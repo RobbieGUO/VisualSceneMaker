@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Stickman>
+    <StickmanFX>
+        <name>billy</name>
+        <bodyColor>#0E867A</bodyColor>
+        <bodyColorOpacity>0.94</bodyColorOpacity>
+        <hairColor>#613A00</hairColor>
+        <hairColorOpacity>1.0</hairColorOpacity>
+        <headColor>#808080</headColor>
+        <headColorOpacity>1.0</headColorOpacity>
+        <limbsColor>#505050</limbsColor>
+        <limbsColorOpacity>1.0</limbsColorOpacity>
+    </StickmanFX>
+    <StickmanFX>
+        <name>victor</name>
+        <bodyColor>#0E867A</bodyColor>
+        <bodyColorOpacity>0.94</bodyColorOpacity>
+        <hairColor>#613A00</hairColor>
+        <hairColorOpacity>1.0</hairColorOpacity>
+        <headColor>#F2E3D9</headColor>
+        <headColorOpacity>1.0</headColorOpacity>
+        <limbsColor>#505050</limbsColor>
+        <limbsColorOpacity>1.0</limbsColorOpacity>
+    </StickmanFX>
+    <StickmanFX>
+        <name>lily</name>
+        <bodyColor>#9A53C6</bodyColor>
+        <bodyColorOpacity>0.94</bodyColorOpacity>
+        <hairColor>#F0D400</hairColor>
+        <hairColorOpacity>1.0</hairColorOpacity>
+        <headColor>#000000</headColor>
+        <headColorOpacity>1.0</headColorOpacity>
+        <limbsColor>#505050</limbsColor>
+        <limbsColorOpacity>1.0</limbsColorOpacity>
+    </StickmanFX>
+    <StickmanFX>
+        <name>thomas</name>
+        <bodyColor>#0E867A</bodyColor>
+        <bodyColorOpacity>0.94</bodyColorOpacity>
+        <hairColor>#613A00</hairColor>
+        <hairColorOpacity>1.0</hairColorOpacity>
+        <headColor>#F2E3D9</headColor>
+        <headColorOpacity>1.0</headColorOpacity>
+        <limbsColor>#505050</limbsColor>
+        <limbsColorOpacity>1.0</limbsColorOpacity>
+    </StickmanFX>
+</Stickman>

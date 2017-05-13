@@ -9,22 +9,23 @@
       <Feature key="tts" val="cereproc"/>
       <Feature key="cereproc_library_path" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib"/>
       <Feature key="license" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib/license.lic"/>
+      <Feature key="" val=""/>
     </Plugin>
   </Plugins>
   <Agents>
-    <Agent name="mathis" device="stickmantts">
+    <Agent name="Victor" device="stickmantts">
       <Feature key="default-voice" val="en"/>
       <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
-    <Agent name="dolf" device="stickmantts">
+    <Agent name="Thomas" device="stickmantts">
       <Feature key="default-voice" val="en"/>
       <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
-    <Agent name="bob" device="stickmantts">
+    <Agent name="Lily" device="stickmantts">
       <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
       <Feature key="default-voice" val="en"/>
     </Agent>
-    <Agent name="mason" device="stickmantts">
+    <Agent name="Billy" device="stickmantts">
       <Feature key="default-voice" val="en"/>
       <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>

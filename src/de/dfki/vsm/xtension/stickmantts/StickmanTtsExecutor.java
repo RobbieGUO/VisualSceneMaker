@@ -310,7 +310,7 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
         stickmanLaunchThread = new Thread() {
             public void run() {
                 try {
-                    stickmanStageC.launchStickmanStage(true);
+                    stickmanStageC.launchStage(true,mProject.getProjectPath());
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
