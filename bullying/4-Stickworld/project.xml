@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Stickworld">
+  <Plugins>
+    <Plugin type="device" name="stickmantts" class="de.dfki.vsm.xtension.stickmantts.StickmanTtsExecutor" load="true">
+      <Feature key="smhost" val="127.0.0.1"/>
+      <Feature key="smport" val="8000"/>
+      <Feature key="showstickmanname" val="true"/>
+      <Feature key="stickman" val="Stickman2D"/>
+      <Feature key="tts" val="cereproc"/>
+      <Feature key="cereproc_library_path" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib"/>
+      <Feature key="license" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib/license.lic"/>
+    </Plugin>
+  </Plugins>
+  <Agents>
+    <Agent name="mathis" device="stickmantts">
+      <Feature key="default-voice" val="en"/>
+      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+    </Agent>
+    <Agent name="dolf" device="stickmantts">
+      <Feature key="default-voice" val="en"/>
+      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+    </Agent>
+    <Agent name="bob" device="stickmantts">
+      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="default-voice" val="en"/>
+    </Agent>
+    <Agent name="mason" device="stickmantts">
+      <Feature key="default-voice" val="en"/>
+      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+    </Agent>
+  </Agents>
+  <Player>
+  </Player>
+</Project>
