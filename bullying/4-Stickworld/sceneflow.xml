@@ -1,10 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SceneFlow id="" name="ZoomOut" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sun, 14 May 2017 00:44:25" start="S6;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+<SceneFlow id="" name="ZoomOut" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sun, 14 May 2017 18:27:07" start="S3;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
   <Define>
   </Define>
   <Declare>
     <VariableDefinition type="Bool" name ="VSMFlag">
       <BoolLiteral value="true"/>
+    </VariableDefinition>
+    <VariableDefinition type="Int" name ="sceneflag">
+      <IntLiteral value="0"/>
+    </VariableDefinition>
+    <VariableDefinition type="String" name ="userName">
+      <StringLiteral><![CDATA[]]></StringLiteral>
+    </VariableDefinition>
+    <VariableDefinition type="Bool" name ="bullyStart">
+      <BoolLiteral value="false"/>
+    </VariableDefinition>
+    <VariableDefinition type="Bool" name ="bell">
+      <BoolLiteral value="false"/>
     </VariableDefinition>
   </Declare>
   <Commands>
@@ -15,103 +27,6 @@
   <GlobalVariableBadge>
     <Position xPos="10" yPos="10"/>
   </GlobalVariableBadge>
-  <SuperNode id="S2" name="introduce" comment="" hideLocalVar="false" hideGlobalVar="false" start="N21;">
-    <Define>
-    </Define>
-    <Declare>
-    </Declare>
-    <Commands>
-    </Commands>
-    <IEdge target="S4" start="">
-      <Graphics>
-        <Connection>
-          <ControlPoint xPos="390" yPos="75" ctrlXPos="457" ctrlYPos="75"/>
-          <ControlPoint xPos="750" yPos="87" ctrlXPos="682" ctrlYPos="105"/>
-        </Connection>
-      </Graphics>
-      <Not>
-        <SimpleVariable name="VSMFlag"/>
-      </Not>
-    </IEdge>
-    <Graphics>
-      <Position xPos="300" yPos="30"/>
-    </Graphics>
-    <LocalVariableBadge>
-      <Position xPos="10" yPos="10"/>
-    </LocalVariableBadge>
-    <GlobalVariableBadge>
-      <Position xPos="10" yPos="10"/>
-    </GlobalVariableBadge>
-    <Node id="N15" name="History" history="true">
-      <Define>
-      </Define>
-      <Declare>
-      </Declare>
-      <Commands>
-      </Commands>
-      <Graphics>
-        <Position xPos="30" yPos="30"/>
-      </Graphics>
-    </Node>
-    <Node id="N16" name="N16" history="false">
-      <Define>
-      </Define>
-      <Declare>
-      </Declare>
-      <Commands>
-        <PlayScene>
-          <StringLiteral><![CDATA[introduceJean]]></StringLiteral>
-        </PlayScene>
-      </Commands>
-      <TEdge target="N20" start="" timeout="1000">
-      <Graphics>
-        <Connection>
-          <ControlPoint xPos="390" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
-          <ControlPoint xPos="570" yPos="165" ctrlXPos="502" ctrlYPos="165"/>
-        </Connection>
-      </Graphics>
-      </TEdge>
-      <Graphics>
-        <Position xPos="300" yPos="120"/>
-      </Graphics>
-    </Node>
-    <Node id="N20" name="N20" history="false">
-      <Define>
-      </Define>
-      <Declare>
-      </Declare>
-      <Commands>
-        <PlayScene>
-          <StringLiteral><![CDATA[MoveLRightBob]]></StringLiteral>
-        </PlayScene>
-        <PlayScene>
-          <StringLiteral><![CDATA[MoveLRightDolf]]></StringLiteral>
-        </PlayScene>
-      </Commands>
-      <Graphics>
-        <Position xPos="570" yPos="120"/>
-      </Graphics>
-    </Node>
-    <Node id="N21" name="N21" history="false">
-      <Define>
-      </Define>
-      <Declare>
-      </Declare>
-      <Commands>
-      </Commands>
-      <TEdge target="N16" start="" timeout="1000">
-      <Graphics>
-        <Connection>
-          <ControlPoint xPos="210" yPos="165" ctrlXPos="232" ctrlYPos="165"/>
-          <ControlPoint xPos="300" yPos="165" ctrlXPos="277" ctrlYPos="165"/>
-        </Connection>
-      </Graphics>
-      </TEdge>
-      <Graphics>
-        <Position xPos="120" yPos="120"/>
-      </Graphics>
-    </Node>
-  </SuperNode>
   <SuperNode id="S1" name="checkFlag" comment="" hideLocalVar="false" hideGlobalVar="false" start="N14;">
     <Define>
     </Define>
@@ -120,7 +35,7 @@
     <Commands>
     </Commands>
     <Graphics>
-      <Position xPos="930" yPos="30"/>
+      <Position xPos="390" yPos="300"/>
     </Graphics>
     <LocalVariableBadge>
       <Position xPos="10" yPos="10"/>
@@ -173,17 +88,59 @@
     </Declare>
     <Commands>
     </Commands>
-    <IEdge target="S2" start="">
+    <IEdge target="S6" start="">
       <Graphics>
         <Connection>
-          <ControlPoint xPos="750" yPos="75" ctrlXPos="682" ctrlYPos="75"/>
-          <ControlPoint xPos="390" yPos="63" ctrlXPos="457" ctrlYPos="45"/>
+          <ControlPoint xPos="859" yPos="480" ctrlXPos="768" ctrlYPos="322"/>
+          <ControlPoint xPos="660" yPos="210" ctrlXPos="817" ctrlYPos="367"/>
         </Connection>
       </Graphics>
-      <SimpleVariable name="VSMFlag"/>
+      <AndAnd>
+        <SimpleVariable name="VSMFlag"/>
+        <ParenExpression>
+          <Eq>
+            <SimpleVariable name="sceneflag"/>
+            <IntLiteral value="0"/>
+          </Eq>
+        </ParenExpression>
+      </AndAnd>
+    </IEdge>
+    <IEdge target="S7" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="897" yPos="480" ctrlXPos="927" ctrlYPos="367"/>
+          <ControlPoint xPos="897" yPos="210" ctrlXPos="927" ctrlYPos="322"/>
+        </Connection>
+      </Graphics>
+      <AndAnd>
+        <SimpleVariable name="VSMFlag"/>
+        <ParenExpression>
+          <Eq>
+            <SimpleVariable name="sceneflag"/>
+            <IntLiteral value="1"/>
+          </Eq>
+        </ParenExpression>
+      </AndAnd>
+    </IEdge>
+    <IEdge target="S8" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="930" yPos="480" ctrlXPos="1087" ctrlYPos="322"/>
+          <ControlPoint xPos="1110" yPos="210" ctrlXPos="952" ctrlYPos="367"/>
+        </Connection>
+      </Graphics>
+      <AndAnd>
+        <SimpleVariable name="VSMFlag"/>
+        <ParenExpression>
+          <Eq>
+            <SimpleVariable name="sceneflag"/>
+            <IntLiteral value="2"/>
+          </Eq>
+        </ParenExpression>
+      </AndAnd>
     </IEdge>
     <Graphics>
-      <Position xPos="750" yPos="30"/>
+      <Position xPos="840" yPos="480"/>
     </Graphics>
     <LocalVariableBadge>
       <Position xPos="10" yPos="10"/>
@@ -232,13 +189,24 @@
     <TEdge target="S7" start="" timeout="3000">
     <Graphics>
       <Connection>
-        <ControlPoint xPos="390" yPos="255" ctrlXPos="412" ctrlYPos="255"/>
-        <ControlPoint xPos="480" yPos="255" ctrlXPos="457" ctrlYPos="255"/>
+        <ControlPoint xPos="660" yPos="165" ctrlXPos="727" ctrlYPos="165"/>
+        <ControlPoint xPos="840" yPos="165" ctrlXPos="772" ctrlYPos="165"/>
       </Connection>
     </Graphics>
     </TEdge>
+    <IEdge target="S4" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="641" yPos="210" ctrlXPos="732" ctrlYPos="367"/>
+          <ControlPoint xPos="840" yPos="480" ctrlXPos="682" ctrlYPos="322"/>
+        </Connection>
+      </Graphics>
+      <Not>
+        <SimpleVariable name="VSMFlag"/>
+      </Not>
+    </IEdge>
     <Graphics>
-      <Position xPos="314" yPos="208"/>
+      <Position xPos="570" yPos="120"/>
     </Graphics>
     <LocalVariableBadge>
       <Position xPos="10" yPos="10"/>
@@ -254,7 +222,7 @@
       <Commands>
       </Commands>
       <Graphics>
-        <Position xPos="30" yPos="30"/>
+        <Position xPos="30" yPos="120"/>
       </Graphics>
     </Node>
     <Node id="N7" name="N7" history="false">
@@ -263,37 +231,21 @@
       <Declare>
       </Declare>
       <Commands>
+        <Assignment>
+          <SimpleVariable name="sceneflag"/>
+          <Expression>
+            <IntLiteral value="0"/>
+          </Expression>
+        </Assignment>
       </Commands>
-      <TEdge target="N8" start="" timeout="3000">
+      <EEdge target="N9" start ="">
       <Graphics>
         <Connection>
-          <ControlPoint xPos="300" yPos="255" ctrlXPos="322" ctrlYPos="255"/>
-          <ControlPoint xPos="390" yPos="255" ctrlXPos="367" ctrlYPos="255"/>
+          <ControlPoint xPos="480" yPos="255" ctrlXPos="637" ctrlYPos="255"/>
+          <ControlPoint xPos="660" yPos="255" ctrlXPos="502" ctrlYPos="255"/>
         </Connection>
       </Graphics>
-      </TEdge>
-      <Graphics>
-        <Position xPos="210" yPos="210"/>
-      </Graphics>
-    </Node>
-    <Node id="N8" name="N8" history="false">
-      <Define>
-      </Define>
-      <Declare>
-      </Declare>
-      <Commands>
-        <PlayScene>
-          <StringLiteral><![CDATA[door]]></StringLiteral>
-        </PlayScene>
-      </Commands>
-      <TEdge target="N9" start="" timeout="1000">
-      <Graphics>
-        <Connection>
-          <ControlPoint xPos="480" yPos="255" ctrlXPos="547" ctrlYPos="255"/>
-          <ControlPoint xPos="660" yPos="255" ctrlXPos="592" ctrlYPos="255"/>
-        </Connection>
-      </Graphics>
-      </TEdge>
+      </EEdge>
       <Graphics>
         <Position xPos="390" yPos="210"/>
       </Graphics>
@@ -306,6 +258,15 @@
       <Commands>
         <PlayScene>
           <StringLiteral><![CDATA[welcome]]></StringLiteral>
+          <StructExpression>
+            <Assignment>
+              <SimpleVariable name="userName"/>
+              <Expression>
+                <CallingExpression name="returnUserName">
+                </CallingExpression>
+              </Expression>
+            </Assignment>
+          </StructExpression>
         </PlayScene>
       </Commands>
       <TEdge target="N10" start="" timeout="3000">
@@ -335,7 +296,7 @@
       </Graphics>
     </Node>
   </SuperNode>
-  <SuperNode id="S7" name="Walk to school" comment="" hideLocalVar="false" hideGlobalVar="false" start="N11;">
+  <SuperNode id="S7" name="Walk to school" comment="" hideLocalVar="false" hideGlobalVar="false" start="N18;">
     <Define>
     </Define>
     <Declare>
@@ -345,13 +306,24 @@
     <TEdge target="S8" start="" timeout="3000">
     <Graphics>
       <Connection>
-        <ControlPoint xPos="570" yPos="255" ctrlXPos="592" ctrlYPos="255"/>
-        <ControlPoint xPos="660" yPos="255" ctrlXPos="637" ctrlYPos="255"/>
+        <ControlPoint xPos="930" yPos="165" ctrlXPos="997" ctrlYPos="165"/>
+        <ControlPoint xPos="1110" yPos="165" ctrlXPos="1042" ctrlYPos="165"/>
       </Connection>
     </Graphics>
     </TEdge>
+    <IEdge target="S4" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="885" yPos="210" ctrlXPos="885" ctrlYPos="322"/>
+          <ControlPoint xPos="885" yPos="480" ctrlXPos="885" ctrlYPos="367"/>
+        </Connection>
+      </Graphics>
+      <Not>
+        <SimpleVariable name="VSMFlag"/>
+      </Not>
+    </IEdge>
     <Graphics>
-      <Position xPos="494" yPos="208"/>
+      <Position xPos="840" yPos="120"/>
     </Graphics>
     <LocalVariableBadge>
       <Position xPos="10" yPos="10"/>
@@ -381,19 +353,55 @@
         </PlayScene>
       </Commands>
       <Graphics>
-        <Position xPos="210" yPos="30"/>
+        <Position xPos="480" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N18" name="N18" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <Assignment>
+          <SimpleVariable name="sceneflag"/>
+          <Expression>
+            <IntLiteral value="1"/>
+          </Expression>
+        </Assignment>
+      </Commands>
+      <EEdge target="N11" start ="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="300" yPos="165" ctrlXPos="367" ctrlYPos="165"/>
+          <ControlPoint xPos="480" yPos="165" ctrlXPos="412" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </EEdge>
+      <Graphics>
+        <Position xPos="210" yPos="120"/>
       </Graphics>
     </Node>
   </SuperNode>
-  <SuperNode id="S8" name="In School" comment="" hideLocalVar="false" hideGlobalVar="false" start="N12;">
+  <SuperNode id="S8" name="In School" comment="" hideLocalVar="false" hideGlobalVar="false" start="N19;">
     <Define>
     </Define>
     <Declare>
     </Declare>
     <Commands>
     </Commands>
+    <IEdge target="S4" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="1129" yPos="210" ctrlXPos="1038" ctrlYPos="367"/>
+          <ControlPoint xPos="911" yPos="480" ctrlXPos="1002" ctrlYPos="322"/>
+        </Connection>
+      </Graphics>
+      <Not>
+        <SimpleVariable name="VSMFlag"/>
+      </Not>
+    </IEdge>
     <Graphics>
-      <Position xPos="674" yPos="208"/>
+      <Position xPos="1110" yPos="120"/>
     </Graphics>
     <LocalVariableBadge>
       <Position xPos="10" yPos="10"/>
@@ -422,13 +430,255 @@
           <StringLiteral><![CDATA[InSchool]]></StringLiteral>
         </PlayScene>
       </Commands>
+      <TEdge target="N13" start="" timeout="1000">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="480" yPos="165" ctrlXPos="592" ctrlYPos="165"/>
+          <ControlPoint xPos="660" yPos="165" ctrlXPos="547" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </TEdge>
       <Graphics>
         <Position xPos="390" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N13" name="N13" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <PlayScene>
+          <StringLiteral><![CDATA[BullyStart]]></StringLiteral>
+        </PlayScene>
+      </Commands>
+      <TEdge target="N17" start="" timeout="10000">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="750" yPos="165" ctrlXPos="817" ctrlYPos="165"/>
+          <ControlPoint xPos="930" yPos="165" ctrlXPos="862" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </TEdge>
+      <Graphics>
+        <Position xPos="660" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N17" name="N17" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <PlayScene>
+          <StringLiteral><![CDATA[BullyEnd]]></StringLiteral>
+        </PlayScene>
+      </Commands>
+      <Graphics>
+        <Position xPos="930" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N19" name="N19" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <Assignment>
+          <SimpleVariable name="sceneflag"/>
+          <Expression>
+            <IntLiteral value="2"/>
+          </Expression>
+        </Assignment>
+      </Commands>
+      <EEdge target="N12" start ="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="300" yPos="165" ctrlXPos="322" ctrlYPos="165"/>
+          <ControlPoint xPos="390" yPos="165" ctrlXPos="367" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </EEdge>
+      <Graphics>
+        <Position xPos="210" yPos="120"/>
+      </Graphics>
+    </Node>
+  </SuperNode>
+  <SuperNode id="S2" name="S2" comment="" hideLocalVar="false" hideGlobalVar="false" start="N23;">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+    </Commands>
+    <IEdge target="S6" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="480" yPos="165" ctrlXPos="547" ctrlYPos="165"/>
+          <ControlPoint xPos="570" yPos="165" ctrlXPos="502" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      <SimpleVariable name="bell"/>
+    </IEdge>
+    <Graphics>
+      <Position xPos="390" yPos="120"/>
+    </Graphics>
+    <LocalVariableBadge>
+      <Position xPos="10" yPos="10"/>
+    </LocalVariableBadge>
+    <GlobalVariableBadge>
+      <Position xPos="10" yPos="10"/>
+    </GlobalVariableBadge>
+    <Node id="N22" name="History" history="true">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+      </Commands>
+      <Graphics>
+        <Position xPos="30" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N23" name="N23" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <PlayScene>
+          <StringLiteral><![CDATA[door]]></StringLiteral>
+        </PlayScene>
+      </Commands>
+      <EEdge target="N20" start ="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="570" yPos="165" ctrlXPos="637" ctrlYPos="165"/>
+          <ControlPoint xPos="750" yPos="165" ctrlXPos="682" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </EEdge>
+      <Graphics>
+        <Position xPos="480" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N24" name="N24" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+      </Commands>
+      <TEdge target="N23" start="" timeout="1000">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="390" yPos="165" ctrlXPos="412" ctrlYPos="165"/>
+          <ControlPoint xPos="480" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      </TEdge>
+      <Graphics>
+        <Position xPos="300" yPos="120"/>
+      </Graphics>
+    </Node>
+    <Node id="N20" name="N20" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <Assignment>
+          <SimpleVariable name="bell"/>
+          <Expression>
+            <CallingExpression name="DoolBell">
+            </CallingExpression>
+          </Expression>
+        </Assignment>
+      </Commands>
+      <TEdge target="N20" start="" timeout="1000">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="807" yPos="122" ctrlXPos="831" ctrlYPos="36"/>
+          <ControlPoint xPos="834" yPos="142" ctrlXPos="912" ctrlYPos="96"/>
+        </Connection>
+      </Graphics>
+      </TEdge>
+      <Graphics>
+        <Position xPos="750" yPos="120"/>
+      </Graphics>
+    </Node>
+  </SuperNode>
+  <SuperNode id="S3" name="S3" comment="" hideLocalVar="false" hideGlobalVar="false" start="N16;">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+    </Commands>
+    <IEdge target="S2" start="">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="210" yPos="165" ctrlXPos="277" ctrlYPos="165"/>
+          <ControlPoint xPos="390" yPos="165" ctrlXPos="322" ctrlYPos="165"/>
+        </Connection>
+      </Graphics>
+      <SimpleVariable name="bullyStart"/>
+    </IEdge>
+    <Graphics>
+      <Position xPos="120" yPos="120"/>
+    </Graphics>
+    <LocalVariableBadge>
+      <Position xPos="10" yPos="10"/>
+    </LocalVariableBadge>
+    <GlobalVariableBadge>
+      <Position xPos="10" yPos="10"/>
+    </GlobalVariableBadge>
+    <Node id="N15" name="History" history="true">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+      </Commands>
+      <Graphics>
+        <Position xPos="30" yPos="30"/>
+      </Graphics>
+    </Node>
+    <Node id="N16" name="N16" history="false">
+      <Define>
+      </Define>
+      <Declare>
+      </Declare>
+      <Commands>
+        <Assignment>
+          <SimpleVariable name="bullyStart"/>
+          <Expression>
+            <CallingExpression name="returnbullyStartFlag">
+            </CallingExpression>
+          </Expression>
+        </Assignment>
+      </Commands>
+      <TEdge target="N16" start="" timeout="1000">
+      <Graphics>
+        <Connection>
+          <ControlPoint xPos="447" yPos="212" ctrlXPos="471" ctrlYPos="126"/>
+          <ControlPoint xPos="474" yPos="232" ctrlXPos="552" ctrlYPos="186"/>
+        </Connection>
+      </Graphics>
+      </TEdge>
+      <Graphics>
+        <Position xPos="390" yPos="210"/>
       </Graphics>
     </Node>
   </SuperNode>
   <UserCommands>
     <UserCommand name="returnBullyingVSMFlag" classname ="de.dfki.stickmanFX.stage.StickmanStageFX" method="returnBullyingVSMFlag">
+    </UserCommand>
+    <UserCommand name="DoolBell" classname ="de.dfki.stickmanFX.stage.StickmanStageFX" method="bullyingVSMControlDoorBell">
+    </UserCommand>
+    <UserCommand name="returnbullyStartFlag" classname ="de.dfki.stickmanFX.stage.StickmanStageFX" method="returnbullyStartFlag">
+    </UserCommand>
+    <UserCommand name="returnUserName" classname ="de.dfki.stickmanFX.stage.StickmanStageFX" method="returnUserName">
     </UserCommand>
   </UserCommands>
   <ClassPath>

@@ -4,9 +4,9 @@
         <name>billy</name>
         <bodyColor>#0E867A</bodyColor>
         <bodyColorOpacity>0.94</bodyColorOpacity>
-        <hairColor>#613A00</hairColor>
+        <hairColor>#000000</hairColor>
         <hairColorOpacity>1.0</hairColorOpacity>
-        <headColor>#808080</headColor>
+        <headColor>#CCFFCC</headColor>
         <headColorOpacity>1.0</headColorOpacity>
         <limbsColor>#505050</limbsColor>
         <limbsColorOpacity>1.0</limbsColorOpacity>
@@ -24,24 +24,24 @@
     </StickmanFX>
     <StickmanFX>
         <name>lily</name>
-        <bodyColor>#9A53C6</bodyColor>
+        <bodyColor>#B34D1A</bodyColor>
         <bodyColorOpacity>0.94</bodyColorOpacity>
-        <hairColor>#F0D400</hairColor>
+        <hairColor>#994D00</hairColor>
         <hairColorOpacity>1.0</hairColorOpacity>
-        <headColor>#000000</headColor>
+        <headColor>#996600</headColor>
         <headColorOpacity>1.0</headColorOpacity>
-        <limbsColor>#505050</limbsColor>
+        <limbsColor>#000000</limbsColor>
         <limbsColorOpacity>1.0</limbsColorOpacity>
     </StickmanFX>
     <StickmanFX>
         <name>thomas</name>
-        <bodyColor>#0E867A</bodyColor>
+        <bodyColor>#E6CCFF</bodyColor>
         <bodyColorOpacity>0.94</bodyColorOpacity>
-        <hairColor>#613A00</hairColor>
+        <hairColor>#994D00</hairColor>
         <hairColorOpacity>1.0</hairColorOpacity>
-        <headColor>#F2E3D9</headColor>
+        <headColor>#FFCCB3</headColor>
         <headColorOpacity>1.0</headColorOpacity>
-        <limbsColor>#505050</limbsColor>
+        <limbsColor>#80B3B3</limbsColor>
         <limbsColorOpacity>1.0</limbsColorOpacity>
     </StickmanFX>
 </Stickman>
