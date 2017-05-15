@@ -29,6 +29,10 @@
       <Feature key="default-voice" val="en"/>
       <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
+    <Agent name="Anna" device="stickmantts">
+      <Feature key="default-voice" val="en"/>
+      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+    </Agent>
   </Agents>
   <Player>
   </Player>
