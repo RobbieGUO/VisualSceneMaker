@@ -28,6 +28,7 @@ public class VoiceReader {
     private static Boolean playingMarking = false;
 
     public static void readFile(String s) throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+        file = "audio/";
         file = file + s;
         play(file);
     }
