@@ -100,18 +100,4 @@ public class StickmanFxFactory extends StickmanAbstractFactory {
             return false;
         }
     }
-//    if (features != null && !(features.isEmpty())) {
-//                    for (final ActionFeature feature : features) {
-//                        if (!feature.getVal().isEmpty()) {
-//                            if (feature.getVal().contains(".")) {
-//                                String filepath = "res" + File.separator + "background";
-//                                String fileAbsolutePath = new File(filepath).getAbsolutePath();
-//                                String sfileAbsolutePath = fileAbsolutePath + File.separator + feature.getVal().replace("'", "");
-//                                stickmanAnimation.setParameter(sfileAbsolutePath);
-//                            } else {
-//                                stickmanAnimation.setParameter(feature.getVal());
-//                            }
-//                        }
-//                    }
-//                }
 }
