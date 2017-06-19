@@ -5,12 +5,11 @@
       <Feature key="smhost" val="127.0.0.1"/>
       <Feature key="smport" val="8000"/>
       <Feature key="showstickmanname" val="true"/>
-      <Feature key="stickman" val="Pinocchio"/>
+      <Feature key="stickman" val="Stickman2D"/>
       <Feature key="tts" val="cereproc"/>
       <Feature key="license" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib/license.lic"/>
-      <Feature key="" val=""/>
       <Feature key="cereproc_library_path" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib"/>
-      <Feature key="fullscreen" val="true"/>
+      <Feature key="fullscreen" val="false"/>
     </Plugin>
   </Plugins>
   <Agents>
