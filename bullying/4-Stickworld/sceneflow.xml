@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SceneFlow id="" name="ZoomOut" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sun, 18 Jun 2017 20:54:37" start="S3;N27;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+<SceneFlow id="" name="ZoomOut" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sun, 25 Jun 2017 23:36:20" start="N27;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
   <Define>
   </Define>
   <Declare>
@@ -76,7 +76,7 @@
       </PlayScene>
     </Commands>
     <Graphics>
-      <Position xPos="300" yPos="390"/>
+      <Position xPos="120" yPos="480"/>
     </Graphics>
   </Node>
   <SuperNode id="S1" name="checkFlag" comment="" hideLocalVar="false" hideGlobalVar="false" start="N14;">

@@ -10,6 +10,13 @@
       <Feature key="license" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib/license.lic"/>
       <Feature key="cereproc_library_path" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib"/>
       <Feature key="fullscreen" val="false"/>
+      <Feature key="useSSI" val="true"/>
+      <Feature key="hlhost" val="127.0.0.1"/>
+      <Feature key="hlport" val="565"/>
+      <Feature key="slhost" val="127.0.0.1"/>
+      <Feature key="slport" val="5000"/>
+      <Feature key="srhost" val="127.0.0.1"/>
+      <Feature key="srport" val="4000"/>
     </Plugin>
   </Plugins>
   <Agents>
