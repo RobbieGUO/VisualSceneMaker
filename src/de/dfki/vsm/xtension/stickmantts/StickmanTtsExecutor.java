@@ -68,6 +68,9 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
     private ExportableProperties exportableProperties = new StickmanTTSProjectProperty();
 
     private int maryId;
+    
+        // SSIUtility to handle message with stickman
+    private SSIUtility mSSIUtility;
 
     // Construct the executor
     public StickmanTtsExecutor(final PluginConfig config, final RunTimeProject project) {
@@ -280,6 +283,8 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
 
     @Override
     public void launch() {
+        launchSSI();
+        
         try {
             String ttsType = mConfig.getProperty("tts");
             if(ttsType == null || ttsType.equalsIgnoreCase("marytts") ) {
@@ -293,6 +298,18 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
         launchStickmanClient();
 
         waitForClients();
+    }
+    
+    private void launchSSI(){
+        final boolean mUseSSI;
+        if(mConfig.getProperty("useSSI") != null){
+            mUseSSI = Boolean.parseBoolean(mConfig.getProperty("useSSI"));           
+        }else{
+            mUseSSI = false;
+        }
+        
+        mSSIUtility = new SSIUtility(mConfig, mProject, mUseSSI);
+        mSSIUtility.launch();
     }
 
     private void launchStickmanClient() {
@@ -371,6 +388,8 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
             clearMaps();
             stickmanStageC.clearStage();
         }
+        
+        mSSIUtility.unload();
     }
 
     private void stopClientsAndServers() throws InterruptedException, IOException {
