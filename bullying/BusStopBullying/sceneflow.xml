@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Fri, 30 Jun 2017 21:49:50" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Fri, 30 Jun 2017 22:09:26" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
   <Define>
   </Define>
   <Declare>
@@ -66,11 +66,11 @@
     </Graphics>
     <Text style="color:blue">
       NextDialogFlog: mark to go to next dialog or not
-                                                                                                            bullyStart: user finishs filling the basic information at beginning
-                                                                                                            stickmanName: indicate which character the user want to talk with
-                        Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
-                        SayNothingFlag: indicate User wants to say anything or not
-                  GamePauseFlag: indicate the game is paused or not
+                                                                                                                  bullyStart: user finishs filling the basic information at beginning
+                                                                                                                  stickmanName: indicate which character the user want to talk with
+                              Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
+                              SayNothingFlag: indicate User wants to say anything or not
+                        GamePauseFlag: indicate the game is paused or not
     </Text>
   </Comment>
   <Node id="N26" name="N26" history="false">
@@ -1550,7 +1550,7 @@
         <Position xPos="10" yPos="10"/>
       </LocalVariableBadge>
       <GlobalVariableBadge>
-        <Position xPos="138" yPos="29"/>
+        <Position xPos="17" yPos="4"/>
       </GlobalVariableBadge>
       <Node id="N74" name="History" history="true">
         <Define>
@@ -1576,13 +1576,13 @@
         <EEdge target="S25" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="660" yPos="255" ctrlXPos="682" ctrlYPos="255"/>
-            <ControlPoint xPos="750" yPos="255" ctrlXPos="727" ctrlYPos="255"/>
+            <ControlPoint xPos="750" yPos="435" ctrlXPos="682" ctrlYPos="435"/>
+            <ControlPoint xPos="570" yPos="435" ctrlXPos="637" ctrlYPos="435"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="570" yPos="210"/>
+          <Position xPos="750" yPos="390"/>
         </Graphics>
       </Node>
       <Node id="N94" name="Billy" history="false">
@@ -1598,13 +1598,13 @@
         <EEdge target="S13" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="300" yPos="255" ctrlXPos="322" ctrlYPos="255"/>
-            <ControlPoint xPos="390" yPos="255" ctrlXPos="367" ctrlYPos="255"/>
+            <ControlPoint xPos="570" yPos="255" ctrlXPos="637" ctrlYPos="255"/>
+            <ControlPoint xPos="750" yPos="255" ctrlXPos="682" ctrlYPos="255"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="210" yPos="210"/>
+          <Position xPos="480" yPos="210"/>
         </Graphics>
       </Node>
       <Node id="N95" name="Start" history="false">
@@ -1620,13 +1620,13 @@
         <TEdge target="N94" start="" timeout="1000">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="120" yPos="255" ctrlXPos="142" ctrlYPos="255"/>
-            <ControlPoint xPos="210" yPos="255" ctrlXPos="187" ctrlYPos="255"/>
+            <ControlPoint xPos="300" yPos="255" ctrlXPos="367" ctrlYPos="255"/>
+            <ControlPoint xPos="480" yPos="255" ctrlXPos="412" ctrlYPos="255"/>
           </Connection>
         </Graphics>
         </TEdge>
         <Graphics>
-          <Position xPos="30" yPos="210"/>
+          <Position xPos="210" yPos="210"/>
         </Graphics>
       </Node>
       <Node id="N110" name="chooseToTalk" history="false">
@@ -1659,13 +1659,13 @@
         <EEdge target="S98" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="572" yPos="447" ctrlXPos="550" ctrlYPos="453"/>
-            <ControlPoint xPos="480" yPos="435" ctrlXPos="502" ctrlYPos="435"/>
+            <ControlPoint xPos="367" yPos="654" ctrlXPos="413" ctrlYPos="736"/>
+            <ControlPoint xPos="499" yPos="840" ctrlXPos="444" ctrlYPos="745"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="570" yPos="390"/>
+          <Position xPos="300" yPos="570"/>
         </Graphics>
       </Node>
       <Node id="N246" name="EndBusStop" history="false">
@@ -1676,7 +1676,7 @@
         <Commands>
         </Commands>
         <Graphics>
-          <Position xPos="390" yPos="660"/>
+          <Position xPos="750" yPos="840"/>
         </Graphics>
       </Node>
       <SuperNode id="S25" name="waitingVoice" comment="" hideLocalVar="false" hideGlobalVar="false" start="N91;">
@@ -1689,13 +1689,13 @@
         <EEdge target="S33" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="795" yPos="300" ctrlXPos="795" ctrlYPos="322"/>
-            <ControlPoint xPos="795" yPos="390" ctrlXPos="795" ctrlYPos="367"/>
+            <ControlPoint xPos="480" yPos="435" ctrlXPos="412" ctrlYPos="435"/>
+            <ControlPoint xPos="300" yPos="435" ctrlXPos="367" ctrlYPos="435"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="750" yPos="210"/>
+          <Position xPos="480" yPos="390"/>
         </Graphics>
         <LocalVariableBadge>
           <Position xPos="10" yPos="10"/>
@@ -2084,13 +2084,13 @@
         <EEdge target="N46" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="480" yPos="255" ctrlXPos="502" ctrlYPos="255"/>
-            <ControlPoint xPos="570" yPos="255" ctrlXPos="547" ctrlYPos="255"/>
+            <ControlPoint xPos="795" yPos="300" ctrlXPos="795" ctrlYPos="322"/>
+            <ControlPoint xPos="795" yPos="390" ctrlXPos="795" ctrlYPos="367"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="390" yPos="210"/>
+          <Position xPos="750" yPos="210"/>
         </Graphics>
         <LocalVariableBadge>
           <Position xPos="10" yPos="10"/>
@@ -2134,7 +2134,7 @@
             </PlayScene>
           </Commands>
           <Graphics>
-            <Position xPos="480" yPos="120"/>
+            <Position xPos="300" yPos="300"/>
           </Graphics>
         </Node>
         <Node id="N93" name="Chris" history="false">
@@ -2148,7 +2148,7 @@
             </PlayScene>
           </Commands>
           <Graphics>
-            <Position xPos="660" yPos="120"/>
+            <Position xPos="300" yPos="480"/>
           </Graphics>
         </Node>
       </SuperNode>
@@ -2162,13 +2162,13 @@
         <EEdge target="N110" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="750" yPos="435" ctrlXPos="727" ctrlYPos="435"/>
-            <ControlPoint xPos="660" yPos="435" ctrlXPos="682" ctrlYPos="435"/>
+            <ControlPoint xPos="281" yPos="480" ctrlXPos="300" ctrlYPos="513"/>
+            <ControlPoint xPos="323" yPos="576" ctrlXPos="306" ctrlYPos="547"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="750" yPos="390"/>
+          <Position xPos="210" yPos="390"/>
         </Graphics>
         <LocalVariableBadge>
           <Position xPos="10" yPos="10"/>
@@ -2212,13 +2212,13 @@
         <EEdge target="N110" start ="">
         <Graphics>
           <Connection>
-            <ControlPoint xPos="120" yPos="423" ctrlXPos="322" ctrlYPos="369"/>
-            <ControlPoint xPos="572" yPos="423" ctrlXPos="378" ctrlYPos="369"/>
+            <ControlPoint xPos="660" yPos="615" ctrlXPos="547" ctrlYPos="615"/>
+            <ControlPoint xPos="390" yPos="615" ctrlXPos="502" ctrlYPos="615"/>
           </Connection>
         </Graphics>
         </EEdge>
         <Graphics>
-          <Position xPos="30" yPos="390"/>
+          <Position xPos="660" yPos="570"/>
         </Graphics>
         <LocalVariableBadge>
           <Position xPos="10" yPos="10"/>
@@ -2247,8 +2247,8 @@
           <IEdge target="S16" start="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="474" yPos="98" ctrlXPos="610" ctrlYPos="178"/>
-                <ControlPoint xPos="750" yPos="319" ctrlXPos="592" ctrlYPos="228"/>
+                <ControlPoint xPos="467" yPos="107" ctrlXPos="554" ctrlYPos="194"/>
+                <ControlPoint xPos="660" yPos="300" ctrlXPos="536" ctrlYPos="176"/>
               </Connection>
             </Graphics>
             <ParenExpression>
@@ -2275,8 +2275,8 @@
           <IEdge target="S38" start="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="403" yPos="107" ctrlXPos="291" ctrlYPos="219"/>
-                <ControlPoint xPos="120" yPos="319" ctrlXPos="277" ctrlYPos="228"/>
+                <ControlPoint xPos="403" yPos="107" ctrlXPos="315" ctrlYPos="194"/>
+                <ControlPoint xPos="210" yPos="300" ctrlXPos="333" ctrlYPos="176"/>
               </Connection>
             </Graphics>
             <ParenExpression>
@@ -2311,13 +2311,13 @@
           <EEdge target="N150" start ="">
           <Graphics>
             <Connection>
-              <ControlPoint xPos="750" yPos="371" ctrlXPos="616" ctrlYPos="448"/>
-              <ControlPoint xPos="474" yPos="502" ctrlXPos="589" ctrlYPos="433"/>
+              <ControlPoint xPos="660" yPos="371" ctrlXPos="565" ctrlYPos="425"/>
+              <ControlPoint xPos="474" yPos="502" ctrlXPos="556" ctrlYPos="453"/>
             </Connection>
           </Graphics>
           </EEdge>
           <Graphics>
-            <Position xPos="750" yPos="300"/>
+            <Position xPos="660" yPos="300"/>
           </Graphics>
           <LocalVariableBadge>
             <Position xPos="10" yPos="10"/>
@@ -2355,13 +2355,13 @@
             <EEdge target="N119" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="390" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
-                <ControlPoint xPos="570" yPos="165" ctrlXPos="502" ctrlYPos="165"/>
+                <ControlPoint xPos="300" yPos="165" ctrlXPos="412" ctrlYPos="165"/>
+                <ControlPoint xPos="570" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="300" yPos="120"/>
+              <Position xPos="210" yPos="120"/>
             </Graphics>
           </Node>
           <Node id="N119" name="SetText" history="false">
@@ -2399,8 +2399,8 @@
             <EEdge target="S41" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="840" yPos="345" ctrlXPos="817" ctrlYPos="345"/>
-                <ControlPoint xPos="750" yPos="345" ctrlXPos="772" ctrlYPos="345"/>
+                <ControlPoint xPos="840" yPos="345" ctrlXPos="772" ctrlYPos="345"/>
+                <ControlPoint xPos="660" yPos="345" ctrlXPos="727" ctrlYPos="345"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -2421,13 +2421,13 @@
             <EEdge target="S42" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="313" yPos="467" ctrlXPos="270" ctrlYPos="509"/>
-                <ControlPoint xPos="210" yPos="570" ctrlXPos="269" ctrlYPos="510"/>
+                <ControlPoint xPos="576" yPos="547" ctrlXPos="460" ctrlYPos="612"/>
+                <ControlPoint xPos="300" yPos="679" ctrlXPos="433" ctrlYPos="601"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="300" yPos="390"/>
+              <Position xPos="570" yPos="480"/>
             </Graphics>
           </Node>
           <Node id="N247" name="N247" history="false">
@@ -2443,13 +2443,13 @@
             <EEdge target="S44" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="474" yPos="818" ctrlXPos="589" ctrlYPos="886"/>
-                <ControlPoint xPos="750" yPos="949" ctrlXPos="616" ctrlYPos="871"/>
+                <ControlPoint xPos="570" yPos="885" ctrlXPos="457" ctrlYPos="885"/>
+                <ControlPoint xPos="300" yPos="885" ctrlXPos="412" ctrlYPos="885"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="390" yPos="750"/>
+              <Position xPos="570" yPos="840"/>
             </Graphics>
           </Node>
           <Node id="N261" name="N261" history="false">
@@ -2465,13 +2465,13 @@
             <EEdge target="S52" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="390" yPos="975" ctrlXPos="322" ctrlYPos="975"/>
-                <ControlPoint xPos="210" yPos="975" ctrlXPos="277" ctrlYPos="975"/>
+                <ControlPoint xPos="255" yPos="1290" ctrlXPos="255" ctrlYPos="1312"/>
+                <ControlPoint xPos="255" yPos="1380" ctrlXPos="255" ctrlYPos="1357"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="390" yPos="930"/>
+              <Position xPos="210" yPos="1200"/>
             </Graphics>
           </Node>
           <Node id="N275" name="N275" history="false">
@@ -2485,7 +2485,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="120" yPos="1290"/>
+              <Position xPos="840" yPos="1560"/>
             </Graphics>
           </Node>
           <Node id="N130" name="N130" history="false">
@@ -2501,13 +2501,13 @@
             <EEdge target="S42" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="165" yPos="390" ctrlXPos="165" ctrlYPos="457"/>
-                <ControlPoint xPos="165" yPos="570" ctrlXPos="165" ctrlYPos="502"/>
+                <ControlPoint xPos="255" yPos="570" ctrlXPos="255" ctrlYPos="592"/>
+                <ControlPoint xPos="255" yPos="660" ctrlXPos="255" ctrlYPos="637"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="120" yPos="300"/>
+              <Position xPos="210" yPos="480"/>
             </Graphics>
           </Node>
           <Node id="N134" name="N134" history="false">
@@ -2523,13 +2523,13 @@
             <EEdge target="S45" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="795" yPos="570" ctrlXPos="795" ctrlYPos="592"/>
-                <ControlPoint xPos="795" yPos="660" ctrlXPos="795" ctrlYPos="637"/>
+                <ControlPoint xPos="885" yPos="570" ctrlXPos="885" ctrlYPos="592"/>
+                <ControlPoint xPos="885" yPos="660" ctrlXPos="885" ctrlYPos="637"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="750" yPos="480"/>
+              <Position xPos="840" yPos="480"/>
             </Graphics>
           </Node>
           <Node id="N166" name="N166" history="false">
@@ -2543,7 +2543,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="570" yPos="1200"/>
+              <Position xPos="840" yPos="1200"/>
             </Graphics>
           </Node>
           <Node id="N167" name="N167" history="false">
@@ -2559,13 +2559,13 @@
             <EEdge target="S44" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="795" yPos="1110" ctrlXPos="795" ctrlYPos="1087"/>
-                <ControlPoint xPos="795" yPos="1020" ctrlXPos="795" ctrlYPos="1042"/>
+                <ControlPoint xPos="842" yPos="1053" ctrlXPos="593" ctrlYPos="983"/>
+                <ControlPoint xPos="300" yPos="897" ctrlXPos="560" ctrlYPos="966"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="750" yPos="1110"/>
+              <Position xPos="840" yPos="1020"/>
             </Graphics>
           </Node>
           <Node id="N168" name="N168" history="false">
@@ -2579,7 +2579,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="390" yPos="1290"/>
+              <Position xPos="840" yPos="1380"/>
             </Graphics>
           </Node>
           <SuperNode id="S48" name="waitingVoice" comment="" hideLocalVar="false" hideGlobalVar="false" start="N352;">
@@ -2977,8 +2977,8 @@
             <IEdge target="N232" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="480" yPos="371" ctrlXPos="446" ctrlYPos="390"/>
-                  <ControlPoint xPos="384" yPos="412" ctrlXPos="412" ctrlYPos="395"/>
+                  <ControlPoint xPos="300" yPos="371" ctrlXPos="433" ctrlYPos="448"/>
+                  <ControlPoint xPos="576" yPos="502" ctrlXPos="460" ctrlYPos="433"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -2996,8 +2996,8 @@
             <IEdge target="N130" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="480" yPos="345" ctrlXPos="367" ctrlYPos="345"/>
-                  <ControlPoint xPos="210" yPos="345" ctrlXPos="322" ctrlYPos="345"/>
+                  <ControlPoint xPos="255" yPos="390" ctrlXPos="255" ctrlYPos="412"/>
+                  <ControlPoint xPos="255" yPos="480" ctrlXPos="255" ctrlYPos="457"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3013,7 +3013,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="480" yPos="300"/>
+              <Position xPos="210" yPos="300"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -3318,8 +3318,8 @@
             <IEdge target="N247" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="513" yPos="570" ctrlXPos="493" ctrlYPos="644"/>
-                  <ControlPoint xPos="447" yPos="752" ctrlXPos="466" ctrlYPos="680"/>
+                  <ControlPoint xPos="615" yPos="750" ctrlXPos="615" ctrlYPos="772"/>
+                  <ControlPoint xPos="615" yPos="840" ctrlXPos="615" ctrlYPos="817"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3337,8 +3337,8 @@
             <IEdge target="N134" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="570" yPos="525" ctrlXPos="637" ctrlYPos="525"/>
-                  <ControlPoint xPos="750" yPos="525" ctrlXPos="682" ctrlYPos="525"/>
+                  <ControlPoint xPos="660" yPos="679" ctrlXPos="754" ctrlYPos="624"/>
+                  <ControlPoint xPos="846" yPos="547" ctrlXPos="763" ctrlYPos="593"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3354,7 +3354,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="480" yPos="480"/>
+              <Position xPos="570" yPos="660"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -3659,8 +3659,8 @@
             <IEdge target="N261" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="570" yPos="975" ctrlXPos="547" ctrlYPos="975"/>
-                  <ControlPoint xPos="480" yPos="975" ctrlXPos="502" ctrlYPos="975"/>
+                  <ControlPoint xPos="255" yPos="1110" ctrlXPos="255" ctrlYPos="1132"/>
+                  <ControlPoint xPos="255" yPos="1200" ctrlXPos="255" ctrlYPos="1177"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3678,8 +3678,8 @@
             <IEdge target="N166" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="615" yPos="1020" ctrlXPos="615" ctrlYPos="1087"/>
-                  <ControlPoint xPos="615" yPos="1200" ctrlXPos="615" ctrlYPos="1132"/>
+                  <ControlPoint xPos="300" yPos="1077" ctrlXPos="560" ctrlYPos="1146"/>
+                  <ControlPoint xPos="842" yPos="1233" ctrlXPos="593" ctrlYPos="1163"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3697,8 +3697,8 @@
             <IEdge target="N167" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="660" yPos="1020" ctrlXPos="719" ctrlYPos="1079"/>
-                  <ControlPoint xPos="763" yPos="1123" ctrlXPos="720" ctrlYPos="1080"/>
+                  <ControlPoint xPos="300" yPos="1065" ctrlXPos="547" ctrlYPos="1065"/>
+                  <ControlPoint xPos="840" yPos="1065" ctrlXPos="592" ctrlYPos="1065"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -3714,7 +3714,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="570" yPos="930"/>
+              <Position xPos="210" yPos="1020"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4026,8 +4026,8 @@
             <IEdge target="N275" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="165" yPos="1200" ctrlXPos="165" ctrlYPos="1222"/>
-                  <ControlPoint xPos="165" yPos="1290" ctrlXPos="165" ctrlYPos="1267"/>
+                  <ControlPoint xPos="660" yPos="1451" ctrlXPos="754" ctrlYPos="1505"/>
+                  <ControlPoint xPos="846" yPos="1582" ctrlXPos="763" ctrlYPos="1533"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -4045,8 +4045,8 @@
             <IEdge target="N168" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="210" yPos="1181" ctrlXPos="304" ctrlYPos="1235"/>
-                  <ControlPoint xPos="396" yPos="1312" ctrlXPos="313" ctrlYPos="1263"/>
+                  <ControlPoint xPos="660" yPos="1425" ctrlXPos="727" ctrlYPos="1425"/>
+                  <ControlPoint xPos="840" yPos="1425" ctrlXPos="772" ctrlYPos="1425"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -4062,7 +4062,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="120" yPos="1110"/>
+              <Position xPos="570" yPos="1380"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4367,13 +4367,13 @@
             <EEdge target="S78" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="660" yPos="345" ctrlXPos="637" ctrlYPos="345"/>
-                <ControlPoint xPos="570" yPos="345" ctrlXPos="592" ctrlYPos="345"/>
+                <ControlPoint xPos="570" yPos="345" ctrlXPos="457" ctrlYPos="345"/>
+                <ControlPoint xPos="300" yPos="345" ctrlXPos="412" ctrlYPos="345"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="660" yPos="300"/>
+              <Position xPos="570" yPos="300"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4468,13 +4468,13 @@
             <EEdge target="S83" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="210" yPos="603" ctrlXPos="328" ctrlYPos="571"/>
-                <ControlPoint xPos="480" yPos="537" ctrlXPos="361" ctrlYPos="568"/>
+                <ControlPoint xPos="300" yPos="705" ctrlXPos="412" ctrlYPos="705"/>
+                <ControlPoint xPos="570" yPos="705" ctrlXPos="457" ctrlYPos="705"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="120" yPos="570"/>
+              <Position xPos="210" yPos="660"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4569,13 +4569,13 @@
             <EEdge target="S88" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="750" yPos="975" ctrlXPos="727" ctrlYPos="975"/>
-                <ControlPoint xPos="660" yPos="975" ctrlXPos="682" ctrlYPos="975"/>
+                <ControlPoint xPos="255" yPos="930" ctrlXPos="255" ctrlYPos="952"/>
+                <ControlPoint xPos="255" yPos="1020" ctrlXPos="255" ctrlYPos="997"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="750" yPos="930"/>
+              <Position xPos="210" yPos="840"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4670,13 +4670,13 @@
             <EEdge target="S46" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="795" yPos="750" ctrlXPos="795" ctrlYPos="761"/>
-                <ControlPoint xPos="795" yPos="750" ctrlXPos="795" ctrlYPos="738"/>
+                <ControlPoint xPos="885" yPos="750" ctrlXPos="885" ctrlYPos="772"/>
+                <ControlPoint xPos="885" yPos="840" ctrlXPos="885" ctrlYPos="817"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="750" yPos="660"/>
+              <Position xPos="840" yPos="660"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -4771,8 +4771,8 @@
             <IEdge target="N247" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="750" yPos="795" ctrlXPos="637" ctrlYPos="795"/>
-                  <ControlPoint xPos="480" yPos="795" ctrlXPos="592" ctrlYPos="795"/>
+                  <ControlPoint xPos="840" yPos="885" ctrlXPos="772" ctrlYPos="885"/>
+                  <ControlPoint xPos="660" yPos="885" ctrlXPos="727" ctrlYPos="885"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -4788,7 +4788,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="750" yPos="750"/>
+              <Position xPos="840" yPos="840"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -5093,13 +5093,13 @@
             <EEdge target="S93" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="165" yPos="1020" ctrlXPos="165" ctrlYPos="1042"/>
-                <ControlPoint xPos="165" yPos="1110" ctrlXPos="165" ctrlYPos="1087"/>
+                <ControlPoint xPos="300" yPos="1425" ctrlXPos="412" ctrlYPos="1425"/>
+                <ControlPoint xPos="570" yPos="1425" ctrlXPos="457" ctrlYPos="1425"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="120" yPos="930"/>
+              <Position xPos="210" yPos="1380"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -5239,13 +5239,13 @@
             <EEdge target="N120" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="300" yPos="255" ctrlXPos="367" ctrlYPos="255"/>
-                <ControlPoint xPos="480" yPos="255" ctrlXPos="412" ctrlYPos="255"/>
+                <ControlPoint xPos="210" yPos="255" ctrlXPos="322" ctrlYPos="255"/>
+                <ControlPoint xPos="480" yPos="255" ctrlXPos="367" ctrlYPos="255"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="210" yPos="210"/>
+              <Position xPos="120" yPos="210"/>
             </Graphics>
           </Node>
           <Node id="N120" name="SetText" history="false">
@@ -5305,13 +5305,13 @@
             <EEdge target="S39" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="97" yPos="654" ctrlXPos="113" ctrlYPos="682"/>
-                <ControlPoint xPos="139" yPos="750" ctrlXPos="119" ctrlYPos="716"/>
+                <ControlPoint xPos="165" yPos="660" ctrlXPos="165" ctrlYPos="682"/>
+                <ControlPoint xPos="165" yPos="750" ctrlXPos="165" ctrlYPos="727"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="30" yPos="570"/>
+              <Position xPos="120" yPos="570"/>
             </Graphics>
           </Node>
           <Node id="N136" name="N136" history="false">
@@ -5327,13 +5327,13 @@
             <EEdge target="S40" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="1020" yPos="795" ctrlXPos="952" ctrlYPos="795"/>
-                <ControlPoint xPos="840" yPos="795" ctrlXPos="907" ctrlYPos="795"/>
+                <ControlPoint xPos="705" yPos="840" ctrlXPos="705" ctrlYPos="862"/>
+                <ControlPoint xPos="705" yPos="930" ctrlXPos="705" ctrlYPos="907"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="1020" yPos="750"/>
+              <Position xPos="660" yPos="750"/>
             </Graphics>
           </Node>
           <Node id="N52" name="N52" history="false">
@@ -5349,13 +5349,13 @@
             <EEdge target="S39" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="313" yPos="647" ctrlXPos="270" ctrlYPos="689"/>
-                <ControlPoint xPos="210" yPos="750" ctrlXPos="269" ctrlYPos="690"/>
+                <ControlPoint xPos="486" yPos="637" ctrlXPos="370" ctrlYPos="702"/>
+                <ControlPoint xPos="210" yPos="769" ctrlXPos="343" ctrlYPos="691"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="300" yPos="570"/>
+              <Position xPos="480" yPos="570"/>
             </Graphics>
           </Node>
           <Node id="N78" name="N78" history="false">
@@ -5369,18 +5369,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="1020" yPos="570"/>
-            </Graphics>
-          </Node>
-          <Node id="N83" name="N83" history="false">
-            <Define>
-            </Define>
-            <Declare>
-            </Declare>
-            <Commands>
-            </Commands>
-            <Graphics>
-              <Position xPos="570" yPos="1200"/>
+              <Position xPos="660" yPos="570"/>
             </Graphics>
           </Node>
           <Node id="N124" name="end" history="false">
@@ -5391,7 +5380,7 @@
             <Commands>
             </Commands>
             <Graphics>
-              <Position xPos="300" yPos="930"/>
+              <Position xPos="120" yPos="930"/>
             </Graphics>
           </Node>
           <Node id="N125" name="end" history="false">
@@ -5402,7 +5391,7 @@
             <Commands>
             </Commands>
             <Graphics>
-              <Position xPos="480" yPos="930"/>
+              <Position xPos="120" yPos="1110"/>
             </Graphics>
           </Node>
           <Node id="N126" name="N126" history="false">
@@ -5416,7 +5405,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="750" yPos="930"/>
+              <Position xPos="660" yPos="1110"/>
             </Graphics>
           </Node>
           <SuperNode id="S63" name="waitingVoice" comment="" hideLocalVar="false" hideGlobalVar="false" start="N304;">
@@ -5814,8 +5803,8 @@
             <IEdge target="N122" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="210" yPos="480" ctrlXPos="150" ctrlYPos="539"/>
-                  <ControlPoint xPos="107" yPos="583" ctrlXPos="149" ctrlYPos="540"/>
+                  <ControlPoint xPos="165" yPos="480" ctrlXPos="165" ctrlYPos="502"/>
+                  <ControlPoint xPos="165" yPos="570" ctrlXPos="165" ctrlYPos="547"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -5833,8 +5822,8 @@
             <IEdge target="N52" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="281" yPos="480" ctrlXPos="300" ctrlYPos="513"/>
-                  <ControlPoint xPos="323" yPos="576" ctrlXPos="306" ctrlYPos="547"/>
+                  <ControlPoint xPos="210" yPos="461" ctrlXPos="343" ctrlYPos="538"/>
+                  <ControlPoint xPos="486" yPos="592" ctrlXPos="370" ctrlYPos="523"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -5850,7 +5839,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="210" yPos="390"/>
+              <Position xPos="120" yPos="390"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -6155,8 +6144,8 @@
             <IEdge target="N136" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="750" yPos="641" ctrlXPos="883" ctrlYPos="718"/>
-                  <ControlPoint xPos="1026" yPos="772" ctrlXPos="910" ctrlYPos="703"/>
+                  <ControlPoint xPos="570" yPos="795" ctrlXPos="592" ctrlYPos="795"/>
+                  <ControlPoint xPos="660" yPos="795" ctrlXPos="637" ctrlYPos="795"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6174,8 +6163,8 @@
             <IEdge target="N78" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="750" yPos="615" ctrlXPos="862" ctrlYPos="615"/>
-                  <ControlPoint xPos="1020" yPos="615" ctrlXPos="907" ctrlYPos="615"/>
+                  <ControlPoint xPos="570" yPos="750" ctrlXPos="629" ctrlYPos="690"/>
+                  <ControlPoint xPos="673" yPos="647" ctrlXPos="630" ctrlYPos="689"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6191,7 +6180,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="660" yPos="570"/>
+              <Position xPos="480" yPos="750"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -6496,8 +6485,8 @@
             <IEdge target="N124" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="480" yPos="840" ctrlXPos="420" ctrlYPos="899"/>
-                  <ControlPoint xPos="377" yPos="943" ctrlXPos="419" ctrlYPos="900"/>
+                  <ControlPoint xPos="480" yPos="975" ctrlXPos="367" ctrlYPos="975"/>
+                  <ControlPoint xPos="210" yPos="975" ctrlXPos="322" ctrlYPos="975"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6515,8 +6504,8 @@
             <IEdge target="N126" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="570" yPos="821" ctrlXPos="664" ctrlYPos="875"/>
-                  <ControlPoint xPos="756" yPos="952" ctrlXPos="673" ctrlYPos="903"/>
+                  <ControlPoint xPos="570" yPos="1020" ctrlXPos="629" ctrlYPos="1079"/>
+                  <ControlPoint xPos="673" yPos="1123" ctrlXPos="630" ctrlYPos="1080"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6534,8 +6523,8 @@
             <IEdge target="N125" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="525" yPos="840" ctrlXPos="525" ctrlYPos="862"/>
-                  <ControlPoint xPos="525" yPos="930" ctrlXPos="525" ctrlYPos="907"/>
+                  <ControlPoint xPos="480" yPos="1001" ctrlXPos="346" ctrlYPos="1078"/>
+                  <ControlPoint xPos="204" yPos="1132" ctrlXPos="319" ctrlYPos="1063"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6551,7 +6540,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="480" yPos="750"/>
+              <Position xPos="480" yPos="930"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -6863,8 +6852,8 @@
             <EEdge target="S12" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="480" yPos="435" ctrlXPos="412" ctrlYPos="435"/>
-                <ControlPoint xPos="300" yPos="435" ctrlXPos="367" ctrlYPos="435"/>
+                <ControlPoint xPos="480" yPos="435" ctrlXPos="367" ctrlYPos="435"/>
+                <ControlPoint xPos="210" yPos="435" ctrlXPos="322" ctrlYPos="435"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -6964,8 +6953,8 @@
             <EEdge target="S24" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="210" yPos="783" ctrlXPos="427" ctrlYPos="725"/>
-                <ControlPoint xPos="660" yPos="627" ctrlXPos="442" ctrlYPos="684"/>
+                <ControlPoint xPos="210" yPos="795" ctrlXPos="322" ctrlYPos="795"/>
+                <ControlPoint xPos="480" yPos="795" ctrlXPos="367" ctrlYPos="795"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -7065,13 +7054,13 @@
             <EEdge target="S43" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="750" yPos="795" ctrlXPos="682" ctrlYPos="795"/>
-                <ControlPoint xPos="570" yPos="795" ctrlXPos="637" ctrlYPos="795"/>
+                <ControlPoint xPos="660" yPos="975" ctrlXPos="637" ctrlYPos="975"/>
+                <ControlPoint xPos="570" yPos="975" ctrlXPos="592" ctrlYPos="975"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="750" yPos="750"/>
+              <Position xPos="660" yPos="930"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -7167,13 +7156,13 @@
           <EEdge target="N150" start ="">
           <Graphics>
             <Connection>
-              <ControlPoint xPos="120" yPos="371" ctrlXPos="253" ctrlYPos="448"/>
-              <ControlPoint xPos="396" yPos="502" ctrlXPos="280" ctrlYPos="433"/>
+              <ControlPoint xPos="210" yPos="371" ctrlXPos="304" ctrlYPos="425"/>
+              <ControlPoint xPos="396" yPos="502" ctrlXPos="313" ctrlYPos="453"/>
             </Connection>
           </Graphics>
           </EEdge>
           <Graphics>
-            <Position xPos="30" yPos="300"/>
+            <Position xPos="120" yPos="300"/>
           </Graphics>
           <LocalVariableBadge>
             <Position xPos="10" yPos="10"/>
@@ -7211,13 +7200,13 @@
             <EEdge target="N121" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="390" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
-                <ControlPoint xPos="570" yPos="165" ctrlXPos="502" ctrlYPos="165"/>
+                <ControlPoint xPos="300" yPos="165" ctrlXPos="367" ctrlYPos="165"/>
+                <ControlPoint xPos="480" yPos="165" ctrlXPos="412" ctrlYPos="165"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="300" yPos="120"/>
+              <Position xPos="210" yPos="120"/>
             </Graphics>
           </Node>
           <Node id="N121" name="SetText" history="false">
@@ -7233,13 +7222,13 @@
             <EEdge target="S68" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="660" yPos="165" ctrlXPos="682" ctrlYPos="165"/>
-                <ControlPoint xPos="750" yPos="165" ctrlXPos="727" ctrlYPos="165"/>
+                <ControlPoint xPos="570" yPos="165" ctrlXPos="637" ctrlYPos="165"/>
+                <ControlPoint xPos="750" yPos="165" ctrlXPos="682" ctrlYPos="165"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="570" yPos="120"/>
+              <Position xPos="480" yPos="120"/>
             </Graphics>
           </Node>
           <Node id="N151" name="N151" history="false">
@@ -7277,8 +7266,8 @@
             <EEdge target="S20" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="300" yPos="525" ctrlXPos="457" ctrlYPos="525"/>
-                <ControlPoint xPos="660" yPos="525" ctrlXPos="502" ctrlYPos="525"/>
+                <ControlPoint xPos="300" yPos="525" ctrlXPos="502" ctrlYPos="525"/>
+                <ControlPoint xPos="750" yPos="525" ctrlXPos="547" ctrlYPos="525"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -7325,7 +7314,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="930" yPos="750"/>
+              <Position xPos="930" yPos="930"/>
             </Graphics>
           </Node>
           <Node id="N39" name="N39" history="false">
@@ -7341,13 +7330,13 @@
             <EEdge target="S14" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="660" yPos="705" ctrlXPos="592" ctrlYPos="705"/>
-                <ControlPoint xPos="480" yPos="705" ctrlXPos="547" ctrlYPos="705"/>
+                <ControlPoint xPos="750" yPos="705" ctrlXPos="682" ctrlYPos="705"/>
+                <ControlPoint xPos="570" yPos="705" ctrlXPos="637" ctrlYPos="705"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="660" yPos="660"/>
+              <Position xPos="750" yPos="660"/>
             </Graphics>
           </Node>
           <Node id="N36" name="N36" history="false">
@@ -8114,8 +8103,8 @@
             <IEdge target="N38" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="975" yPos="570" ctrlXPos="975" ctrlYPos="637"/>
-                  <ControlPoint xPos="975" yPos="750" ctrlXPos="975" ctrlYPos="682"/>
+                  <ControlPoint xPos="975" yPos="570" ctrlXPos="975" ctrlYPos="727"/>
+                  <ControlPoint xPos="975" yPos="930" ctrlXPos="975" ctrlYPos="772"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -8133,8 +8122,8 @@
             <IEdge target="N39" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="930" yPos="551" ctrlXPos="835" ctrlYPos="605"/>
-                  <ControlPoint xPos="744" yPos="682" ctrlXPos="826" ctrlYPos="633"/>
+                  <ControlPoint xPos="930" yPos="570" ctrlXPos="870" ctrlYPos="629"/>
+                  <ControlPoint xPos="827" yPos="673" ctrlXPos="869" ctrlYPos="630"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -8822,13 +8811,13 @@
             <EEdge target="S58" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="390" yPos="705" ctrlXPos="367" ctrlYPos="705"/>
-                <ControlPoint xPos="300" yPos="705" ctrlXPos="322" ctrlYPos="705"/>
+                <ControlPoint xPos="480" yPos="705" ctrlXPos="412" ctrlYPos="705"/>
+                <ControlPoint xPos="300" yPos="705" ctrlXPos="367" ctrlYPos="705"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="390" yPos="660"/>
+              <Position xPos="480" yPos="660"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -8923,7 +8912,7 @@
             <EEdge target="S53" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="930" yPos="357" ctrlXPos="907" ctrlYPos="345"/>
+                <ControlPoint xPos="930" yPos="345" ctrlXPos="907" ctrlYPos="345"/>
                 <ControlPoint xPos="840" yPos="345" ctrlXPos="862" ctrlYPos="345"/>
               </Connection>
             </Graphics>
@@ -9024,13 +9013,13 @@
             <EEdge target="S99" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="750" yPos="525" ctrlXPos="817" ctrlYPos="525"/>
-                <ControlPoint xPos="930" yPos="525" ctrlXPos="862" ctrlYPos="525"/>
+                <ControlPoint xPos="840" yPos="525" ctrlXPos="862" ctrlYPos="525"/>
+                <ControlPoint xPos="930" yPos="525" ctrlXPos="907" ctrlYPos="525"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="660" yPos="480"/>
+              <Position xPos="750" yPos="480"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -9127,8 +9116,8 @@
         <IEdge target="N246" start="">
           <Graphics>
             <Connection>
-              <ControlPoint xPos="435" yPos="480" ctrlXPos="435" ctrlYPos="547"/>
-              <ControlPoint xPos="435" yPos="660" ctrlXPos="435" ctrlYPos="592"/>
+              <ControlPoint xPos="570" yPos="885" ctrlXPos="637" ctrlYPos="885"/>
+              <ControlPoint xPos="750" yPos="885" ctrlXPos="682" ctrlYPos="885"/>
             </Connection>
           </Graphics>
           <ParenExpression>
@@ -9138,8 +9127,8 @@
         <IEdge target="S11" start="">
           <Graphics>
             <Connection>
-              <ControlPoint xPos="390" yPos="435" ctrlXPos="277" ctrlYPos="435"/>
-              <ControlPoint xPos="120" yPos="435" ctrlXPos="232" ctrlYPos="435"/>
+              <ControlPoint xPos="551" yPos="840" ctrlXPos="605" ctrlYPos="745"/>
+              <ControlPoint xPos="679" yPos="660" ctrlXPos="624" ctrlYPos="754"/>
             </Connection>
           </Graphics>
           <ParenExpression>
@@ -9150,7 +9139,7 @@
           </ParenExpression>
         </IEdge>
         <Graphics>
-          <Position xPos="390" yPos="390"/>
+          <Position xPos="480" yPos="840"/>
         </Graphics>
         <LocalVariableBadge>
           <Position xPos="10" yPos="10"/>
