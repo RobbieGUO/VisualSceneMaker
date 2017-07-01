@@ -1,1176 +1,1709 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <SceneScript lower="0" upper="0">
-  <SceneComment lower="0" upper="17" comment="/*  Bus Stop   */"/>
-  <SceneObject lower="19" upper="126" language="en" identifier="BusStop_Start">
-    <SceneTurn lower="42" upper="69" speaker="Marie">
-      <SceneUttr lower="50" upper="69" punct=".">
-        <ActionObject lower="50" upper="56" actor="" name="MoveLR">
-          <ActionFeature lower="57" upper="67" key="value" val="-800"/>
+  <SceneComment lower="0" upper="137" comment="/*  --------------------------------------------------------------------------------------------------------------------------------   */"/>
+  <SceneComment lower="139" upper="156" comment="/*  Bus Stop   */"/>
+  <SceneObject lower="158" upper="383" language="en" identifier="BusStop_Start">
+    <SceneTurn lower="181" upper="225" speaker="Victor">
+      <SceneUttr lower="190" upper="225" punct=".">
+        <ActionObject lower="190" upper="203" actor="" name="SetBackground">
+          <ActionFeature lower="204" upper="223" key="value" val="'busstop.jpg'"/>
         </ActionObject>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="70" upper="97" speaker="Billy">
-      <SceneUttr lower="78" upper="97" punct=".">
-        <ActionObject lower="78" upper="84" actor="" name="MoveUD">
-          <ActionFeature lower="85" upper="95" key="value" val="1500"/>
+    </SceneTurn><SceneTurn lower="226" upper="277" speaker="Marie">
+      <SceneUttr lower="234" upper="253" punct=".">
+        <ActionObject lower="234" upper="240" actor="" name="MoveLR">
+          <ActionFeature lower="241" upper="251" key="value" val="-500"/>
         </ActionObject>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="98" upper="126" speaker="Victor">
-      <SceneUttr lower="107" upper="126" punct=".">
-        <ActionObject lower="107" upper="113" actor="" name="MoveLR">
-          <ActionFeature lower="114" upper="124" key="value" val="-100"/>
+      <SceneUttr lower="255" upper="277" punct=".">
+        <ActionObject lower="255" upper="263" actor="" name="Bodyshap">
+          <ActionFeature lower="264" upper="275" key="value" val="'FAT'"/>
         </ActionObject>
       </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="128" upper="181" language="en" identifier="BusStop_BillyHello">
-    <SceneTurn lower="156" upper="181" speaker="Billy">
-      <SceneUttr lower="163" upper="172" punct="!">
-        <SceneWord lower="163" upper="166" text="Hey"/>
-        <SceneWord lower="167" upper="171" text="guys"/>
-      </SceneUttr>
-      <SceneUttr lower="174" upper="181" punct=".">
-        <ActionObject lower="174" upper="179" actor="" name="Smile">
+    </SceneTurn><SceneTurn lower="278" upper="331" speaker="Victor">
+      <SceneUttr lower="287" upper="306" punct=".">
+        <ActionObject lower="287" upper="293" actor="" name="MoveUD">
+          <ActionFeature lower="294" upper="304" key="value" val="1500"/>
         </ActionObject>
       </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="183" upper="237" language="en" identifier="BusStop_PaulaHello">
-    <SceneTurn lower="211" upper="237" speaker="Paula">
-      <SceneUttr lower="218" upper="221" punct=",">
-        <SceneWord lower="218" upper="220" text="Hi"/>
+      <SceneUttr lower="308" upper="331" punct=".">
+        <ActionObject lower="308" upper="316" actor="" name="Bodyshap">
+          <ActionFeature lower="317" upper="329" key="value" val="'THIN'"/>
+        </ActionObject>
       </SceneUttr>
-      <SceneUttr lower="222" upper="228" punct="!">
-        <SceneWord lower="222" upper="227" text="Billy"/>
+    </SceneTurn><SceneTurn lower="332" upper="383" speaker="Billy">
+      <SceneUttr lower="340" upper="359" punct=".">
+        <ActionObject lower="340" upper="346" actor="" name="MoveLR">
+          <ActionFeature lower="347" upper="357" key="value" val="-100"/>
+        </ActionObject>
       </SceneUttr>
-      <SceneUttr lower="230" upper="237" punct=".">
-        <ActionObject lower="230" upper="235" actor="" name="Happy">
+      <SceneUttr lower="361" upper="383" punct=".">
+        <ActionObject lower="361" upper="369" actor="" name="Bodyshap">
+          <ActionFeature lower="370" upper="381" key="value" val="'FAT'"/>
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="239" upper="299" language="en" identifier="BusStop_MarieHello">
-    <SceneTurn lower="267" upper="299" speaker="Marie">
-      <SceneUttr lower="274" upper="278" punct="!">
-        <SceneWord lower="274" upper="277" text="Hey"/>
+  <SceneObject lower="385" upper="438" language="en" identifier="BusStop_BillyHello">
+    <SceneTurn lower="413" upper="438" speaker="Billy">
+      <SceneUttr lower="420" upper="429" punct="!">
+        <SceneWord lower="420" upper="423" text="Hey"/>
+        <SceneWord lower="424" upper="428" text="guys"/>
       </SceneUttr>
-      <SceneUttr lower="280" upper="290" punct=".">
-        <ActionObject lower="280" upper="288" actor="" name="WaveLeft">
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="292" upper="299" punct=".">
-        <ActionObject lower="292" upper="297" actor="" name="Happy">
+      <SceneUttr lower="431" upper="438" punct=".">
+        <ActionObject lower="431" upper="436" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="301" upper="354" language="en" identifier="BusStop_ChrisHello">
-    <SceneTurn lower="329" upper="354" speaker="Chris">
-      <SceneUttr lower="336" upper="345" punct="!">
-        <SceneWord lower="336" upper="338" text="Hi"/>
-        <SceneWord lower="339" upper="344" text="dudes"/>
-      </SceneUttr>
-      <SceneUttr lower="347" upper="354" punct=".">
-        <ActionObject lower="347" upper="352" actor="" name="Smile">
+  <SceneObject lower="440" upper="508" language="en" identifier="BusStop_BillyGotoSchool">
+    <SceneTurn lower="473" upper="508" speaker="Billy">
+      <SceneUttr lower="480" upper="508" punct=".">
+        <SceneWord lower="480" upper="483" text="Let"/>
+        <SceneWord lower="484" upper="486" text="us"/>
+        <SceneWord lower="487" upper="489" text="go"/>
+        <SceneWord lower="490" upper="492" text="to"/>
+        <SceneWord lower="493" upper="499" text="School"/>
+        <ActionObject lower="501" upper="506" actor="" name="Happy">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="356" upper="826" language="en" identifier="BusStop_Talking">
-    <SceneTurn lower="381" upper="416" speaker="Chris">
-      <SceneUttr lower="388" upper="407" punct="?">
-        <SceneWord lower="388" upper="393" text="Wanna"/>
-        <SceneWord lower="394" upper="397" text="see"/>
-        <SceneWord lower="398" upper="400" text="it"/>
-        <SceneWord lower="401" upper="406" text="again"/>
-      </SceneUttr>
-      <SceneUttr lower="409" upper="416" punct=".">
-        <ActionObject lower="409" upper="414" actor="" name="Smile">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="417" upper="456" speaker="Paula">
-      <SceneUttr lower="424" upper="431" punct=",">
-        <SceneWord lower="424" upper="430" text="Please"/>
-      </SceneUttr>
-      <SceneUttr lower="432" upper="447" punct="!">
-        <SceneWord lower="432" upper="434" text="it"/>
-        <SceneWord lower="435" upper="437" text="is"/>
-        <SceneWord lower="438" upper="440" text="so"/>
-        <SceneWord lower="441" upper="446" text="funny"/>
-      </SceneUttr>
-      <SceneUttr lower="449" upper="456" punct=".">
-        <ActionObject lower="449" upper="454" actor="" name="happy">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="457" upper="535" speaker="Paula">
-      <SceneUttr lower="464" upper="501" punct=",">
-        <SceneWord lower="464" upper="473" text="Everybody"/>
-        <SceneWord lower="474" upper="480" text="should"/>
-        <SceneWord lower="481" upper="485" text="have"/>
-        <SceneWord lower="486" upper="490" text="seen"/>
-        <SceneWord lower="491" upper="493" text="it"/>
-        <SceneWord lower="494" upper="496" text="by"/>
-        <SceneWord lower="497" upper="500" text="now"/>
-      </SceneUttr>
-      <SceneUttr lower="502" upper="535" punct=".">
-        <SceneWord lower="502" upper="503" text="I"/>
-        <SceneWord lower="504" upper="510" text="posted"/>
-        <SceneWord lower="511" upper="513" text="it"/>
-        <SceneWord lower="514" upper="516" text="on"/>
-        <SceneWord lower="517" upper="524" text="twitter"/>
-        <SceneWord lower="525" upper="534" text="yesterday"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="536" upper="598" speaker="Paula">
-      <SceneUttr lower="543" upper="598" punct="!">
-        <SceneWord lower="543" upper="545" text="It"/>
-        <SceneWord lower="546" upper="551" text="looks"/>
-        <SceneWord lower="552" upper="556" text="like"/>
-        <SceneWord lower="557" upper="559" text="he"/>
-        <SceneWord lower="560" upper="562" text="is"/>
-        <SceneWord lower="563" upper="569" text="really"/>
-        <SceneWord lower="570" upper="577" text="wearing"/>
-        <SceneWord lower="578" upper="581" text="his"/>
-        <SceneWord lower="582" upper="589" text="mothers"/>
-        <SceneWord lower="590" upper="597" text="clothes"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="599" upper="631" speaker="Paula">
-      <SceneUttr lower="606" upper="615" punct=",">
-        <SceneWord lower="606" upper="610" text="Good"/>
-        <SceneWord lower="611" upper="614" text="job"/>
-      </SceneUttr>
-      <SceneUttr lower="616" upper="622" punct=".">
-        <SceneWord lower="616" upper="621" text="Chris"/>
-      </SceneUttr>
-      <SceneUttr lower="624" upper="631" punct=".">
-        <ActionObject lower="624" upper="629" actor="" name="happy">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="632" upper="712" speaker="Chris">
-      <SceneUttr lower="639" upper="658" punct=".">
-        <SceneWord lower="639" upper="645" text="Credit"/>
-        <SceneWord lower="646" upper="650" text="goes"/>
-        <SceneWord lower="651" upper="653" text="to"/>
-        <SceneWord lower="654" upper="657" text="you"/>
-      </SceneUttr>
-      <SceneUttr lower="659" upper="703" punct=".">
-        <SceneWord lower="659" upper="661" text="It"/>
-        <SceneWord lower="662" upper="665" text="was"/>
-        <SceneWord lower="666" upper="670" text="your"/>
-        <SceneWord lower="671" upper="675" text="idea"/>
-        <SceneWord lower="676" upper="678" text="to"/>
-        <SceneWord lower="679" upper="682" text="put"/>
-        <SceneWord lower="683" upper="686" text="the"/>
-        <SceneWord lower="687" upper="690" text="bra"/>
-        <SceneWord lower="691" upper="693" text="on"/>
-        <SceneWord lower="694" upper="697" text="his"/>
-        <SceneWord lower="698" upper="702" text="head"/>
-      </SceneUttr>
-      <SceneUttr lower="705" upper="712" punct=".">
-        <ActionObject lower="705" upper="710" actor="" name="happy">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="713" upper="781" speaker="Chris">
-      <SceneUttr lower="720" upper="740" punct=".">
-        <SceneWord lower="720" upper="724" text="That"/>
-        <SceneWord lower="725" upper="728" text="was"/>
-        <SceneWord lower="729" upper="730" text="a"/>
-        <SceneWord lower="731" upper="735" text="good"/>
-        <SceneWord lower="736" upper="739" text="one"/>
-      </SceneUttr>
-      <SceneUttr lower="741" upper="781" punct=".">
-        <SceneWord lower="741" upper="746" text="Could"/>
-        <SceneWord lower="747" upper="750" text="not"/>
-        <SceneWord lower="751" upper="755" text="have"/>
-        <SceneWord lower="756" upper="760" text="done"/>
-        <SceneWord lower="761" upper="763" text="it"/>
-        <SceneWord lower="764" upper="771" text="without"/>
-        <SceneWord lower="772" upper="775" text="you"/>
-        <SceneWord lower="776" upper="780" text="dude"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="782" upper="826" speaker="Paula">
-      <SceneUttr lower="789" upper="826" punct="!">
-        <SceneWord lower="789" upper="792" text="You"/>
-        <SceneWord lower="793" upper="799" text="always"/>
-        <SceneWord lower="800" upper="804" text="have"/>
-        <SceneWord lower="805" upper="808" text="the"/>
-        <SceneWord lower="809" upper="813" text="best"/>
-        <SceneWord lower="814" upper="819" text="ideas"/>
-        <SceneWord lower="820" upper="825" text="Billy"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="828" upper="935" language="en" identifier="BusStop_PaulaFine">
-    <SceneTurn lower="855" upper="935" speaker="Paula">
-      <SceneUttr lower="862" upper="872" punct=".">
-        <SceneWord lower="862" upper="863" text="I"/>
-        <SceneWord lower="864" upper="866" text="am"/>
-        <SceneWord lower="867" upper="871" text="fine"/>
-      </SceneUttr>
-      <SceneUttr lower="873" upper="920" punct=".">
-        <SceneWord lower="873" upper="874" text="I"/>
-        <SceneWord lower="875" upper="878" text="had"/>
-        <SceneWord lower="879" upper="880" text="a"/>
-        <SceneWord lower="881" upper="885" text="good"/>
-        <SceneWord lower="886" upper="891" text="laugh"/>
-        <SceneWord lower="892" upper="896" text="with"/>
-        <SceneWord lower="897" upper="900" text="the"/>
-        <SceneWord lower="901" upper="908" text="picture"/>
-        <SceneWord lower="909" upper="914" text="Chris"/>
-        <SceneWord lower="915" upper="919" text="made"/>
-      </SceneUttr>
-      <SceneUttr lower="921" upper="935" punct="?">
-        <SceneWord lower="921" upper="924" text="How"/>
-        <SceneWord lower="925" upper="930" text="about"/>
-        <SceneWord lower="931" upper="934" text="you"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="937" upper="1032" language="en" identifier="BusStop_PaulaDont">
-    <SceneTurn lower="964" upper="1032" speaker="Paula">
-      <SceneUttr lower="971" upper="988" punct=".">
-        <SceneWord lower="971" upper="973" text="Do"/>
-        <SceneWord lower="974" upper="977" text="not"/>
-        <SceneWord lower="978" upper="980" text="be"/>
-        <SceneWord lower="981" upper="982" text="a"/>
-        <SceneWord lower="983" upper="987" text="drag"/>
-      </SceneUttr>
-      <SceneUttr lower="989" upper="1007" punct=",">
-        <SceneWord lower="989" upper="992" text="You"/>
-        <SceneWord lower="993" upper="996" text="are"/>
-        <SceneWord lower="997" upper="1000" text="one"/>
-        <SceneWord lower="1001" upper="1003" text="of"/>
-        <SceneWord lower="1004" upper="1006" text="us"/>
-      </SceneUttr>
-      <SceneUttr lower="1008" upper="1032" punct=".">
-        <SceneWord lower="1008" upper="1015" text="nothing"/>
-        <SceneWord lower="1016" upper="1019" text="bad"/>
-        <SceneWord lower="1020" upper="1024" text="will"/>
-        <SceneWord lower="1025" upper="1031" text="happen"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="1034" upper="1088" language="en" identifier="BusStop_PaulaBillyis">
-    <SceneTurn lower="1064" upper="1088" speaker="Paula">
-      <SceneUttr lower="1071" upper="1088" punct=".">
-        <SceneWord lower="1071" upper="1076" text="Billy"/>
-        <SceneWord lower="1077" upper="1079" text="is"/>
-        <SceneWord lower="1080" upper="1081" text="a"/>
-        <SceneWord lower="1082" upper="1087" text="geniu"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="1090" upper="1204" language="en" identifier="BusStop_PaulaRelax">
-    <SceneTurn lower="1118" upper="1204" speaker="Paula">
-      <SceneUttr lower="1125" upper="1131" punct=".">
-        <SceneWord lower="1125" upper="1130" text="Relax"/>
-      </SceneUttr>
-      <SceneUttr lower="1132" upper="1204" punct="?">
-        <SceneWord lower="1132" upper="1134" text="Do"/>
-        <SceneWord lower="1135" upper="1138" text="you"/>
-        <SceneWord lower="1139" upper="1144" text="think"/>
-        <SceneWord lower="1145" upper="1148" text="the"/>
-        <SceneWord lower="1149" upper="1152" text="new"/>
-        <SceneWord lower="1153" upper="1156" text="one"/>
-        <SceneWord lower="1157" upper="1159" text="is"/>
-        <SceneWord lower="1160" upper="1164" text="such"/>
-        <SceneWord lower="1165" upper="1166" text="a"/>
-        <SceneWord lower="1167" upper="1172" text="pussy"/>
-        <SceneWord lower="1173" upper="1177" text="that"/>
-        <SceneWord lower="1178" upper="1180" text="he"/>
-        <SceneWord lower="1181" upper="1185" text="will"/>
-        <SceneWord lower="1186" upper="1190" text="tell"/>
-        <SceneWord lower="1191" upper="1194" text="the"/>
-        <SceneWord lower="1195" upper="1203" text="teachers"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="1206" upper="1306" language="en" identifier="BusStop_PaulaThankyou">
-    <SceneTurn lower="1237" upper="1306" speaker="Paula">
-      <SceneUttr lower="1244" upper="1254" punct=".">
-        <SceneWord lower="1244" upper="1249" text="Thank"/>
-        <SceneWord lower="1250" upper="1253" text="you"/>
-      </SceneUttr>
-      <SceneUttr lower="1255" upper="1306" punct=".">
-        <SceneWord lower="1255" upper="1257" text="My"/>
-        <SceneWord lower="1258" upper="1264" text="mother"/>
-        <SceneWord lower="1265" upper="1269" text="gave"/>
-        <SceneWord lower="1270" upper="1272" text="me"/>
-        <SceneWord lower="1273" upper="1277" text="this"/>
-        <SceneWord lower="1278" upper="1281" text="new"/>
-        <SceneWord lower="1282" upper="1287" text="dress"/>
-        <SceneWord lower="1288" upper="1297" text="yesterday"/>
-        <ActionObject lower="1299" upper="1304" actor="" name="Smile">
+  <SceneObject lower="510" upper="559" language="en" identifier="BusStop_PaulaFaceLeft">
+    <SceneTurn lower="541" upper="559" speaker="Paula">
+      <SceneUttr lower="549" upper="559" punct=".">
+        <ActionObject lower="549" upper="557" actor="" name="FaceLeft">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1308" upper="1382" language="en" identifier="BusStop_PaulaReallyI">
-    <SceneTurn lower="1338" upper="1382" speaker="Paula">
-      <SceneUttr lower="1345" upper="1352" punct="?">
-        <SceneWord lower="1345" upper="1351" text="Really"/>
+  <SceneObject lower="561" upper="628" language="en" identifier="BusStop_PaulaHello">
+    <SceneTurn lower="589" upper="628" speaker="Paula">
+      <SceneUttr lower="596" upper="599" punct=",">
+        <SceneWord lower="596" upper="598" text="Hi"/>
       </SceneUttr>
-      <SceneUttr lower="1353" upper="1373" punct=".">
-        <SceneWord lower="1353" upper="1354" text="I"/>
-        <SceneWord lower="1355" upper="1360" text="guess"/>
-        <SceneWord lower="1361" upper="1363" text="we"/>
-        <SceneWord lower="1364" upper="1368" text="will"/>
-        <SceneWord lower="1369" upper="1372" text="see"/>
+      <SceneUttr lower="600" upper="606" punct="!">
+        <SceneWord lower="600" upper="605" text="Billy"/>
       </SceneUttr>
-      <SceneUttr lower="1375" upper="1382" punct=".">
-        <ActionObject lower="1375" upper="1380" actor="" name="Smile">
+      <SceneUttr lower="608" upper="619" punct=".">
+        <ActionObject lower="608" upper="617" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="621" upper="628" punct=".">
+        <ActionObject lower="621" upper="626" actor="" name="Happy">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1384" upper="1459" language="en" identifier="BusStop_Marieme">
-    <SceneTurn lower="1409" upper="1459" speaker="Marie">
-      <SceneUttr lower="1416" upper="1419" punct="?">
-        <SceneWord lower="1416" upper="1418" text="Me"/>
-      </SceneUttr>
-      <SceneUttr lower="1420" upper="1439" punct=".">
-        <SceneWord lower="1420" upper="1421" text="I"/>
-        <SceneWord lower="1422" upper="1424" text="am"/>
-        <SceneWord lower="1425" upper="1426" text="I"/>
-        <SceneWord lower="1427" upper="1429" text="am"/>
-        <SceneWord lower="1430" upper="1438" text="allright"/>
-      </SceneUttr>
-      <SceneUttr lower="1440" upper="1459" punct="?">
-        <SceneWord lower="1440" upper="1443" text="Why"/>
-        <SceneWord lower="1444" upper="1447" text="are"/>
-        <SceneWord lower="1448" upper="1451" text="you"/>
-        <SceneWord lower="1452" upper="1458" text="asking"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="1461" upper="1516" language="en" identifier="BusStop_MarieNevermind">
-    <SceneTurn lower="1493" upper="1516" speaker="Marie">
-      <SceneUttr lower="1500" upper="1516" punct=".">
-        <SceneWord lower="1500" upper="1509" text="Nevermind"/>
-        <ActionObject lower="1511" upper="1514" actor="" name="Sad">
+  <SceneObject lower="630" upper="681" language="en" identifier="BusStop_MarieFaceRight">
+    <SceneTurn lower="662" upper="681" speaker="Marie">
+      <SceneUttr lower="670" upper="681" punct=".">
+        <ActionObject lower="670" upper="679" actor="" name="FaceRight">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1518" upper="1596" language="en" identifier="BusStop_MarieIjust">
-    <SceneTurn lower="1546" upper="1596" speaker="Marie">
-      <SceneUttr lower="1553" upper="1589" punct=".">
-        <SceneWord lower="1553" upper="1554" text="I"/>
-        <SceneWord lower="1555" upper="1559" text="just"/>
-        <SceneWord lower="1560" upper="1562" text="do"/>
-        <SceneWord lower="1563" upper="1566" text="not"/>
-        <SceneWord lower="1567" upper="1571" text="know"/>
-        <SceneWord lower="1572" upper="1574" text="if"/>
-        <SceneWord lower="1575" upper="1579" text="this"/>
-        <SceneWord lower="1580" upper="1582" text="is"/>
-        <SceneWord lower="1583" upper="1588" text="right"/>
+  <SceneObject lower="683" upper="746" language="en" identifier="BusStop_MarieHello">
+    <SceneTurn lower="711" upper="746" speaker="Marie">
+      <SceneUttr lower="718" upper="722" punct="!">
+        <SceneWord lower="718" upper="721" text="Hey"/>
       </SceneUttr>
-      <SceneUttr lower="1591" upper="1596" punct=".">
-        <ActionObject lower="1591" upper="1594" actor="" name="Sad">
+      <SceneUttr lower="724" upper="735" punct=".">
+        <ActionObject lower="724" upper="733" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="737" upper="746" punct=".">
+        <ActionObject lower="737" upper="744" actor="" name="Excited">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1598" upper="1681" language="en" identifier="BusStop_MarieYesI">
-    <SceneTurn lower="1625" upper="1681" speaker="Marie">
-      <SceneUttr lower="1632" upper="1636" punct=".">
-        <SceneWord lower="1632" upper="1635" text="Yes"/>
-      </SceneUttr>
-      <SceneUttr lower="1637" upper="1644" punct=".">
-        <SceneWord lower="1637" upper="1638" text="I"/>
-        <SceneWord lower="1639" upper="1643" text="mean"/>
-      </SceneUttr>
-      <SceneUttr lower="1645" upper="1648" punct=".">
-        <SceneWord lower="1645" upper="1647" text="no"/>
-      </SceneUttr>
-      <SceneUttr lower="1649" upper="1674" punct=".">
-        <SceneWord lower="1649" upper="1651" text="no"/>
-        <SceneWord lower="1652" upper="1654" text="it"/>
-        <SceneWord lower="1655" upper="1658" text="was"/>
-        <SceneWord lower="1659" upper="1662" text="not"/>
-        <SceneWord lower="1663" upper="1668" text="about"/>
-        <SceneWord lower="1669" upper="1673" text="that"/>
-      </SceneUttr>
-      <SceneUttr lower="1676" upper="1681" punct=".">
-        <ActionObject lower="1676" upper="1679" actor="" name="Sad">
+  <SceneObject lower="748" upper="797" language="en" identifier="BusStop_ChrisFaceLeft">
+    <SceneTurn lower="779" upper="797" speaker="Chris">
+      <SceneUttr lower="787" upper="797" punct=".">
+        <ActionObject lower="787" upper="795" actor="" name="FaceLeft">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1683" upper="1785" language="en" identifier="BusStop_MarieIdonot">
-    <SceneTurn lower="1712" upper="1785" speaker="Marie">
-      <SceneUttr lower="1719" upper="1733" punct=".">
-        <SceneWord lower="1719" upper="1720" text="I"/>
-        <SceneWord lower="1721" upper="1723" text="do"/>
-        <SceneWord lower="1724" upper="1727" text="not"/>
-        <SceneWord lower="1728" upper="1732" text="know"/>
+  <SceneObject lower="799" upper="865" language="en" identifier="BusStop_ChrisHello">
+    <SceneTurn lower="827" upper="865" speaker="Chris">
+      <SceneUttr lower="834" upper="843" punct="!">
+        <SceneWord lower="834" upper="836" text="Hi"/>
+        <SceneWord lower="837" upper="842" text="dudes"/>
       </SceneUttr>
-      <SceneUttr lower="1734" upper="1785" punct=".">
-        <SceneWord lower="1734" upper="1736" text="If"/>
-        <SceneWord lower="1737" upper="1740" text="the"/>
-        <SceneWord lower="1741" upper="1748" text="weather"/>
-        <SceneWord lower="1749" upper="1751" text="is"/>
-        <SceneWord lower="1752" upper="1756" text="nice"/>
-        <SceneWord lower="1757" upper="1758" text="I"/>
-        <SceneWord lower="1759" upper="1763" text="will"/>
-        <SceneWord lower="1764" upper="1766" text="go"/>
-        <SceneWord lower="1767" upper="1769" text="to"/>
-        <SceneWord lower="1770" upper="1773" text="the"/>
-        <SceneWord lower="1774" upper="1778" text="park"/>
-        <SceneWord lower="1779" upper="1784" text="maybe"/>
+      <SceneUttr lower="845" upper="856" punct=".">
+        <ActionObject lower="845" upper="854" actor="" name="FaceFront">
+        </ActionObject>
       </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="1787" upper="1878" language="en" identifier="BusStop_MarieYoudont">
-    <SceneTurn lower="1817" upper="1878" speaker="Marie">
-      <SceneUttr lower="1824" upper="1827" punct=".">
-        <SceneWord lower="1824" upper="1826" text="Oh"/>
-      </SceneUttr>
-      <SceneUttr lower="1828" upper="1839" punct="?">
-        <SceneWord lower="1828" upper="1831" text="You"/>
-        <SceneWord lower="1832" upper="1834" text="do"/>
-        <SceneWord lower="1835" upper="1838" text="not"/>
-      </SceneUttr>
-      <SceneUttr lower="1840" upper="1869" punct=".">
-        <SceneWord lower="1840" upper="1843" text="Let"/>
-        <SceneWord lower="1844" upper="1846" text="us"/>
-        <SceneWord lower="1847" upper="1851" text="talk"/>
-        <SceneWord lower="1852" upper="1857" text="about"/>
-        <SceneWord lower="1858" upper="1862" text="that"/>
-        <SceneWord lower="1863" upper="1868" text="later"/>
-      </SceneUttr>
-      <SceneUttr lower="1871" upper="1878" punct=".">
-        <ActionObject lower="1871" upper="1876" actor="" name="Smile">
+      <SceneUttr lower="858" upper="865" punct=".">
+        <ActionObject lower="858" upper="863" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1880" upper="1987" language="en" identifier="BusStop_Marieohthat">
-    <SceneTurn lower="1909" upper="1987" speaker="Marie">
-      <SceneUttr lower="1916" upper="1919" punct=".">
-        <SceneWord lower="1916" upper="1918" text="Oh"/>
+  <SceneObject lower="867" upper="1471" language="en" identifier="BusStop_Talking">
+    <SceneTurn lower="892" upper="927" speaker="Chris">
+      <SceneUttr lower="899" upper="918" punct="?">
+        <SceneWord lower="899" upper="904" text="Wanna"/>
+        <SceneWord lower="905" upper="908" text="see"/>
+        <SceneWord lower="909" upper="911" text="it"/>
+        <SceneWord lower="912" upper="917" text="again"/>
       </SceneUttr>
-      <SceneUttr lower="1920" upper="1938" punct=".">
-        <SceneWord lower="1920" upper="1924" text="That"/>
-        <SceneWord lower="1925" upper="1927" text="is"/>
-        <SceneWord lower="1928" upper="1932" text="very"/>
-        <SceneWord lower="1933" upper="1937" text="kind"/>
+      <SceneUttr lower="920" upper="927" punct=".">
+        <ActionObject lower="920" upper="925" actor="" name="Smile">
+        </ActionObject>
       </SceneUttr>
-      <SceneUttr lower="1939" upper="1978" punct=".">
-        <SceneWord lower="1939" upper="1940" text="I"/>
-        <SceneWord lower="1941" upper="1945" text="will"/>
-        <SceneWord lower="1946" upper="1948" text="be"/>
-        <SceneWord lower="1949" upper="1951" text="at"/>
-        <SceneWord lower="1952" upper="1955" text="the"/>
-        <SceneWord lower="1956" upper="1960" text="park"/>
-        <SceneWord lower="1961" upper="1963" text="in"/>
-        <SceneWord lower="1964" upper="1967" text="the"/>
-        <SceneWord lower="1968" upper="1977" text="afternoon"/>
+    </SceneTurn><SceneTurn lower="928" upper="967" speaker="Paula">
+      <SceneUttr lower="935" upper="942" punct=",">
+        <SceneWord lower="935" upper="941" text="Please"/>
       </SceneUttr>
-      <SceneUttr lower="1980" upper="1987" punct=".">
-        <ActionObject lower="1980" upper="1985" actor="" name="Smile">
+      <SceneUttr lower="943" upper="958" punct="!">
+        <SceneWord lower="943" upper="945" text="it"/>
+        <SceneWord lower="946" upper="948" text="is"/>
+        <SceneWord lower="949" upper="951" text="so"/>
+        <SceneWord lower="952" upper="957" text="funny"/>
+      </SceneUttr>
+      <SceneUttr lower="960" upper="967" punct=".">
+        <ActionObject lower="960" upper="965" actor="" name="Happy">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="968" upper="1057" speaker="Paula">
+      <SceneUttr lower="975" upper="1012" punct=",">
+        <SceneWord lower="975" upper="984" text="Everybody"/>
+        <SceneWord lower="985" upper="991" text="should"/>
+        <SceneWord lower="992" upper="996" text="have"/>
+        <SceneWord lower="997" upper="1001" text="seen"/>
+        <SceneWord lower="1002" upper="1004" text="it"/>
+        <SceneWord lower="1005" upper="1007" text="by"/>
+        <SceneWord lower="1008" upper="1011" text="now"/>
+      </SceneUttr>
+      <SceneUttr lower="1013" upper="1046" punct=".">
+        <SceneWord lower="1013" upper="1014" text="I"/>
+        <SceneWord lower="1015" upper="1021" text="posted"/>
+        <SceneWord lower="1022" upper="1024" text="it"/>
+        <SceneWord lower="1025" upper="1027" text="on"/>
+        <SceneWord lower="1028" upper="1035" text="twitter"/>
+        <SceneWord lower="1036" upper="1045" text="yesterday"/>
+      </SceneUttr>
+      <SceneUttr lower="1048" upper="1057" punct=".">
+        <ActionObject lower="1048" upper="1055" actor="" name="Excited">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="1058" upper="1131" speaker="Paula">
+      <SceneUttr lower="1065" upper="1120" punct="!">
+        <SceneWord lower="1065" upper="1067" text="It"/>
+        <SceneWord lower="1068" upper="1073" text="looks"/>
+        <SceneWord lower="1074" upper="1078" text="like"/>
+        <SceneWord lower="1079" upper="1081" text="he"/>
+        <SceneWord lower="1082" upper="1084" text="is"/>
+        <SceneWord lower="1085" upper="1091" text="really"/>
+        <SceneWord lower="1092" upper="1099" text="wearing"/>
+        <SceneWord lower="1100" upper="1103" text="his"/>
+        <SceneWord lower="1104" upper="1111" text="mothers"/>
+        <SceneWord lower="1112" upper="1119" text="clothes"/>
+      </SceneUttr>
+      <SceneUttr lower="1122" upper="1131" punct=".">
+        <ActionObject lower="1122" upper="1129" actor="" name="Excited">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="1132" upper="1188" speaker="Paula">
+      <SceneUttr lower="1140" upper="1150" punct=".">
+        <ActionObject lower="1140" upper="1148" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1151" upper="1166" punct=".">
+        <SceneWord lower="1151" upper="1155" text="Good"/>
+        <SceneWord lower="1156" upper="1159" text="job"/>
+        <SceneWord lower="1160" upper="1165" text="Chris"/>
+      </SceneUttr>
+      <SceneUttr lower="1168" upper="1179" punct=".">
+        <ActionObject lower="1168" upper="1177" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1181" upper="1188" punct=".">
+        <ActionObject lower="1181" upper="1186" actor="" name="Happy">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="1189" upper="1310" speaker="Chris">
+      <SceneUttr lower="1197" upper="1208" punct=".">
+        <ActionObject lower="1197" upper="1206" actor="" name="FaceRight">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1209" upper="1228" punct=".">
+        <SceneWord lower="1209" upper="1215" text="Credit"/>
+        <SceneWord lower="1216" upper="1220" text="goes"/>
+        <SceneWord lower="1221" upper="1223" text="to"/>
+        <SceneWord lower="1224" upper="1227" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="1230" upper="1288" punct=".">
+        <ActionObject lower="1230" upper="1242" actor="Paula" name="Happy">
+        </ActionObject>
+        <SceneWord lower="1244" upper="1246" text="It"/>
+        <SceneWord lower="1247" upper="1250" text="was"/>
+        <SceneWord lower="1251" upper="1255" text="your"/>
+        <SceneWord lower="1256" upper="1260" text="idea"/>
+        <SceneWord lower="1261" upper="1263" text="to"/>
+        <SceneWord lower="1264" upper="1267" text="put"/>
+        <SceneWord lower="1268" upper="1271" text="the"/>
+        <SceneWord lower="1272" upper="1275" text="bra"/>
+        <SceneWord lower="1276" upper="1278" text="on"/>
+        <SceneWord lower="1279" upper="1282" text="his"/>
+        <SceneWord lower="1283" upper="1287" text="head"/>
+      </SceneUttr>
+      <SceneUttr lower="1290" upper="1301" punct=".">
+        <ActionObject lower="1290" upper="1299" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1303" upper="1310" punct=".">
+        <ActionObject lower="1303" upper="1308" actor="" name="Happy">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="1311" upper="1390" speaker="Chris">
+      <SceneUttr lower="1318" upper="1338" punct=".">
+        <SceneWord lower="1318" upper="1322" text="That"/>
+        <SceneWord lower="1323" upper="1326" text="was"/>
+        <SceneWord lower="1327" upper="1328" text="a"/>
+        <SceneWord lower="1329" upper="1333" text="good"/>
+        <SceneWord lower="1334" upper="1337" text="one"/>
+      </SceneUttr>
+      <SceneUttr lower="1339" upper="1379" punct=".">
+        <SceneWord lower="1339" upper="1344" text="Could"/>
+        <SceneWord lower="1345" upper="1348" text="not"/>
+        <SceneWord lower="1349" upper="1353" text="have"/>
+        <SceneWord lower="1354" upper="1358" text="done"/>
+        <SceneWord lower="1359" upper="1361" text="it"/>
+        <SceneWord lower="1362" upper="1369" text="without"/>
+        <SceneWord lower="1370" upper="1373" text="you"/>
+        <SceneWord lower="1374" upper="1378" text="dude"/>
+      </SceneUttr>
+      <SceneUttr lower="1381" upper="1390" punct=".">
+        <ActionObject lower="1381" upper="1388" actor="" name="Excited">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="1391" upper="1471" speaker="Paula">
+      <SceneUttr lower="1399" upper="1409" punct=".">
+        <ActionObject lower="1399" upper="1407" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1410" upper="1447" punct="!">
+        <SceneWord lower="1410" upper="1413" text="You"/>
+        <SceneWord lower="1414" upper="1420" text="always"/>
+        <SceneWord lower="1421" upper="1425" text="have"/>
+        <SceneWord lower="1426" upper="1429" text="the"/>
+        <SceneWord lower="1430" upper="1434" text="best"/>
+        <SceneWord lower="1435" upper="1440" text="ideas"/>
+        <SceneWord lower="1441" upper="1446" text="Billy"/>
+      </SceneUttr>
+      <SceneUttr lower="1449" upper="1460" punct=".">
+        <ActionObject lower="1449" upper="1458" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="1462" upper="1471" punct=".">
+        <ActionObject lower="1462" upper="1469" actor="" name="Excited">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="1989" upper="2075" language="en" identifier="BusStop_MarieYeahyou">
-    <SceneTurn lower="2019" upper="2075" speaker="Marie">
-      <SceneUttr lower="2026" upper="2031" punct=".">
-        <SceneWord lower="2026" upper="2030" text="Yeah"/>
+  <SceneObject lower="1473" upper="1627" language="en" identifier="BusStop_PaulaFine">
+    <SceneTurn lower="1500" upper="1627" speaker="Paula">
+      <SceneUttr lower="1508" upper="1544" punct=".">
+        <ActionObject lower="1508" upper="1514" actor="" name="ZoomIn">
+          <ActionFeature lower="1515" upper="1524" key="value" val="2.0"/>
+        </ActionObject>
+        <ActionObject lower="1527" upper="1533" actor="" name="MoveLR">
+          <ActionFeature lower="1534" upper="1542" key="value" val="20"/>
+        </ActionObject>
       </SceneUttr>
-      <SceneUttr lower="2032" upper="2046" punct=".">
-        <SceneWord lower="2032" upper="2035" text="you"/>
-        <SceneWord lower="2036" upper="2039" text="are"/>
-        <SceneWord lower="2040" upper="2045" text="right"/>
+      <SceneUttr lower="1545" upper="1555" punct=".">
+        <SceneWord lower="1545" upper="1546" text="I"/>
+        <SceneWord lower="1547" upper="1549" text="am"/>
+        <SceneWord lower="1550" upper="1554" text="fine"/>
       </SceneUttr>
-      <SceneUttr lower="2047" upper="2066" punct=".">
-        <SceneWord lower="2047" upper="2049" text="it"/>
-        <SceneWord lower="2050" upper="2052" text="is"/>
-        <SceneWord lower="2053" upper="2059" text="really"/>
-        <SceneWord lower="2060" upper="2065" text="funny"/>
+      <SceneUttr lower="1556" upper="1603" punct=".">
+        <SceneWord lower="1556" upper="1557" text="I"/>
+        <SceneWord lower="1558" upper="1561" text="had"/>
+        <SceneWord lower="1562" upper="1563" text="a"/>
+        <SceneWord lower="1564" upper="1568" text="good"/>
+        <SceneWord lower="1569" upper="1574" text="laugh"/>
+        <SceneWord lower="1575" upper="1579" text="with"/>
+        <SceneWord lower="1580" upper="1583" text="the"/>
+        <SceneWord lower="1584" upper="1591" text="picture"/>
+        <SceneWord lower="1592" upper="1597" text="Chris"/>
+        <SceneWord lower="1598" upper="1602" text="made"/>
       </SceneUttr>
-      <SceneUttr lower="2068" upper="2075" punct=".">
-        <ActionObject lower="2068" upper="2073" actor="" name="Smile">
+      <SceneUttr lower="1604" upper="1618" punct="?">
+        <SceneWord lower="1604" upper="1607" text="How"/>
+        <SceneWord lower="1608" upper="1613" text="about"/>
+        <SceneWord lower="1614" upper="1617" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="1620" upper="1627" punct=".">
+        <ActionObject lower="1620" upper="1625" actor="" name="Happy">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2077" upper="2185" language="en" identifier="BusStop_ChrisIhave">
-    <SceneTurn lower="2105" upper="2185" speaker="Chris">
-      <SceneUttr lower="2112" upper="2164" punct=".">
-        <SceneWord lower="2112" upper="2113" text="I"/>
-        <SceneWord lower="2114" upper="2118" text="have"/>
-        <SceneWord lower="2119" upper="2123" text="used"/>
-        <SceneWord lower="2124" upper="2128" text="some"/>
-        <SceneWord lower="2129" upper="2137" text="graphics"/>
-        <SceneWord lower="2138" upper="2147" text="programms"/>
-        <SceneWord lower="2148" upper="2150" text="on"/>
-        <SceneWord lower="2151" upper="2153" text="my"/>
-        <SceneWord lower="2154" upper="2160" text="uncles"/>
-        <SceneWord lower="2161" upper="2163" text="pc"/>
-      </SceneUttr>
-      <SceneUttr lower="2165" upper="2185" punct="?">
-        <SceneWord lower="2165" upper="2168" text="You"/>
-        <SceneWord lower="2169" upper="2173" text="like"/>
-        <SceneWord lower="2174" upper="2176" text="it"/>
-        <ActionObject lower="2178" upper="2183" actor="" name="Happy">
+  <SceneObject lower="1629" upper="1697" language="en" identifier="BusStop_PaulaZoomBack">
+    <SceneTurn lower="1660" upper="1697" speaker="Paula">
+      <SceneUttr lower="1668" upper="1697" punct=".">
+        <ActionObject lower="1668" upper="1674" actor="" name="MoveLR">
+          <ActionFeature lower="1675" upper="1684" key="value" val="-20"/>
+        </ActionObject>
+        <ActionObject lower="1687" upper="1695" actor="" name="ZoomBack">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2187" upper="2264" language="en" identifier="BusStop_ChrisDoyou">
-    <SceneTurn lower="2215" upper="2264" speaker="Chris">
-      <SceneUttr lower="2222" upper="2238" punct="?">
-        <SceneWord lower="2222" upper="2224" text="Do"/>
-        <SceneWord lower="2225" upper="2228" text="you"/>
-        <SceneWord lower="2229" upper="2234" text="think"/>
-        <SceneWord lower="2235" upper="2237" text="so"/>
+  <SceneObject lower="1699" upper="1803" language="en" identifier="BusStop_PaulaDont">
+    <SceneTurn lower="1726" upper="1803" speaker="Paula">
+      <SceneUttr lower="1733" upper="1750" punct=".">
+        <SceneWord lower="1733" upper="1735" text="Do"/>
+        <SceneWord lower="1736" upper="1739" text="not"/>
+        <SceneWord lower="1740" upper="1742" text="be"/>
+        <SceneWord lower="1743" upper="1744" text="a"/>
+        <SceneWord lower="1745" upper="1749" text="drag"/>
       </SceneUttr>
-      <SceneUttr lower="2239" upper="2264" punct=".">
-        <SceneWord lower="2239" upper="2244" text="Thats"/>
-        <SceneWord lower="2245" upper="2251" text="pretty"/>
-        <SceneWord lower="2252" upper="2255" text="sad"/>
-        <ActionObject lower="2257" upper="2262" actor="" name="Happy">
+      <SceneUttr lower="1751" upper="1769" punct=",">
+        <SceneWord lower="1751" upper="1754" text="You"/>
+        <SceneWord lower="1755" upper="1758" text="are"/>
+        <SceneWord lower="1759" upper="1762" text="one"/>
+        <SceneWord lower="1763" upper="1765" text="of"/>
+        <SceneWord lower="1766" upper="1768" text="us"/>
+      </SceneUttr>
+      <SceneUttr lower="1770" upper="1794" punct=".">
+        <SceneWord lower="1770" upper="1777" text="nothing"/>
+        <SceneWord lower="1778" upper="1781" text="bad"/>
+        <SceneWord lower="1782" upper="1786" text="will"/>
+        <SceneWord lower="1787" upper="1793" text="happen"/>
+      </SceneUttr>
+      <SceneUttr lower="1796" upper="1803" punct=".">
+        <ActionObject lower="1796" upper="1801" actor="" name="Happy">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2266" upper="2326" language="en" identifier="BusStop_ChrisWhat">
-    <SceneTurn lower="2293" upper="2326" speaker="Chris">
-      <SceneUttr lower="2300" upper="2317" punct="?">
-        <SceneWord lower="2300" upper="2304" text="What"/>
-        <SceneWord lower="2305" upper="2307" text="do"/>
-        <SceneWord lower="2308" upper="2311" text="you"/>
-        <SceneWord lower="2312" upper="2316" text="mean"/>
+  <SceneObject lower="1805" upper="1870" language="en" identifier="BusStop_PaulaBillyis">
+    <SceneTurn lower="1835" upper="1870" speaker="Paula">
+      <SceneUttr lower="1842" upper="1859" punct=".">
+        <SceneWord lower="1842" upper="1847" text="Billy"/>
+        <SceneWord lower="1848" upper="1850" text="is"/>
+        <SceneWord lower="1851" upper="1852" text="a"/>
+        <SceneWord lower="1853" upper="1858" text="geniu"/>
       </SceneUttr>
-      <SceneUttr lower="2319" upper="2326" punct=".">
-        <ActionObject lower="2319" upper="2324" actor="" name="Angry">
+      <SceneUttr lower="1861" upper="1870" punct=".">
+        <ActionObject lower="1861" upper="1868" actor="" name="Excited">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2328" upper="2415" language="en" identifier="BusStop_ChrisIamgoing">
-    <SceneTurn lower="2359" upper="2415" speaker="Chris">
-      <SceneUttr lower="2366" upper="2415" punct=".">
-        <SceneWord lower="2366" upper="2367" text="I"/>
-        <SceneWord lower="2368" upper="2370" text="am"/>
-        <SceneWord lower="2371" upper="2376" text="going"/>
-        <SceneWord lower="2377" upper="2379" text="to"/>
-        <SceneWord lower="2380" upper="2385" text="shoot"/>
-        <SceneWord lower="2386" upper="2390" text="some"/>
-        <SceneWord lower="2391" upper="2396" text="hoops"/>
-        <SceneWord lower="2397" upper="2401" text="with"/>
-        <SceneWord lower="2402" upper="2406" text="Marc"/>
-        <ActionObject lower="2408" upper="2413" actor="" name="Happy">
+  <SceneObject lower="1872" upper="1998" language="en" identifier="BusStop_PaulaRelax">
+    <SceneTurn lower="1900" upper="1998" speaker="Paula">
+      <SceneUttr lower="1907" upper="1913" punct=".">
+        <SceneWord lower="1907" upper="1912" text="Relax"/>
+      </SceneUttr>
+      <SceneUttr lower="1914" upper="1986" punct="?">
+        <SceneWord lower="1914" upper="1916" text="Do"/>
+        <SceneWord lower="1917" upper="1920" text="you"/>
+        <SceneWord lower="1921" upper="1926" text="think"/>
+        <SceneWord lower="1927" upper="1930" text="the"/>
+        <SceneWord lower="1931" upper="1934" text="new"/>
+        <SceneWord lower="1935" upper="1938" text="one"/>
+        <SceneWord lower="1939" upper="1941" text="is"/>
+        <SceneWord lower="1942" upper="1946" text="such"/>
+        <SceneWord lower="1947" upper="1948" text="a"/>
+        <SceneWord lower="1949" upper="1954" text="pussy"/>
+        <SceneWord lower="1955" upper="1959" text="that"/>
+        <SceneWord lower="1960" upper="1962" text="he"/>
+        <SceneWord lower="1963" upper="1967" text="will"/>
+        <SceneWord lower="1968" upper="1972" text="tell"/>
+        <SceneWord lower="1973" upper="1976" text="the"/>
+        <SceneWord lower="1977" upper="1985" text="teachers"/>
+      </SceneUttr>
+      <SceneUttr lower="1988" upper="1998" punct=".">
+        <ActionObject lower="1988" upper="1996" actor="" name="Contempt">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2417" upper="2474" language="en" identifier="BusStop_ChrisThanks">
-    <SceneTurn lower="2446" upper="2474" speaker="Chris">
-      <SceneUttr lower="2453" upper="2465" punct="!">
-        <SceneWord lower="2453" upper="2459" text="Thanks"/>
-        <SceneWord lower="2460" upper="2464" text="mate"/>
+  <SceneObject lower="2000" upper="2100" language="en" identifier="BusStop_PaulaThankyou">
+    <SceneTurn lower="2031" upper="2100" speaker="Paula">
+      <SceneUttr lower="2038" upper="2048" punct=".">
+        <SceneWord lower="2038" upper="2043" text="Thank"/>
+        <SceneWord lower="2044" upper="2047" text="you"/>
       </SceneUttr>
-      <SceneUttr lower="2467" upper="2474" punct=".">
-        <ActionObject lower="2467" upper="2472" actor="" name="Smile">
+      <SceneUttr lower="2049" upper="2100" punct=".">
+        <SceneWord lower="2049" upper="2051" text="My"/>
+        <SceneWord lower="2052" upper="2058" text="mother"/>
+        <SceneWord lower="2059" upper="2063" text="gave"/>
+        <SceneWord lower="2064" upper="2066" text="me"/>
+        <SceneWord lower="2067" upper="2071" text="this"/>
+        <SceneWord lower="2072" upper="2075" text="new"/>
+        <SceneWord lower="2076" upper="2081" text="dress"/>
+        <SceneWord lower="2082" upper="2091" text="yesterday"/>
+        <ActionObject lower="2093" upper="2098" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2476" upper="2563" language="en" identifier="BusStop_ChrisIamgoing">
-    <SceneTurn lower="2507" upper="2563" speaker="Chris">
-      <SceneUttr lower="2514" upper="2563" punct=".">
-        <SceneWord lower="2514" upper="2515" text="I"/>
-        <SceneWord lower="2516" upper="2518" text="am"/>
-        <SceneWord lower="2519" upper="2524" text="going"/>
-        <SceneWord lower="2525" upper="2527" text="to"/>
-        <SceneWord lower="2528" upper="2533" text="shoot"/>
-        <SceneWord lower="2534" upper="2538" text="some"/>
-        <SceneWord lower="2539" upper="2544" text="hoops"/>
-        <SceneWord lower="2545" upper="2549" text="with"/>
-        <SceneWord lower="2550" upper="2554" text="Marc"/>
-        <ActionObject lower="2556" upper="2561" actor="" name="Smile">
+  <SceneObject lower="2102" upper="2192" language="en" identifier="BusStop_PaulaReallyI">
+    <SceneTurn lower="2132" upper="2192" speaker="Paula">
+      <SceneUttr lower="2139" upper="2146" punct="?">
+        <SceneWord lower="2139" upper="2145" text="Really"/>
+      </SceneUttr>
+      <SceneUttr lower="2148" upper="2159" punct=".">
+        <ActionObject lower="2148" upper="2157" actor="" name="Surprised">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="2160" upper="2180" punct=".">
+        <SceneWord lower="2160" upper="2161" text="I"/>
+        <SceneWord lower="2162" upper="2167" text="guess"/>
+        <SceneWord lower="2168" upper="2170" text="we"/>
+        <SceneWord lower="2171" upper="2175" text="will"/>
+        <SceneWord lower="2176" upper="2179" text="see"/>
+      </SceneUttr>
+      <SceneUttr lower="2182" upper="2192" punct=".">
+        <ActionObject lower="2182" upper="2190" actor="" name="Contempt">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2565" upper="2644" language="en" identifier="BusStop_Christhat">
-    <SceneTurn lower="2592" upper="2644" speaker="Chris">
-      <SceneUttr lower="2599" upper="2625" punct=",">
-        <SceneWord lower="2599" upper="2601" text="It"/>
-        <SceneWord lower="2602" upper="2604" text="is"/>
-        <SceneWord lower="2605" upper="2609" text="what"/>
-        <SceneWord lower="2610" upper="2619" text="everybody"/>
-        <SceneWord lower="2620" upper="2624" text="does"/>
+  <SceneObject lower="2194" upper="2314" language="en" identifier="BusStop_Marieme">
+    <SceneTurn lower="2219" upper="2314" speaker="Marie">
+      <SceneUttr lower="2227" upper="2263" punct=".">
+        <ActionObject lower="2227" upper="2233" actor="" name="ZoomIn">
+          <ActionFeature lower="2234" upper="2243" key="value" val="2.0"/>
+        </ActionObject>
+        <ActionObject lower="2246" upper="2252" actor="" name="MoveLR">
+          <ActionFeature lower="2253" upper="2261" key="value" val="20"/>
+        </ActionObject>
       </SceneUttr>
-      <SceneUttr lower="2626" upper="2644" punct="?">
-        <SceneWord lower="2626" upper="2628" text="is"/>
-        <SceneWord lower="2629" upper="2632" text="not"/>
-        <SceneWord lower="2633" upper="2635" text="it"/>
-        <ActionObject lower="2637" upper="2642" actor="" name="Angry">
+      <SceneUttr lower="2264" upper="2267" punct="?">
+        <SceneWord lower="2264" upper="2266" text="Me"/>
+      </SceneUttr>
+      <SceneUttr lower="2268" upper="2287" punct=".">
+        <SceneWord lower="2268" upper="2269" text="I"/>
+        <SceneWord lower="2270" upper="2272" text="am"/>
+        <SceneWord lower="2273" upper="2274" text="I"/>
+        <SceneWord lower="2275" upper="2277" text="am"/>
+        <SceneWord lower="2278" upper="2286" text="allright"/>
+      </SceneUttr>
+      <SceneUttr lower="2289" upper="2294" punct=".">
+        <ActionObject lower="2289" upper="2292" actor="" name="Sad">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="2295" upper="2314" punct="?">
+        <SceneWord lower="2295" upper="2298" text="Why"/>
+        <SceneWord lower="2299" upper="2302" text="are"/>
+        <SceneWord lower="2303" upper="2306" text="you"/>
+        <SceneWord lower="2307" upper="2313" text="asking"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2316" upper="2405" language="en" identifier="BusStop_MarieZoomBack">
+    <SceneTurn lower="2347" upper="2405" speaker="Marie">
+      <SceneUttr lower="2355" upper="2384" punct=".">
+        <ActionObject lower="2355" upper="2361" actor="" name="MoveLR">
+          <ActionFeature lower="2362" upper="2371" key="value" val="-20"/>
+        </ActionObject>
+        <ActionObject lower="2374" upper="2382" actor="" name="ZoomBack">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="2386" upper="2405" punct=".">
+        <ActionObject lower="2386" upper="2392" actor="" name="MoveLR">
+          <ActionFeature lower="2393" upper="2403" key="value" val="-500"/>
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2646" upper="2738" language="en" identifier="BusStop_ChrisIfyou">
-    <SceneTurn lower="2674" upper="2738" speaker="Chris">
-      <SceneUttr lower="2681" upper="2695" punct=".">
-        <SceneWord lower="2681" upper="2683" text="If"/>
-        <SceneWord lower="2684" upper="2687" text="you"/>
-        <SceneWord lower="2688" upper="2691" text="say"/>
-        <SceneWord lower="2692" upper="2694" text="so"/>
-      </SceneUttr>
-      <SceneUttr lower="2696" upper="2738" punct=".">
-        <SceneWord lower="2696" upper="2697" text="I"/>
-        <SceneWord lower="2698" upper="2702" text="just"/>
-        <SceneWord lower="2703" upper="2709" text="wanted"/>
-        <SceneWord lower="2710" upper="2712" text="to"/>
-        <SceneWord lower="2713" upper="2717" text="make"/>
-        <SceneWord lower="2718" upper="2719" text="a"/>
-        <SceneWord lower="2720" upper="2724" text="good"/>
-        <SceneWord lower="2725" upper="2729" text="joke"/>
-        <ActionObject lower="2731" upper="2736" actor="" name="Angry">
+  <SceneObject lower="2407" upper="2462" language="en" identifier="BusStop_MarieNevermind">
+    <SceneTurn lower="2439" upper="2462" speaker="Marie">
+      <SceneUttr lower="2446" upper="2462" punct=".">
+        <SceneWord lower="2446" upper="2455" text="Nevermind"/>
+        <ActionObject lower="2457" upper="2460" actor="" name="Sad">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2740" upper="2803" language="en" identifier="BusStop_ChrisYeahI">
-    <SceneTurn lower="2768" upper="2803" speaker="Chris">
-      <SceneUttr lower="2775" upper="2780" punct=",">
-        <SceneWord lower="2775" upper="2779" text="Yeah"/>
+  <SceneObject lower="2464" upper="2542" language="en" identifier="BusStop_MarieIjust">
+    <SceneTurn lower="2492" upper="2542" speaker="Marie">
+      <SceneUttr lower="2499" upper="2535" punct=".">
+        <SceneWord lower="2499" upper="2500" text="I"/>
+        <SceneWord lower="2501" upper="2505" text="just"/>
+        <SceneWord lower="2506" upper="2508" text="do"/>
+        <SceneWord lower="2509" upper="2512" text="not"/>
+        <SceneWord lower="2513" upper="2517" text="know"/>
+        <SceneWord lower="2518" upper="2520" text="if"/>
+        <SceneWord lower="2521" upper="2525" text="this"/>
+        <SceneWord lower="2526" upper="2528" text="is"/>
+        <SceneWord lower="2529" upper="2534" text="right"/>
       </SceneUttr>
-      <SceneUttr lower="2781" upper="2803" punct=".">
-        <SceneWord lower="2781" upper="2782" text="I"/>
-        <SceneWord lower="2783" upper="2788" text="guess"/>
-        <SceneWord lower="2789" upper="2791" text="he"/>
-        <SceneWord lower="2792" upper="2794" text="is"/>
-        <ActionObject lower="2796" upper="2801" actor="" name="Angry">
+      <SceneUttr lower="2537" upper="2542" punct=".">
+        <ActionObject lower="2537" upper="2540" actor="" name="Sad">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2805" upper="2885" language="en" identifier="BusStop_ChrisComeon">
-    <SceneTurn lower="2834" upper="2885" speaker="Chris">
-      <SceneUttr lower="2841" upper="2849" punct=".">
-        <SceneWord lower="2841" upper="2845" text="Come"/>
-        <SceneWord lower="2846" upper="2848" text="on"/>
+  <SceneObject lower="2544" upper="2627" language="en" identifier="BusStop_MarieYesI">
+    <SceneTurn lower="2571" upper="2627" speaker="Marie">
+      <SceneUttr lower="2578" upper="2582" punct=".">
+        <SceneWord lower="2578" upper="2581" text="Yes"/>
       </SceneUttr>
-      <SceneUttr lower="2850" upper="2885" punct=".">
-        <SceneWord lower="2850" upper="2852" text="It"/>
-        <SceneWord lower="2853" upper="2855" text="is"/>
-        <SceneWord lower="2856" upper="2860" text="just"/>
-        <SceneWord lower="2861" upper="2862" text="a"/>
-        <SceneWord lower="2863" upper="2871" text="harmless"/>
-        <SceneWord lower="2872" upper="2876" text="joke"/>
-        <ActionObject lower="2878" upper="2883" actor="" name="Angry">
+      <SceneUttr lower="2583" upper="2590" punct=".">
+        <SceneWord lower="2583" upper="2584" text="I"/>
+        <SceneWord lower="2585" upper="2589" text="mean"/>
+      </SceneUttr>
+      <SceneUttr lower="2591" upper="2594" punct=".">
+        <SceneWord lower="2591" upper="2593" text="no"/>
+      </SceneUttr>
+      <SceneUttr lower="2595" upper="2620" punct=".">
+        <SceneWord lower="2595" upper="2597" text="no"/>
+        <SceneWord lower="2598" upper="2600" text="it"/>
+        <SceneWord lower="2601" upper="2604" text="was"/>
+        <SceneWord lower="2605" upper="2608" text="not"/>
+        <SceneWord lower="2609" upper="2614" text="about"/>
+        <SceneWord lower="2615" upper="2619" text="that"/>
+      </SceneUttr>
+      <SceneUttr lower="2622" upper="2627" punct=".">
+        <ActionObject lower="2622" upper="2625" actor="" name="Sad">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="2887" upper="3007" language="en" identifier="BusStop_ChrisIdonot">
-    <SceneTurn lower="2916" upper="3007" speaker="Chris">
-      <SceneUttr lower="2923" upper="2937" punct=".">
-        <SceneWord lower="2923" upper="2924" text="I"/>
-        <SceneWord lower="2925" upper="2927" text="do"/>
-        <SceneWord lower="2928" upper="2931" text="not"/>
-        <SceneWord lower="2932" upper="2936" text="know"/>
+  <SceneObject lower="2629" upper="2740" language="en" identifier="BusStop_MarieIdonot">
+    <SceneTurn lower="2658" upper="2740" speaker="Marie">
+      <SceneUttr lower="2665" upper="2679" punct=".">
+        <SceneWord lower="2665" upper="2666" text="I"/>
+        <SceneWord lower="2667" upper="2669" text="do"/>
+        <SceneWord lower="2670" upper="2673" text="not"/>
+        <SceneWord lower="2674" upper="2678" text="know"/>
       </SceneUttr>
-      <SceneUttr lower="2938" upper="2966" punct=".">
-        <SceneWord lower="2938" upper="2943" text="Maybe"/>
-        <SceneWord lower="2944" upper="2946" text="it"/>
-        <SceneWord lower="2947" upper="2950" text="was"/>
-        <SceneWord lower="2951" upper="2952" text="a"/>
-        <SceneWord lower="2953" upper="2956" text="bit"/>
-        <SceneWord lower="2957" upper="2960" text="too"/>
-        <SceneWord lower="2961" upper="2965" text="much"/>
+      <SceneUttr lower="2680" upper="2731" punct=".">
+        <SceneWord lower="2680" upper="2682" text="If"/>
+        <SceneWord lower="2683" upper="2686" text="the"/>
+        <SceneWord lower="2687" upper="2694" text="weather"/>
+        <SceneWord lower="2695" upper="2697" text="is"/>
+        <SceneWord lower="2698" upper="2702" text="nice"/>
+        <SceneWord lower="2703" upper="2704" text="I"/>
+        <SceneWord lower="2705" upper="2709" text="will"/>
+        <SceneWord lower="2710" upper="2712" text="go"/>
+        <SceneWord lower="2713" upper="2715" text="to"/>
+        <SceneWord lower="2716" upper="2719" text="the"/>
+        <SceneWord lower="2720" upper="2724" text="park"/>
+        <SceneWord lower="2725" upper="2730" text="maybe"/>
       </SceneUttr>
-      <SceneUttr lower="2967" upper="2979" punct=",">
-        <SceneWord lower="2967" upper="2970" text="But"/>
-        <SceneWord lower="2971" upper="2975" text="come"/>
-        <SceneWord lower="2976" upper="2978" text="on"/>
-      </SceneUttr>
-      <SceneUttr lower="2980" upper="3007" punct=".">
-        <SceneWord lower="2980" upper="2982" text="it"/>
-        <SceneWord lower="2983" upper="2986" text="was"/>
-        <SceneWord lower="2987" upper="2991" text="just"/>
-        <SceneWord lower="2992" upper="2993" text="a"/>
-        <SceneWord lower="2994" upper="2998" text="joke"/>
-        <ActionObject lower="3000" upper="3005" actor="" name="Angry">
+      <SceneUttr lower="2733" upper="2740" punct=".">
+        <ActionObject lower="2733" upper="2738" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneComment lower="3009" upper="3022" comment="/*  Home   */"/>
-  <SceneObject lower="3024" upper="3218" language="en" identifier="park">
-    <SceneTurn lower="3038" upper="3065" speaker="Billy">
-      <SceneUttr lower="3046" upper="3065" punct=".">
-        <ActionObject lower="3046" upper="3052" actor="" name="MoveUD">
-          <ActionFeature lower="3053" upper="3063" key="value" val="1500"/>
-        </ActionObject>
+  <SceneObject lower="2742" upper="2833" language="en" identifier="BusStop_MarieYoudont">
+    <SceneTurn lower="2772" upper="2833" speaker="Marie">
+      <SceneUttr lower="2779" upper="2782" punct=".">
+        <SceneWord lower="2779" upper="2781" text="Oh"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3066" upper="3094" speaker="Victor">
-      <SceneUttr lower="3075" upper="3094" punct=".">
-        <ActionObject lower="3075" upper="3081" actor="" name="MoveUD">
-          <ActionFeature lower="3082" upper="3092" key="value" val="1500"/>
-        </ActionObject>
+      <SceneUttr lower="2783" upper="2794" punct="?">
+        <SceneWord lower="2783" upper="2786" text="You"/>
+        <SceneWord lower="2787" upper="2789" text="do"/>
+        <SceneWord lower="2790" upper="2793" text="not"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3095" upper="3121" speaker="Lily">
-      <SceneUttr lower="3102" upper="3121" punct=".">
-        <ActionObject lower="3102" upper="3108" actor="" name="MoveUD">
-          <ActionFeature lower="3109" upper="3119" key="value" val="1500"/>
-        </ActionObject>
+      <SceneUttr lower="2795" upper="2824" punct=".">
+        <SceneWord lower="2795" upper="2798" text="Let"/>
+        <SceneWord lower="2799" upper="2801" text="us"/>
+        <SceneWord lower="2802" upper="2806" text="talk"/>
+        <SceneWord lower="2807" upper="2812" text="about"/>
+        <SceneWord lower="2813" upper="2817" text="that"/>
+        <SceneWord lower="2818" upper="2823" text="later"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3122" upper="3150" speaker="Thomas">
-      <SceneUttr lower="3131" upper="3150" punct=".">
-        <ActionObject lower="3131" upper="3137" actor="" name="MoveUD">
-          <ActionFeature lower="3138" upper="3148" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3151" upper="3177" speaker="Anna">
-      <SceneUttr lower="3158" upper="3177" punct=".">
-        <ActionObject lower="3158" upper="3164" actor="" name="MoveUD">
-          <ActionFeature lower="3165" upper="3175" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3178" upper="3218" speaker="Billy">
-      <SceneUttr lower="3186" upper="3218" punct=".">
-        <ActionObject lower="3186" upper="3199" actor="" name="SetBackground">
-          <ActionFeature lower="3200" upper="3216" key="value" val="'park.jpg'"/>
+      <SceneUttr lower="2826" upper="2833" punct=".">
+        <ActionObject lower="2826" upper="2831" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="3220" upper="3414" language="en" identifier="door">
-    <SceneTurn lower="3234" upper="3261" speaker="Billy">
-      <SceneUttr lower="3242" upper="3261" punct=".">
-        <ActionObject lower="3242" upper="3248" actor="" name="MoveUD">
-          <ActionFeature lower="3249" upper="3259" key="value" val="1500"/>
-        </ActionObject>
+  <SceneObject lower="2835" upper="2942" language="en" identifier="BusStop_Marieohthat">
+    <SceneTurn lower="2864" upper="2942" speaker="Marie">
+      <SceneUttr lower="2871" upper="2874" punct=".">
+        <SceneWord lower="2871" upper="2873" text="Oh"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3262" upper="3290" speaker="Victor">
-      <SceneUttr lower="3271" upper="3290" punct=".">
-        <ActionObject lower="3271" upper="3277" actor="" name="MoveUD">
-          <ActionFeature lower="3278" upper="3288" key="value" val="1500"/>
-        </ActionObject>
+      <SceneUttr lower="2875" upper="2893" punct=".">
+        <SceneWord lower="2875" upper="2879" text="That"/>
+        <SceneWord lower="2880" upper="2882" text="is"/>
+        <SceneWord lower="2883" upper="2887" text="very"/>
+        <SceneWord lower="2888" upper="2892" text="kind"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3291" upper="3317" speaker="Lily">
-      <SceneUttr lower="3298" upper="3317" punct=".">
-        <ActionObject lower="3298" upper="3304" actor="" name="MoveUD">
-          <ActionFeature lower="3305" upper="3315" key="value" val="1500"/>
-        </ActionObject>
+      <SceneUttr lower="2894" upper="2933" punct=".">
+        <SceneWord lower="2894" upper="2895" text="I"/>
+        <SceneWord lower="2896" upper="2900" text="will"/>
+        <SceneWord lower="2901" upper="2903" text="be"/>
+        <SceneWord lower="2904" upper="2906" text="at"/>
+        <SceneWord lower="2907" upper="2910" text="the"/>
+        <SceneWord lower="2911" upper="2915" text="park"/>
+        <SceneWord lower="2916" upper="2918" text="in"/>
+        <SceneWord lower="2919" upper="2922" text="the"/>
+        <SceneWord lower="2923" upper="2932" text="afternoon"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3318" upper="3346" speaker="Thomas">
-      <SceneUttr lower="3327" upper="3346" punct=".">
-        <ActionObject lower="3327" upper="3333" actor="" name="MoveUD">
-          <ActionFeature lower="3334" upper="3344" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3347" upper="3373" speaker="Anna">
-      <SceneUttr lower="3354" upper="3373" punct=".">
-        <ActionObject lower="3354" upper="3360" actor="" name="MoveUD">
-          <ActionFeature lower="3361" upper="3371" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3374" upper="3414" speaker="Billy">
-      <SceneUttr lower="3382" upper="3414" punct=".">
-        <ActionObject lower="3382" upper="3395" actor="" name="SetBackground">
-          <ActionFeature lower="3396" upper="3412" key="value" val="'door.jpg'"/>
+      <SceneUttr lower="2935" upper="2942" punct=".">
+        <ActionObject lower="2935" upper="2940" actor="" name="Smile">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="3416" upper="3959" language="en" identifier="welcome">
-    <SceneTurn lower="3433" upper="3482" speaker="Billy">
-      <SceneUttr lower="3441" upper="3482" punct=".">
-        <ActionObject lower="3441" upper="3454" actor="" name="SetBackground">
-          <ActionFeature lower="3455" upper="3480" key="value" val="'oldlivingroom.jpg'"/>
-        </ActionObject>
+  <SceneObject lower="2944" upper="3028" language="en" identifier="BusStop_MarieYeahyou">
+    <SceneTurn lower="2974" upper="3028" speaker="Marie">
+      <SceneUttr lower="2981" upper="2986" punct=".">
+        <SceneWord lower="2981" upper="2985" text="Yeah"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3483" upper="3509" speaker="Billy">
-      <SceneUttr lower="3491" upper="3509" punct=".">
-        <ActionObject lower="3491" upper="3497" actor="" name="MoveUD">
-          <ActionFeature lower="3498" upper="3507" key="value" val="300"/>
-        </ActionObject>
+      <SceneUttr lower="2987" upper="3001" punct=".">
+        <SceneWord lower="2987" upper="2990" text="you"/>
+        <SceneWord lower="2991" upper="2994" text="are"/>
+        <SceneWord lower="2995" upper="3000" text="right"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="3510" upper="3575" speaker="Lily">
-      <SceneUttr lower="3517" upper="3535" punct=".">
-        <ActionObject lower="3517" upper="3523" actor="" name="MoveUD">
-          <ActionFeature lower="3524" upper="3533" key="value" val="600"/>
-        </ActionObject>
+      <SceneUttr lower="3002" upper="3021" punct=".">
+        <SceneWord lower="3002" upper="3004" text="it"/>
+        <SceneWord lower="3005" upper="3007" text="is"/>
+        <SceneWord lower="3008" upper="3014" text="really"/>
+        <SceneWord lower="3015" upper="3020" text="funny"/>
       </SceneUttr>
-      <SceneUttr lower="3537" upper="3555" punct=".">
-        <ActionObject lower="3537" upper="3543" actor="" name="MoveLR">
-          <ActionFeature lower="3544" upper="3553" key="value" val="300"/>
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="3557" upper="3575" punct=".">
-        <ActionObject lower="3557" upper="3563" actor="" name="ZoomIO">
-          <ActionFeature lower="3564" upper="3573" key="value" val="0.5"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3576" upper="3606" speaker="Billy">
-      <SceneUttr lower="3583" upper="3586" punct=".">
-        <SceneWord lower="3583" upper="3585" text="Hi"/>
-      </SceneUttr>
-      <SceneUttr lower="3587" upper="3597" punct=".">
-        <SceneParam lower="3587" upper="3596" name="userName"/>
-      </SceneUttr>
-      <SceneUttr lower="3599" upper="3606" punct=".">
-        <ActionObject lower="3599" upper="3604" actor="" name="Smile">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3607" upper="3687" speaker="Billy">
-      <SceneUttr lower="3614" upper="3622" punct=".">
-        <SceneWord lower="3614" upper="3618" text="Come"/>
-        <SceneWord lower="3619" upper="3621" text="in"/>
-      </SceneUttr>
-      <SceneUttr lower="3623" upper="3687" punct="!">
-        <SceneWord lower="3623" upper="3624" text="I"/>
-        <SceneWord lower="3625" upper="3629" text="have"/>
-        <SceneWord lower="3630" upper="3632" text="to"/>
-        <SceneWord lower="3633" upper="3636" text="get"/>
-        <SceneWord lower="3637" upper="3640" text="the"/>
-        <SceneWord lower="3641" upper="3645" text="exam"/>
-        <SceneWord lower="3646" upper="3652" text="signed"/>
-        <SceneWord lower="3653" upper="3662" text="otherwise"/>
-        <SceneWord lower="3663" upper="3666" text="Mrs"/>
-        <SceneWord lower="3667" upper="3673" text="Teachy"/>
-        <SceneWord lower="3674" upper="3678" text="will"/>
-        <SceneWord lower="3679" upper="3683" text="hang"/>
-        <SceneWord lower="3684" upper="3686" text="me"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3688" upper="3736" speaker="Lily">
-      <SceneUttr lower="3694" upper="3703" punct=",">
-        <SceneWord lower="3694" upper="3696" text="Oh"/>
-        <SceneWord lower="3697" upper="3702" text="Billy"/>
-      </SceneUttr>
-      <SceneUttr lower="3704" upper="3726" punct="!">
-        <SceneWord lower="3704" upper="3706" text="go"/>
-        <SceneWord lower="3707" upper="3713" text="bother"/>
-        <SceneWord lower="3714" upper="3718" text="your"/>
-        <SceneWord lower="3719" upper="3725" text="father"/>
-      </SceneUttr>
-      <SceneUttr lower="3728" upper="3736" punct=".">
-        <ActionObject lower="3728" upper="3734" actor="" name="Angry2">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3737" upper="3771" speaker="Billy">
-      <SceneUttr lower="3745" upper="3750" punct=".">
-        <ActionObject lower="3745" upper="3748" actor="" name="Sad">
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="3752" upper="3771" punct=".">
-        <ActionObject lower="3752" upper="3758" actor="" name="MoveLR">
-          <ActionFeature lower="3759" upper="3769" key="value" val="-300"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3772" upper="3813" speaker="Victor">
-      <SceneUttr lower="3780" upper="3785" punct="?">
-        <SceneWord lower="3780" upper="3782" text="An"/>
-        <SceneWord lower="3783" upper="3784" text="E"/>
-      </SceneUttr>
-      <SceneUttr lower="3786" upper="3813" punct="?">
-        <SceneWord lower="3786" upper="3789" text="Are"/>
-        <SceneWord lower="3790" upper="3793" text="you"/>
-        <SceneWord lower="3794" upper="3801" text="fucking"/>
-        <SceneWord lower="3802" upper="3809" text="kidding"/>
-        <SceneWord lower="3810" upper="3812" text="me"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3814" upper="3874" speaker="Victor">
-      <SceneUttr lower="3822" upper="3836" punct=".">
-        <SceneWord lower="3822" upper="3825" text="You"/>
-        <SceneWord lower="3826" upper="3830" text="dumb"/>
-        <SceneWord lower="3831" upper="3835" text="jerk"/>
-      </SceneUttr>
-      <SceneUttr lower="3837" upper="3874" punct=".">
-        <SceneWord lower="3837" upper="3840" text="You"/>
-        <SceneWord lower="3841" upper="3844" text="are"/>
-        <SceneWord lower="3845" upper="3850" text="right"/>
-        <SceneWord lower="3851" upper="3853" text="as"/>
-        <SceneWord lower="3854" upper="3858" text="dumb"/>
-        <SceneWord lower="3859" upper="3861" text="as"/>
-        <SceneWord lower="3862" upper="3866" text="your"/>
-        <SceneWord lower="3867" upper="3873" text="mother"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3875" upper="3918" speaker="Victor">
-      <SceneUttr lower="3883" upper="3918" punct="!">
-        <SceneWord lower="3883" upper="3884" text="I"/>
-        <SceneWord lower="3885" upper="3887" text="am"/>
-        <SceneWord lower="3888" upper="3895" text="ashamed"/>
-        <SceneWord lower="3896" upper="3902" text="having"/>
-        <SceneWord lower="3903" upper="3904" text="a"/>
-        <SceneWord lower="3905" upper="3908" text="son"/>
-        <SceneWord lower="3909" upper="3913" text="like"/>
-        <SceneWord lower="3914" upper="3917" text="you"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="3919" upper="3959" speaker="Victor">
-      <SceneUttr lower="3927" upper="3959" punct="!">
-        <SceneWord lower="3927" upper="3931" text="That"/>
-        <SceneWord lower="3932" upper="3934" text="is"/>
-        <SceneWord lower="3935" upper="3938" text="the"/>
-        <SceneWord lower="3939" upper="3942" text="end"/>
-        <SceneWord lower="3943" upper="3945" text="of"/>
-        <SceneWord lower="3946" upper="3952" text="pocket"/>
-        <SceneWord lower="3953" upper="3958" text="money"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="3961" upper="4044" language="en" identifier="GoToSchool">
-    <SceneTurn lower="3981" upper="4013" speaker="Billy">
-      <SceneUttr lower="3989" upper="3994" punct=".">
-        <ActionObject lower="3989" upper="3992" actor="" name="Sad">
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="3996" upper="4013" punct=".">
-        <ActionObject lower="3996" upper="4002" actor="" name="MoveLR">
-          <ActionFeature lower="4003" upper="4011" key="value" val="10"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4014" upper="4044" speaker="Billy">
-      <SceneUttr lower="4021" upper="4044" punct=".">
-        <SceneAbbrev lower="4021" upper="4026" first="Let" second="s"/>
-        <SceneWord lower="4027" upper="4029" text="go"/>
-        <SceneWord lower="4030" upper="4032" text="to"/>
-        <SceneWord lower="4033" upper="4039" text="School"/>
-        <SceneWord lower="4040" upper="4043" text="now"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneComment lower="4046" upper="4069" comment="/*  Walk to school   */"/>
-  <SceneObject lower="4071" upper="4324" language="en" identifier="Ontheway">
-    <SceneTurn lower="4089" upper="4129" speaker="Billy">
-      <SceneUttr lower="4097" upper="4129" punct=".">
-        <ActionObject lower="4097" upper="4110" actor="" name="SetBackground">
-          <ActionFeature lower="4111" upper="4127" key="value" val="'road.jpg'"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4130" upper="4156" speaker="Lily">
-      <SceneUttr lower="4137" upper="4156" punct=".">
-        <ActionObject lower="4137" upper="4143" actor="" name="MoveUD">
-          <ActionFeature lower="4144" upper="4154" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4157" upper="4183" speaker="Billy">
-      <SceneUttr lower="4165" upper="4183" punct=".">
-        <ActionObject lower="4165" upper="4171" actor="" name="MoveLR">
-          <ActionFeature lower="4172" upper="4181" key="value" val="200"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4184" upper="4210" speaker="Billy">
-      <SceneUttr lower="4192" upper="4210" punct=".">
-        <ActionObject lower="4192" upper="4198" actor="" name="MoveUD">
-          <ActionFeature lower="4199" upper="4208" key="value" val="100"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4211" upper="4324" speaker="Billy">
-      <SceneUttr lower="4218" upper="4234" punct=".">
-        <SceneWord lower="4218" upper="4219" text="I"/>
-        <SceneWord lower="4220" upper="4223" text="hat"/>
-        <SceneWord lower="4224" upper="4226" text="my"/>
-        <SceneWord lower="4227" upper="4233" text="family"/>
-      </SceneUttr>
-      <SceneUttr lower="4235" upper="4283" punct=".">
-        <SceneWord lower="4235" upper="4238" text="The"/>
-        <SceneWord lower="4239" upper="4243" text="only"/>
-        <SceneWord lower="4244" upper="4249" text="thing"/>
-        <SceneWord lower="4250" upper="4252" text="my"/>
-        <SceneWord lower="4253" upper="4259" text="mother"/>
-        <SceneWord lower="4260" upper="4265" text="cares"/>
-        <SceneWord lower="4266" upper="4268" text="is"/>
-        <SceneWord lower="4269" upper="4272" text="her"/>
-        <SceneWord lower="4273" upper="4276" text="red"/>
-        <SceneWord lower="4277" upper="4282" text="hairs"/>
-      </SceneUttr>
-      <SceneUttr lower="4284" upper="4324" punct=".">
-        <SceneWord lower="4284" upper="4287" text="And"/>
-        <SceneWord lower="4288" upper="4290" text="my"/>
-        <SceneWord lower="4291" upper="4297" text="father"/>
-        <SceneWord lower="4298" upper="4301" text="are"/>
-        <SceneWord lower="4302" upper="4310" text="drinking"/>
-        <SceneWord lower="4311" upper="4314" text="all"/>
-        <SceneWord lower="4315" upper="4318" text="the"/>
-        <SceneWord lower="4319" upper="4323" text="time"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="4326" upper="4373" language="en" identifier="MoveLRightBob">
-    <SceneTurn lower="4349" upper="4373" speaker="bob">
-      <SceneUttr lower="4355" upper="4373" punct=".">
-        <ActionObject lower="4355" upper="4361" actor="" name="MoveLR">
-          <ActionFeature lower="4362" upper="4371" key="value" val="500"/>
+      <SceneUttr lower="3023" upper="3028" punct=".">
+        <ActionObject lower="3023" upper="3026" actor="" name="Sad">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneComment lower="4375" upper="4393" comment="/*  In school   */"/>
-  <SceneObject lower="4395" upper="4635" language="en" identifier="InSchool">
-    <SceneTurn lower="4413" upper="4455" speaker="Billy">
-      <SceneUttr lower="4421" upper="4455" punct=".">
-        <ActionObject lower="4421" upper="4434" actor="" name="SetBackground">
-          <ActionFeature lower="4435" upper="4453" key="value" val="'school.jpg'"/>
+  <SceneObject lower="3030" upper="3176" language="en" identifier="BusStop_ChrisIhave">
+    <SceneTurn lower="3058" upper="3176" speaker="Chris">
+      <SceneUttr lower="3066" upper="3102" punct=".">
+        <ActionObject lower="3066" upper="3072" actor="" name="ZoomIn">
+          <ActionFeature lower="3073" upper="3082" key="value" val="2.0"/>
+        </ActionObject>
+        <ActionObject lower="3085" upper="3091" actor="" name="MoveLR">
+          <ActionFeature lower="3092" upper="3100" key="value" val="20"/>
         </ActionObject>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="4456" upper="4502" speaker="Billy">
-      <SceneUttr lower="4464" upper="4482" punct=".">
-        <ActionObject lower="4464" upper="4470" actor="" name="MoveUD">
-          <ActionFeature lower="4471" upper="4480" key="value" val="100"/>
-        </ActionObject>
+      <SceneUttr lower="3103" upper="3155" punct=".">
+        <SceneWord lower="3103" upper="3104" text="I"/>
+        <SceneWord lower="3105" upper="3109" text="have"/>
+        <SceneWord lower="3110" upper="3114" text="used"/>
+        <SceneWord lower="3115" upper="3119" text="some"/>
+        <SceneWord lower="3120" upper="3128" text="graphics"/>
+        <SceneWord lower="3129" upper="3138" text="programms"/>
+        <SceneWord lower="3139" upper="3141" text="on"/>
+        <SceneWord lower="3142" upper="3144" text="my"/>
+        <SceneWord lower="3145" upper="3151" text="uncles"/>
+        <SceneWord lower="3152" upper="3154" text="pc"/>
       </SceneUttr>
-      <SceneUttr lower="4484" upper="4502" punct=".">
-        <ActionObject lower="4484" upper="4490" actor="" name="MoveLR">
-          <ActionFeature lower="4491" upper="4500" key="value" val="400"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4503" upper="4530" speaker="Thomas">
-      <SceneUttr lower="4512" upper="4530" punct=".">
-        <ActionObject lower="4512" upper="4518" actor="" name="MoveUD">
-          <ActionFeature lower="4519" upper="4528" key="value" val="100"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4531" upper="4576" speaker="Billy">
-      <SceneUttr lower="4538" upper="4576" punct=".">
-        <SceneWord lower="4538" upper="4542" text="Look"/>
-        <SceneWord lower="4543" upper="4545" text="at"/>
-        <SceneWord lower="4546" upper="4550" text="that"/>
-        <SceneWord lower="4551" upper="4557" text="stupid"/>
-        <SceneWord lower="4558" upper="4561" text="guy"/>
-        <SceneWord lower="4562" upper="4566" text="with"/>
-        <SceneWord lower="4567" upper="4570" text="red"/>
-        <SceneWord lower="4571" upper="4575" text="hair"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4577" upper="4635" speaker="Billy">
-      <SceneUttr lower="4584" upper="4635" punct=".">
-        <SceneAbbrev lower="4584" upper="4588" first="I" second="ll"/>
-        <SceneWord lower="4589" upper="4592" text="let"/>
-        <SceneWord lower="4593" upper="4596" text="him"/>
-        <SceneWord lower="4597" upper="4601" text="know"/>
-        <SceneWord lower="4602" upper="4605" text="how"/>
-        <SceneWord lower="4606" upper="4612" text="stupid"/>
-        <SceneWord lower="4613" upper="4615" text="he"/>
-        <SceneWord lower="4616" upper="4618" text="is"/>
-        <SceneWord lower="4619" upper="4623" text="with"/>
-        <SceneWord lower="4624" upper="4628" text="that"/>
-        <SceneWord lower="4629" upper="4634" text="color"/>
-      </SceneUttr>
-    </SceneTurn>
-  </SceneObject>
-  <SceneObject lower="4637" upper="4839" language="en" identifier="BullyStart">
-    <SceneTurn lower="4657" upper="4702" speaker="Billy">
-      <SceneUttr lower="4664" upper="4674" punct=",">
-        <SceneWord lower="4664" upper="4668" text="Come"/>
-        <SceneWord lower="4669" upper="4673" text="here"/>
-      </SceneUttr>
-      <SceneUttr lower="4675" upper="4682" punct=".">
-        <SceneWord lower="4675" upper="4681" text="Thomas"/>
-      </SceneUttr>
-      <SceneUttr lower="4684" upper="4702" punct=".">
-        <ActionObject lower="4684" upper="4690" actor="" name="MoveLR">
-          <ActionFeature lower="4691" upper="4700" key="value" val="400"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4703" upper="4744" speaker="Thomas">
-      <SceneUttr lower="4712" upper="4731" punct=".">
-        <ActionObject lower="4712" upper="4718" actor="" name="MoveLR">
-          <ActionFeature lower="4719" upper="4729" key="value" val="-530"/>
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="4733" upper="4744" punct=".">
-        <ActionObject lower="4733" upper="4742" actor="" name="FearStart">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4745" upper="4792" speaker="Billy">
-      <SceneUttr lower="4752" upper="4792" punct=".">
-        <SceneAbbrev lower="4752" upper="4757" first="Don" second="t"/>
-        <SceneWord lower="4758" upper="4761" text="let"/>
-        <SceneWord lower="4762" upper="4764" text="me"/>
-        <SceneWord lower="4765" upper="4768" text="see"/>
-        <SceneWord lower="4769" upper="4773" text="your"/>
-        <SceneWord lower="4774" upper="4780" text="stupid"/>
-        <SceneWord lower="4781" upper="4785" text="hair"/>
-        <SceneWord lower="4786" upper="4791" text="again"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4793" upper="4807" speaker="Billy">
-      <SceneUttr lower="4801" upper="4807" punct=".">
-        <ActionObject lower="4801" upper="4805" actor="" name="Beat">
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4808" upper="4839" speaker="Thomas">
-      <SceneUttr lower="4817" upper="4827" punct=".">
-        <ActionObject lower="4817" upper="4825" actor="" name="TiltLeft">
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="4829" upper="4839" punct=".">
-        <ActionObject lower="4829" upper="4837" actor="" name="SadStart">
+      <SceneUttr lower="3156" upper="3176" punct="?">
+        <SceneWord lower="3156" upper="3159" text="You"/>
+        <SceneWord lower="3160" upper="3164" text="like"/>
+        <SceneWord lower="3165" upper="3167" text="it"/>
+        <ActionObject lower="3169" upper="3174" actor="" name="Happy">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="4841" upper="4902" language="en" identifier="BullyEnd">
-    <SceneTurn lower="4859" upper="4874" speaker="Billy">
-      <SceneUttr lower="4866" upper="4874" punct="!">
-        <SceneWord lower="4866" upper="4869" text="Get"/>
-        <SceneWord lower="4870" upper="4873" text="out"/>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="4875" upper="4902" speaker="Thomas">
-      <SceneUttr lower="4884" upper="4902" punct=".">
-        <ActionObject lower="4884" upper="4890" actor="" name="MoveLR">
-          <ActionFeature lower="4891" upper="4900" key="value" val="800"/>
+  <SceneObject lower="3178" upper="3246" language="en" identifier="BusStop_ChrisZoomBack">
+    <SceneTurn lower="3209" upper="3246" speaker="Chris">
+      <SceneUttr lower="3217" upper="3246" punct=".">
+        <ActionObject lower="3217" upper="3223" actor="" name="MoveLR">
+          <ActionFeature lower="3224" upper="3233" key="value" val="-20"/>
+        </ActionObject>
+        <ActionObject lower="3236" upper="3244" actor="" name="ZoomBack">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneComment lower="4904" upper="4923" comment="/*  Experience   */"/>
-  <SceneObject lower="4925" upper="5139" language="en" identifier="classroom">
-    <SceneTurn lower="4944" upper="4988" speaker="Anna">
-      <SceneUttr lower="4951" upper="4988" punct=".">
-        <ActionObject lower="4951" upper="4964" actor="" name="SetBackground">
-          <ActionFeature lower="4965" upper="4986" key="value" val="'classroom.jpg'"/>
-        </ActionObject>
+  <SceneObject lower="3248" upper="3323" language="en" identifier="BusStop_ChrisDoyou">
+    <SceneTurn lower="3276" upper="3323" speaker="Chris">
+      <SceneUttr lower="3283" upper="3299" punct="?">
+        <SceneWord lower="3283" upper="3285" text="Do"/>
+        <SceneWord lower="3286" upper="3289" text="you"/>
+        <SceneWord lower="3290" upper="3295" text="think"/>
+        <SceneWord lower="3296" upper="3298" text="so"/>
       </SceneUttr>
-    </SceneTurn><SceneTurn lower="4989" upper="5035" speaker="Anna">
-      <SceneUttr lower="4996" upper="5014" punct=".">
-        <ActionObject lower="4996" upper="5002" actor="" name="MoveUD">
-          <ActionFeature lower="5003" upper="5012" key="value" val="100"/>
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="5016" upper="5035" punct=".">
-        <ActionObject lower="5016" upper="5022" actor="" name="MoveLR">
-          <ActionFeature lower="5023" upper="5033" key="value" val="-900"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="5036" upper="5082" speaker="Lily">
-      <SceneUttr lower="5043" upper="5061" punct=".">
-        <ActionObject lower="5043" upper="5049" actor="" name="MoveUD">
-          <ActionFeature lower="5050" upper="5059" key="value" val="100"/>
-        </ActionObject>
-      </SceneUttr>
-      <SceneUttr lower="5063" upper="5082" punct=".">
-        <ActionObject lower="5063" upper="5069" actor="" name="MoveLR">
-          <ActionFeature lower="5070" upper="5080" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="5083" upper="5110" speaker="Billy">
-      <SceneUttr lower="5091" upper="5110" punct=".">
-        <ActionObject lower="5091" upper="5097" actor="" name="MoveUD">
-          <ActionFeature lower="5098" upper="5108" key="value" val="1500"/>
-        </ActionObject>
-      </SceneUttr>
-    </SceneTurn><SceneTurn lower="5111" upper="5139" speaker="Thomas">
-      <SceneUttr lower="5120" upper="5139" punct=".">
-        <ActionObject lower="5120" upper="5126" actor="" name="MoveUD">
-          <ActionFeature lower="5127" upper="5137" key="value" val="1500"/>
+      <SceneUttr lower="3300" upper="3323" punct=".">
+        <SceneWord lower="3300" upper="3305" text="Thats"/>
+        <SceneWord lower="3306" upper="3312" text="pretty"/>
+        <SceneWord lower="3313" upper="3316" text="sad"/>
+        <ActionObject lower="3318" upper="3321" actor="" name="Sad">
         </ActionObject>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
-  <SceneObject lower="5141" upper="5183" language="en" identifier="experience">
-    <SceneTurn lower="5161" upper="5183" speaker="Anna">
-      <SceneUttr lower="5167" upper="5170" punct=",">
-        <SceneWord lower="5167" upper="5169" text="Hi"/>
+  <SceneObject lower="3325" upper="3389" language="en" identifier="BusStop_ChrisWhat">
+    <SceneTurn lower="3352" upper="3389" speaker="Chris">
+      <SceneUttr lower="3359" upper="3376" punct="?">
+        <SceneWord lower="3359" upper="3363" text="What"/>
+        <SceneWord lower="3364" upper="3366" text="do"/>
+        <SceneWord lower="3367" upper="3370" text="you"/>
+        <SceneWord lower="3371" upper="3375" text="mean"/>
       </SceneUttr>
-      <SceneUttr lower="5171" upper="5183" punct=".">
-        <SceneWord lower="5171" upper="5174" text="how"/>
-        <SceneWord lower="5175" upper="5178" text="are"/>
-        <SceneWord lower="5179" upper="5182" text="you"/>
+      <SceneUttr lower="3378" upper="3389" punct=".">
+        <ActionObject lower="3378" upper="3387" actor="" name="AngryLook">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3391" upper="3478" language="en" identifier="BusStop_ChrisIamgoing">
+    <SceneTurn lower="3422" upper="3478" speaker="Chris">
+      <SceneUttr lower="3429" upper="3478" punct=".">
+        <SceneWord lower="3429" upper="3430" text="I"/>
+        <SceneWord lower="3431" upper="3433" text="am"/>
+        <SceneWord lower="3434" upper="3439" text="going"/>
+        <SceneWord lower="3440" upper="3442" text="to"/>
+        <SceneWord lower="3443" upper="3448" text="shoot"/>
+        <SceneWord lower="3449" upper="3453" text="some"/>
+        <SceneWord lower="3454" upper="3459" text="hoops"/>
+        <SceneWord lower="3460" upper="3464" text="with"/>
+        <SceneWord lower="3465" upper="3469" text="Marc"/>
+        <ActionObject lower="3471" upper="3476" actor="" name="Happy">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3480" upper="3537" language="en" identifier="BusStop_ChrisThanks">
+    <SceneTurn lower="3509" upper="3537" speaker="Chris">
+      <SceneUttr lower="3516" upper="3528" punct="!">
+        <SceneWord lower="3516" upper="3522" text="Thanks"/>
+        <SceneWord lower="3523" upper="3527" text="mate"/>
+      </SceneUttr>
+      <SceneUttr lower="3530" upper="3537" punct=".">
+        <ActionObject lower="3530" upper="3535" actor="" name="Happy">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3539" upper="3621" language="en" identifier="BusStop_Christhat">
+    <SceneTurn lower="3566" upper="3621" speaker="Chris">
+      <SceneUttr lower="3573" upper="3599" punct=",">
+        <SceneWord lower="3573" upper="3575" text="It"/>
+        <SceneWord lower="3576" upper="3578" text="is"/>
+        <SceneWord lower="3579" upper="3583" text="what"/>
+        <SceneWord lower="3584" upper="3593" text="everybody"/>
+        <SceneWord lower="3594" upper="3598" text="does"/>
+      </SceneUttr>
+      <SceneUttr lower="3600" upper="3621" punct="?">
+        <SceneWord lower="3600" upper="3602" text="is"/>
+        <SceneWord lower="3603" upper="3606" text="not"/>
+        <SceneWord lower="3607" upper="3609" text="it"/>
+        <ActionObject lower="3611" upper="3619" actor="" name="Contempt">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3623" upper="3720" language="en" identifier="BusStop_ChrisIfyou">
+    <SceneTurn lower="3651" upper="3720" speaker="Chris">
+      <SceneUttr lower="3658" upper="3672" punct=".">
+        <SceneWord lower="3658" upper="3660" text="If"/>
+        <SceneWord lower="3661" upper="3664" text="you"/>
+        <SceneWord lower="3665" upper="3668" text="say"/>
+        <SceneWord lower="3669" upper="3671" text="so"/>
+      </SceneUttr>
+      <SceneUttr lower="3673" upper="3707" punct=".">
+        <SceneWord lower="3673" upper="3674" text="I"/>
+        <SceneWord lower="3675" upper="3679" text="just"/>
+        <SceneWord lower="3680" upper="3686" text="wanted"/>
+        <SceneWord lower="3687" upper="3689" text="to"/>
+        <SceneWord lower="3690" upper="3694" text="make"/>
+        <SceneWord lower="3695" upper="3696" text="a"/>
+        <SceneWord lower="3697" upper="3701" text="good"/>
+        <SceneWord lower="3702" upper="3706" text="joke"/>
+      </SceneUttr>
+      <SceneUttr lower="3709" upper="3720" punct=".">
+        <ActionObject lower="3709" upper="3718" actor="" name="AngryLook">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3722" upper="3785" language="en" identifier="BusStop_ChrisYeahI">
+    <SceneTurn lower="3750" upper="3785" speaker="Chris">
+      <SceneUttr lower="3757" upper="3762" punct=",">
+        <SceneWord lower="3757" upper="3761" text="Yeah"/>
+      </SceneUttr>
+      <SceneUttr lower="3763" upper="3785" punct=".">
+        <SceneWord lower="3763" upper="3764" text="I"/>
+        <SceneWord lower="3765" upper="3770" text="guess"/>
+        <SceneWord lower="3771" upper="3773" text="he"/>
+        <SceneWord lower="3774" upper="3776" text="is"/>
+        <ActionObject lower="3778" upper="3783" actor="" name="Smile">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3787" upper="3871" language="en" identifier="BusStop_ChrisComeon">
+    <SceneTurn lower="3816" upper="3871" speaker="Chris">
+      <SceneUttr lower="3823" upper="3831" punct=".">
+        <SceneWord lower="3823" upper="3827" text="Come"/>
+        <SceneWord lower="3828" upper="3830" text="on"/>
+      </SceneUttr>
+      <SceneUttr lower="3832" upper="3871" punct=".">
+        <SceneWord lower="3832" upper="3834" text="It"/>
+        <SceneWord lower="3835" upper="3837" text="is"/>
+        <SceneWord lower="3838" upper="3842" text="just"/>
+        <SceneWord lower="3843" upper="3844" text="a"/>
+        <SceneWord lower="3845" upper="3853" text="harmless"/>
+        <SceneWord lower="3854" upper="3858" text="joke"/>
+        <ActionObject lower="3860" upper="3869" actor="" name="AngryLook">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="3873" upper="3996" language="en" identifier="BusStop_ChrisIdonot">
+    <SceneTurn lower="3902" upper="3996" speaker="Chris">
+      <SceneUttr lower="3909" upper="3923" punct=".">
+        <SceneWord lower="3909" upper="3910" text="I"/>
+        <SceneWord lower="3911" upper="3913" text="do"/>
+        <SceneWord lower="3914" upper="3917" text="not"/>
+        <SceneWord lower="3918" upper="3922" text="know"/>
+      </SceneUttr>
+      <SceneUttr lower="3924" upper="3952" punct=".">
+        <SceneWord lower="3924" upper="3929" text="Maybe"/>
+        <SceneWord lower="3930" upper="3932" text="it"/>
+        <SceneWord lower="3933" upper="3936" text="was"/>
+        <SceneWord lower="3937" upper="3938" text="a"/>
+        <SceneWord lower="3939" upper="3942" text="bit"/>
+        <SceneWord lower="3943" upper="3946" text="too"/>
+        <SceneWord lower="3947" upper="3951" text="much"/>
+      </SceneUttr>
+      <SceneUttr lower="3953" upper="3965" punct=",">
+        <SceneWord lower="3953" upper="3956" text="But"/>
+        <SceneWord lower="3957" upper="3961" text="come"/>
+        <SceneWord lower="3962" upper="3964" text="on"/>
+      </SceneUttr>
+      <SceneUttr lower="3966" upper="3996" punct=".">
+        <SceneWord lower="3966" upper="3968" text="it"/>
+        <SceneWord lower="3969" upper="3972" text="was"/>
+        <SceneWord lower="3973" upper="3977" text="just"/>
+        <SceneWord lower="3978" upper="3979" text="a"/>
+        <SceneWord lower="3980" upper="3984" text="joke"/>
+        <ActionObject lower="3986" upper="3994" actor="" name="Contempt">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneComment lower="3998" upper="4135" comment="/*  --------------------------------------------------------------------------------------------------------------------------------   */"/>
+  <SceneComment lower="4137" upper="4156" comment="/*  FirstBully   */"/>
+  <SceneObject lower="4158" upper="4286" language="en" identifier="FirstBully_Initial">
+    <SceneTurn lower="4186" upper="4229" speaker="Victor">
+      <SceneUttr lower="4195" upper="4229" punct=".">
+        <ActionObject lower="4195" upper="4208" actor="" name="SetBackground">
+          <ActionFeature lower="4209" upper="4227" key="value" val="'school.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4230" upper="4258" speaker="Marie">
+      <SceneUttr lower="4238" upper="4258" punct=".">
+        <ActionObject lower="4238" upper="4244" actor="" name="MoveLR">
+          <ActionFeature lower="4245" upper="4256" key="value" val="-1300"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4259" upper="4286" speaker="Billy">
+      <SceneUttr lower="4267" upper="4286" punct=".">
+        <ActionObject lower="4267" upper="4273" actor="" name="MoveLR">
+          <ActionFeature lower="4274" upper="4284" key="value" val="-200"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="4288" upper="4402" language="en" identifier="FirstBully_BillyAhhthere">
+    <SceneTurn lower="4322" upper="4402" speaker="Billy">
+      <SceneUttr lower="4330" upper="4340" punct=".">
+        <ActionObject lower="4330" upper="4338" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4341" upper="4345" punct=",">
+        <SceneWord lower="4341" upper="4344" text="Ahh"/>
+      </SceneUttr>
+      <SceneUttr lower="4346" upper="4358" punct=",">
+        <SceneWord lower="4346" upper="4351" text="there"/>
+        <SceneWord lower="4352" upper="4354" text="he"/>
+        <SceneWord lower="4355" upper="4357" text="is"/>
+      </SceneUttr>
+      <SceneUttr lower="4359" upper="4389" punct=".">
+        <SceneWord lower="4359" upper="4362" text="the"/>
+        <SceneWord lower="4363" upper="4369" text="little"/>
+        <SceneWord lower="4370" upper="4374" text="cute"/>
+        <SceneWord lower="4375" upper="4382" text="dancing"/>
+        <SceneWord lower="4383" upper="4388" text="queen"/>
+      </SceneUttr>
+      <SceneUttr lower="4391" upper="4402" punct=".">
+        <ActionObject lower="4391" upper="4400" actor="" name="FaceFront">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="4404" upper="4454" language="en" identifier="FirstBully_BillyExcited">
+    <SceneTurn lower="4437" upper="4454" speaker="Billy">
+      <SceneUttr lower="4445" upper="4454" punct=".">
+        <ActionObject lower="4445" upper="4452" actor="" name="Excited">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="4456" upper="4579" language="en" identifier="FirstBully_VictorWalkin">
+    <SceneTurn lower="4489" upper="4579" speaker="Victor">
+      <SceneUttr lower="4498" upper="4516" punct=".">
+        <ActionObject lower="4498" upper="4504" actor="" name="MoveLR">
+          <ActionFeature lower="4505" upper="4514" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4518" upper="4535" punct=".">
+        <ActionObject lower="4518" upper="4524" actor="" name="MoveUD">
+          <ActionFeature lower="4525" upper="4533" key="value" val="60"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4537" upper="4555" punct=".">
+        <ActionObject lower="4537" upper="4543" actor="" name="ZoomIO">
+          <ActionFeature lower="4544" upper="4553" key="value" val="0.7"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4557" upper="4579" punct=".">
+        <ActionObject lower="4557" upper="4566" actor="" name="WalkRight">
+          <ActionFeature lower="4567" upper="4577" key="value" val="-200"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="4581" upper="5206" language="en" identifier="FirstBully_talk">
+    <SceneTurn lower="4606" upper="4683" speaker="Billy">
+      <SceneUttr lower="4614" upper="4624" punct=".">
+        <ActionObject lower="4614" upper="4622" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4625" upper="4669" punct="?">
+        <SceneWord lower="4625" upper="4628" text="And"/>
+        <SceneWord lower="4629" upper="4633" text="what"/>
+        <SceneWord lower="4634" upper="4636" text="do"/>
+        <SceneWord lower="4637" upper="4640" text="you"/>
+        <SceneWord lower="4641" upper="4646" text="think"/>
+        <SceneWord lower="4647" upper="4650" text="you"/>
+        <SceneWord lower="4651" upper="4654" text="are"/>
+        <SceneWord lower="4655" upper="4662" text="wearing"/>
+        <SceneWord lower="4663" upper="4668" text="today"/>
+      </SceneUttr>
+      <SceneUttr lower="4670" upper="4683" punct="?">
+        <SceneWord lower="4670" upper="4671" text="A"/>
+        <SceneWord lower="4672" upper="4676" text="pink"/>
+        <SceneWord lower="4677" upper="4682" text="shirt"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4684" upper="4738" speaker="Billy">
+      <SceneUttr lower="4692" upper="4703" punct=".">
+        <ActionObject lower="4692" upper="4701" actor="" name="FaceRight">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4704" upper="4714" punct=",">
+        <SceneWord lower="4704" upper="4707" text="Hey"/>
+        <SceneWord lower="4708" upper="4713" text="Chris"/>
+      </SceneUttr>
+      <SceneUttr lower="4715" upper="4738" punct="?">
+        <SceneWord lower="4715" upper="4719" text="what"/>
+        <SceneWord lower="4720" upper="4724" text="does"/>
+        <SceneWord lower="4725" upper="4727" text="he"/>
+        <SceneWord lower="4728" upper="4732" text="look"/>
+        <SceneWord lower="4733" upper="4737" text="like"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4739" upper="4797" speaker="Chris">
+      <SceneUttr lower="4747" upper="4757" punct=".">
+        <ActionObject lower="4747" upper="4755" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4758" upper="4763" punct=".">
+        <SceneWord lower="4758" upper="4762" text="Hehe"/>
+      </SceneUttr>
+      <SceneUttr lower="4764" upper="4797" punct=".">
+        <SceneWord lower="4764" upper="4766" text="He"/>
+        <SceneWord lower="4767" upper="4772" text="looks"/>
+        <SceneWord lower="4773" upper="4777" text="like"/>
+        <SceneWord lower="4778" upper="4779" text="a"/>
+        <SceneWord lower="4780" upper="4786" text="little"/>
+        <SceneWord lower="4787" upper="4790" text="fat"/>
+        <SceneWord lower="4791" upper="4796" text="piggy"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4798" upper="4869" speaker="Chris">
+      <SceneUttr lower="4805" upper="4869" punct="!">
+        <SceneWord lower="4805" upper="4808" text="Let"/>
+        <SceneWord lower="4809" upper="4811" text="us"/>
+        <SceneWord lower="4812" upper="4816" text="look"/>
+        <SceneWord lower="4817" upper="4819" text="if"/>
+        <SceneWord lower="4820" upper="4822" text="he"/>
+        <SceneWord lower="4823" upper="4826" text="has"/>
+        <SceneWord lower="4827" upper="4831" text="some"/>
+        <SceneWord lower="4832" upper="4836" text="more"/>
+        <SceneWord lower="4837" upper="4839" text="of"/>
+        <SceneWord lower="4840" upper="4843" text="his"/>
+        <SceneWord lower="4844" upper="4851" text="mothers"/>
+        <SceneWord lower="4852" upper="4859" text="clothes"/>
+        <SceneWord lower="4860" upper="4862" text="in"/>
+        <SceneWord lower="4863" upper="4868" text="there"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4870" upper="4940" speaker="Billy">
+      <SceneUttr lower="4878" upper="4888" punct=".">
+        <ActionObject lower="4878" upper="4886" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="4889" upper="4892" punct=",">
+        <SceneWord lower="4889" upper="4891" text="Oh"/>
+      </SceneUttr>
+      <SceneUttr lower="4893" upper="4907" punct=",">
+        <SceneWord lower="4893" upper="4898" text="sorry"/>
+        <SceneWord lower="4899" upper="4902" text="new"/>
+        <SceneWord lower="4903" upper="4906" text="kid"/>
+      </SceneUttr>
+      <SceneUttr lower="4908" upper="4940" punct=".">
+        <SceneWord lower="4908" upper="4910" text="it"/>
+        <SceneWord lower="4911" upper="4915" text="just"/>
+        <SceneWord lower="4916" upper="4923" text="slipped"/>
+        <SceneWord lower="4924" upper="4927" text="out"/>
+        <SceneWord lower="4928" upper="4930" text="of"/>
+        <SceneWord lower="4931" upper="4933" text="my"/>
+        <SceneWord lower="4934" upper="4939" text="hands"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="4941" upper="5002" speaker="Victor">
+      <SceneUttr lower="4949" upper="4977" punct="?">
+        <SceneWord lower="4949" upper="4952" text="Why"/>
+        <SceneWord lower="4953" upper="4956" text="are"/>
+        <SceneWord lower="4957" upper="4960" text="you"/>
+        <SceneWord lower="4961" upper="4965" text="such"/>
+        <SceneWord lower="4966" upper="4968" text="an"/>
+        <SceneWord lower="4969" upper="4976" text="asshole"/>
+      </SceneUttr>
+      <SceneUttr lower="4978" upper="5002" punct="?">
+        <SceneWord lower="4978" upper="4982" text="What"/>
+        <SceneWord lower="4983" upper="4987" text="have"/>
+        <SceneWord lower="4988" upper="4989" text="I"/>
+        <SceneWord lower="4990" upper="4994" text="done"/>
+        <SceneWord lower="4995" upper="4997" text="to"/>
+        <SceneWord lower="4998" upper="5001" text="you"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5003" upper="5042" speaker="Billy">
+      <SceneUttr lower="5010" upper="5042" punct="?">
+        <SceneWord lower="5010" upper="5013" text="Did"/>
+        <SceneWord lower="5014" upper="5017" text="you"/>
+        <SceneWord lower="5018" upper="5022" text="just"/>
+        <SceneWord lower="5023" upper="5027" text="call"/>
+        <SceneWord lower="5028" upper="5030" text="me"/>
+        <SceneWord lower="5031" upper="5033" text="an"/>
+        <SceneWord lower="5034" upper="5041" text="asshole"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5043" upper="5096" speaker="Billy">
+      <SceneUttr lower="5051" upper="5062" punct=".">
+        <ActionObject lower="5051" upper="5060" actor="" name="FaceRight">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="5063" upper="5069" punct=",">
+        <SceneWord lower="5063" upper="5068" text="Chris"/>
+      </SceneUttr>
+      <SceneUttr lower="5070" upper="5096" punct=".">
+        <SceneWord lower="5070" upper="5073" text="did"/>
+        <SceneWord lower="5074" upper="5076" text="he"/>
+        <SceneWord lower="5077" upper="5081" text="call"/>
+        <SceneWord lower="5082" upper="5084" text="me"/>
+        <SceneWord lower="5085" upper="5087" text="an"/>
+        <SceneWord lower="5088" upper="5095" text="asshole"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5097" upper="5131" speaker="Chris">
+      <SceneUttr lower="5104" upper="5115" punct=",">
+        <SceneWord lower="5104" upper="5108" text="Yeah"/>
+        <SceneWord lower="5109" upper="5114" text="Billy"/>
+      </SceneUttr>
+      <SceneUttr lower="5116" upper="5131" punct=".">
+        <SceneWord lower="5116" upper="5117" text="I"/>
+        <SceneWord lower="5118" upper="5123" text="think"/>
+        <SceneWord lower="5124" upper="5126" text="he"/>
+        <SceneWord lower="5127" upper="5130" text="did"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5132" upper="5206" speaker="Billy">
+      <SceneUttr lower="5140" upper="5150" punct=".">
+        <ActionObject lower="5140" upper="5148" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="5151" upper="5206" punct=".">
+        <SceneWord lower="5151" upper="5154" text="And"/>
+        <SceneWord lower="5155" upper="5159" text="what"/>
+        <SceneWord lower="5160" upper="5162" text="do"/>
+        <SceneWord lower="5163" upper="5165" text="we"/>
+        <SceneWord lower="5166" upper="5168" text="do"/>
+        <SceneWord lower="5169" upper="5173" text="with"/>
+        <SceneWord lower="5174" upper="5183" text="strangers"/>
+        <SceneWord lower="5184" upper="5188" text="that"/>
+        <SceneWord lower="5189" upper="5193" text="call"/>
+        <SceneWord lower="5194" upper="5196" text="us"/>
+        <SceneWord lower="5197" upper="5205" text="assholes"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="5208" upper="5276" language="en" identifier="FirstBully_PaulaShowhim">
+    <SceneTurn lower="5241" upper="5276" speaker="Paula">
+      <SceneUttr lower="5249" upper="5259" punct=".">
+        <ActionObject lower="5249" upper="5257" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="5260" upper="5269" punct=",">
+        <SceneWord lower="5260" upper="5264" text="Show"/>
+        <SceneWord lower="5265" upper="5268" text="him"/>
+      </SceneUttr>
+      <SceneUttr lower="5270" upper="5276" punct="!">
+        <SceneWord lower="5270" upper="5275" text="Billy"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="5278" upper="5336" language="en" identifier="FirstBully_BillyWalk">
+    <SceneTurn lower="5308" upper="5336" speaker="Billy">
+      <SceneUttr lower="5316" upper="5336" punct=".">
+        <ActionObject lower="5316" upper="5324" actor="" name="WalkLeft">
+          <ActionFeature lower="5325" upper="5334" key="value" val="-80"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="5338" upper="5427" language="en" identifier="FirstBully_MarieTheTeacher">
+    <SceneTurn lower="5374" upper="5427" speaker="Marie">
+      <SceneUttr lower="5382" upper="5392" punct=".">
+        <ActionObject lower="5382" upper="5390" actor="" name="FaceLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="5393" upper="5399" punct="!">
+        <SceneWord lower="5393" upper="5398" text="Billy"/>
+      </SceneUttr>
+      <SceneUttr lower="5400" upper="5427" punct=".">
+        <SceneWord lower="5400" upper="5403" text="The"/>
+        <SceneWord lower="5404" upper="5411" text="teacher"/>
+        <SceneWord lower="5412" upper="5414" text="is"/>
+        <SceneWord lower="5415" upper="5423" text="watching"/>
+        <SceneWord lower="5424" upper="5426" text="us"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="5429" upper="5658" language="en" identifier="FirstBully_BillyLeave">
+    <SceneTurn lower="5460" upper="5541" speaker="Billy">
+      <SceneUttr lower="5467" upper="5491" punct=",">
+        <SceneWord lower="5467" upper="5471" text="This"/>
+        <SceneWord lower="5472" upper="5476" text="time"/>
+        <SceneWord lower="5477" upper="5480" text="you"/>
+        <SceneWord lower="5481" upper="5484" text="are"/>
+        <SceneWord lower="5485" upper="5490" text="lucky"/>
+      </SceneUttr>
+      <SceneUttr lower="5492" upper="5496" punct=",">
+        <SceneWord lower="5492" upper="5495" text="pig"/>
+      </SceneUttr>
+      <SceneUttr lower="5497" upper="5541" punct=".">
+        <SceneWord lower="5497" upper="5500" text="but"/>
+        <SceneWord lower="5501" upper="5505" text="next"/>
+        <SceneWord lower="5506" upper="5510" text="time"/>
+        <SceneWord lower="5511" upper="5514" text="you"/>
+        <SceneWord lower="5515" upper="5519" text="will"/>
+        <SceneWord lower="5520" upper="5523" text="not"/>
+        <SceneWord lower="5524" upper="5527" text="get"/>
+        <SceneWord lower="5528" upper="5532" text="away"/>
+        <SceneWord lower="5533" upper="5537" text="with"/>
+        <SceneWord lower="5538" upper="5540" text="it"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5542" upper="5627" speaker="Billy">
+      <SceneUttr lower="5549" upper="5559" punct=",">
+        <SceneParam lower="5549" upper="5558" name="userName"/>
+      </SceneUttr>
+      <SceneUttr lower="5560" upper="5582" punct=".">
+        <SceneWord lower="5560" upper="5564" text="keep"/>
+        <SceneWord lower="5565" upper="5568" text="his"/>
+        <SceneWord lower="5569" upper="5572" text="bag"/>
+        <SceneWord lower="5573" upper="5577" text="with"/>
+        <SceneWord lower="5578" upper="5581" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="5583" upper="5627" punct=".">
+        <SceneWord lower="5583" upper="5585" text="We"/>
+        <SceneWord lower="5586" upper="5590" text="will"/>
+        <SceneWord lower="5591" upper="5594" text="see"/>
+        <SceneWord lower="5595" upper="5599" text="what"/>
+        <SceneWord lower="5600" upper="5602" text="we"/>
+        <SceneWord lower="5603" upper="5605" text="do"/>
+        <SceneWord lower="5606" upper="5610" text="with"/>
+        <SceneWord lower="5611" upper="5613" text="it"/>
+        <SceneWord lower="5614" upper="5619" text="after"/>
+        <SceneWord lower="5620" upper="5626" text="school"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5628" upper="5658" speaker="Billy">
+      <SceneUttr lower="5636" upper="5647" punct=".">
+        <ActionObject lower="5636" upper="5645" actor="" name="FaceRight">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="5648" upper="5658" punct=".">
+        <SceneWord lower="5648" upper="5651" text="Let"/>
+        <SceneWord lower="5652" upper="5654" text="us"/>
+        <SceneWord lower="5655" upper="5657" text="go"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneComment lower="5660" upper="5673" comment="/*  Home   */"/>
+  <SceneObject lower="5675" upper="5869" language="en" identifier="park">
+    <SceneTurn lower="5689" upper="5716" speaker="Billy">
+      <SceneUttr lower="5697" upper="5716" punct=".">
+        <ActionObject lower="5697" upper="5703" actor="" name="MoveUD">
+          <ActionFeature lower="5704" upper="5714" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5717" upper="5745" speaker="Victor">
+      <SceneUttr lower="5726" upper="5745" punct=".">
+        <ActionObject lower="5726" upper="5732" actor="" name="MoveUD">
+          <ActionFeature lower="5733" upper="5743" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5746" upper="5772" speaker="Lily">
+      <SceneUttr lower="5753" upper="5772" punct=".">
+        <ActionObject lower="5753" upper="5759" actor="" name="MoveUD">
+          <ActionFeature lower="5760" upper="5770" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5773" upper="5801" speaker="Thomas">
+      <SceneUttr lower="5782" upper="5801" punct=".">
+        <ActionObject lower="5782" upper="5788" actor="" name="MoveUD">
+          <ActionFeature lower="5789" upper="5799" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5802" upper="5828" speaker="Anna">
+      <SceneUttr lower="5809" upper="5828" punct=".">
+        <ActionObject lower="5809" upper="5815" actor="" name="MoveUD">
+          <ActionFeature lower="5816" upper="5826" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5829" upper="5869" speaker="Billy">
+      <SceneUttr lower="5837" upper="5869" punct=".">
+        <ActionObject lower="5837" upper="5850" actor="" name="SetBackground">
+          <ActionFeature lower="5851" upper="5867" key="value" val="'park.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="5871" upper="6065" language="en" identifier="door">
+    <SceneTurn lower="5885" upper="5912" speaker="Billy">
+      <SceneUttr lower="5893" upper="5912" punct=".">
+        <ActionObject lower="5893" upper="5899" actor="" name="MoveUD">
+          <ActionFeature lower="5900" upper="5910" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5913" upper="5941" speaker="Victor">
+      <SceneUttr lower="5922" upper="5941" punct=".">
+        <ActionObject lower="5922" upper="5928" actor="" name="MoveUD">
+          <ActionFeature lower="5929" upper="5939" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5942" upper="5968" speaker="Lily">
+      <SceneUttr lower="5949" upper="5968" punct=".">
+        <ActionObject lower="5949" upper="5955" actor="" name="MoveUD">
+          <ActionFeature lower="5956" upper="5966" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5969" upper="5997" speaker="Thomas">
+      <SceneUttr lower="5978" upper="5997" punct=".">
+        <ActionObject lower="5978" upper="5984" actor="" name="MoveUD">
+          <ActionFeature lower="5985" upper="5995" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="5998" upper="6024" speaker="Anna">
+      <SceneUttr lower="6005" upper="6024" punct=".">
+        <ActionObject lower="6005" upper="6011" actor="" name="MoveUD">
+          <ActionFeature lower="6012" upper="6022" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6025" upper="6065" speaker="Billy">
+      <SceneUttr lower="6033" upper="6065" punct=".">
+        <ActionObject lower="6033" upper="6046" actor="" name="SetBackground">
+          <ActionFeature lower="6047" upper="6063" key="value" val="'door.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="6067" upper="6610" language="en" identifier="welcome">
+    <SceneTurn lower="6084" upper="6133" speaker="Billy">
+      <SceneUttr lower="6092" upper="6133" punct=".">
+        <ActionObject lower="6092" upper="6105" actor="" name="SetBackground">
+          <ActionFeature lower="6106" upper="6131" key="value" val="'oldlivingroom.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6134" upper="6160" speaker="Billy">
+      <SceneUttr lower="6142" upper="6160" punct=".">
+        <ActionObject lower="6142" upper="6148" actor="" name="MoveUD">
+          <ActionFeature lower="6149" upper="6158" key="value" val="300"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6161" upper="6226" speaker="Lily">
+      <SceneUttr lower="6168" upper="6186" punct=".">
+        <ActionObject lower="6168" upper="6174" actor="" name="MoveUD">
+          <ActionFeature lower="6175" upper="6184" key="value" val="600"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="6188" upper="6206" punct=".">
+        <ActionObject lower="6188" upper="6194" actor="" name="MoveLR">
+          <ActionFeature lower="6195" upper="6204" key="value" val="300"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="6208" upper="6226" punct=".">
+        <ActionObject lower="6208" upper="6214" actor="" name="ZoomIO">
+          <ActionFeature lower="6215" upper="6224" key="value" val="0.5"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6227" upper="6257" speaker="Billy">
+      <SceneUttr lower="6234" upper="6237" punct=".">
+        <SceneWord lower="6234" upper="6236" text="Hi"/>
+      </SceneUttr>
+      <SceneUttr lower="6238" upper="6248" punct=".">
+        <SceneParam lower="6238" upper="6247" name="userName"/>
+      </SceneUttr>
+      <SceneUttr lower="6250" upper="6257" punct=".">
+        <ActionObject lower="6250" upper="6255" actor="" name="Smile">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6258" upper="6338" speaker="Billy">
+      <SceneUttr lower="6265" upper="6273" punct=".">
+        <SceneWord lower="6265" upper="6269" text="Come"/>
+        <SceneWord lower="6270" upper="6272" text="in"/>
+      </SceneUttr>
+      <SceneUttr lower="6274" upper="6338" punct="!">
+        <SceneWord lower="6274" upper="6275" text="I"/>
+        <SceneWord lower="6276" upper="6280" text="have"/>
+        <SceneWord lower="6281" upper="6283" text="to"/>
+        <SceneWord lower="6284" upper="6287" text="get"/>
+        <SceneWord lower="6288" upper="6291" text="the"/>
+        <SceneWord lower="6292" upper="6296" text="exam"/>
+        <SceneWord lower="6297" upper="6303" text="signed"/>
+        <SceneWord lower="6304" upper="6313" text="otherwise"/>
+        <SceneWord lower="6314" upper="6317" text="Mrs"/>
+        <SceneWord lower="6318" upper="6324" text="Teachy"/>
+        <SceneWord lower="6325" upper="6329" text="will"/>
+        <SceneWord lower="6330" upper="6334" text="hang"/>
+        <SceneWord lower="6335" upper="6337" text="me"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6339" upper="6387" speaker="Lily">
+      <SceneUttr lower="6345" upper="6354" punct=",">
+        <SceneWord lower="6345" upper="6347" text="Oh"/>
+        <SceneWord lower="6348" upper="6353" text="Billy"/>
+      </SceneUttr>
+      <SceneUttr lower="6355" upper="6377" punct="!">
+        <SceneWord lower="6355" upper="6357" text="go"/>
+        <SceneWord lower="6358" upper="6364" text="bother"/>
+        <SceneWord lower="6365" upper="6369" text="your"/>
+        <SceneWord lower="6370" upper="6376" text="father"/>
+      </SceneUttr>
+      <SceneUttr lower="6379" upper="6387" punct=".">
+        <ActionObject lower="6379" upper="6385" actor="" name="Angry2">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6388" upper="6422" speaker="Billy">
+      <SceneUttr lower="6396" upper="6401" punct=".">
+        <ActionObject lower="6396" upper="6399" actor="" name="Sad">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="6403" upper="6422" punct=".">
+        <ActionObject lower="6403" upper="6409" actor="" name="MoveLR">
+          <ActionFeature lower="6410" upper="6420" key="value" val="-300"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6423" upper="6464" speaker="Victor">
+      <SceneUttr lower="6431" upper="6436" punct="?">
+        <SceneWord lower="6431" upper="6433" text="An"/>
+        <SceneWord lower="6434" upper="6435" text="E"/>
+      </SceneUttr>
+      <SceneUttr lower="6437" upper="6464" punct="?">
+        <SceneWord lower="6437" upper="6440" text="Are"/>
+        <SceneWord lower="6441" upper="6444" text="you"/>
+        <SceneWord lower="6445" upper="6452" text="fucking"/>
+        <SceneWord lower="6453" upper="6460" text="kidding"/>
+        <SceneWord lower="6461" upper="6463" text="me"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6465" upper="6525" speaker="Victor">
+      <SceneUttr lower="6473" upper="6487" punct=".">
+        <SceneWord lower="6473" upper="6476" text="You"/>
+        <SceneWord lower="6477" upper="6481" text="dumb"/>
+        <SceneWord lower="6482" upper="6486" text="jerk"/>
+      </SceneUttr>
+      <SceneUttr lower="6488" upper="6525" punct=".">
+        <SceneWord lower="6488" upper="6491" text="You"/>
+        <SceneWord lower="6492" upper="6495" text="are"/>
+        <SceneWord lower="6496" upper="6501" text="right"/>
+        <SceneWord lower="6502" upper="6504" text="as"/>
+        <SceneWord lower="6505" upper="6509" text="dumb"/>
+        <SceneWord lower="6510" upper="6512" text="as"/>
+        <SceneWord lower="6513" upper="6517" text="your"/>
+        <SceneWord lower="6518" upper="6524" text="mother"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6526" upper="6569" speaker="Victor">
+      <SceneUttr lower="6534" upper="6569" punct="!">
+        <SceneWord lower="6534" upper="6535" text="I"/>
+        <SceneWord lower="6536" upper="6538" text="am"/>
+        <SceneWord lower="6539" upper="6546" text="ashamed"/>
+        <SceneWord lower="6547" upper="6553" text="having"/>
+        <SceneWord lower="6554" upper="6555" text="a"/>
+        <SceneWord lower="6556" upper="6559" text="son"/>
+        <SceneWord lower="6560" upper="6564" text="like"/>
+        <SceneWord lower="6565" upper="6568" text="you"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6570" upper="6610" speaker="Victor">
+      <SceneUttr lower="6578" upper="6610" punct="!">
+        <SceneWord lower="6578" upper="6582" text="That"/>
+        <SceneWord lower="6583" upper="6585" text="is"/>
+        <SceneWord lower="6586" upper="6589" text="the"/>
+        <SceneWord lower="6590" upper="6593" text="end"/>
+        <SceneWord lower="6594" upper="6596" text="of"/>
+        <SceneWord lower="6597" upper="6603" text="pocket"/>
+        <SceneWord lower="6604" upper="6609" text="money"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="6612" upper="6695" language="en" identifier="GoToSchool">
+    <SceneTurn lower="6632" upper="6664" speaker="Billy">
+      <SceneUttr lower="6640" upper="6645" punct=".">
+        <ActionObject lower="6640" upper="6643" actor="" name="Sad">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="6647" upper="6664" punct=".">
+        <ActionObject lower="6647" upper="6653" actor="" name="MoveLR">
+          <ActionFeature lower="6654" upper="6662" key="value" val="10"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6665" upper="6695" speaker="Billy">
+      <SceneUttr lower="6672" upper="6695" punct=".">
+        <SceneAbbrev lower="6672" upper="6677" first="Let" second="s"/>
+        <SceneWord lower="6678" upper="6680" text="go"/>
+        <SceneWord lower="6681" upper="6683" text="to"/>
+        <SceneWord lower="6684" upper="6690" text="School"/>
+        <SceneWord lower="6691" upper="6694" text="now"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneComment lower="6697" upper="6720" comment="/*  Walk to school   */"/>
+  <SceneObject lower="6722" upper="6975" language="en" identifier="Ontheway">
+    <SceneTurn lower="6740" upper="6780" speaker="Billy">
+      <SceneUttr lower="6748" upper="6780" punct=".">
+        <ActionObject lower="6748" upper="6761" actor="" name="SetBackground">
+          <ActionFeature lower="6762" upper="6778" key="value" val="'road.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6781" upper="6807" speaker="Lily">
+      <SceneUttr lower="6788" upper="6807" punct=".">
+        <ActionObject lower="6788" upper="6794" actor="" name="MoveUD">
+          <ActionFeature lower="6795" upper="6805" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6808" upper="6834" speaker="Billy">
+      <SceneUttr lower="6816" upper="6834" punct=".">
+        <ActionObject lower="6816" upper="6822" actor="" name="MoveLR">
+          <ActionFeature lower="6823" upper="6832" key="value" val="200"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6835" upper="6861" speaker="Billy">
+      <SceneUttr lower="6843" upper="6861" punct=".">
+        <ActionObject lower="6843" upper="6849" actor="" name="MoveUD">
+          <ActionFeature lower="6850" upper="6859" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="6862" upper="6975" speaker="Billy">
+      <SceneUttr lower="6869" upper="6885" punct=".">
+        <SceneWord lower="6869" upper="6870" text="I"/>
+        <SceneWord lower="6871" upper="6874" text="hat"/>
+        <SceneWord lower="6875" upper="6877" text="my"/>
+        <SceneWord lower="6878" upper="6884" text="family"/>
+      </SceneUttr>
+      <SceneUttr lower="6886" upper="6934" punct=".">
+        <SceneWord lower="6886" upper="6889" text="The"/>
+        <SceneWord lower="6890" upper="6894" text="only"/>
+        <SceneWord lower="6895" upper="6900" text="thing"/>
+        <SceneWord lower="6901" upper="6903" text="my"/>
+        <SceneWord lower="6904" upper="6910" text="mother"/>
+        <SceneWord lower="6911" upper="6916" text="cares"/>
+        <SceneWord lower="6917" upper="6919" text="is"/>
+        <SceneWord lower="6920" upper="6923" text="her"/>
+        <SceneWord lower="6924" upper="6927" text="red"/>
+        <SceneWord lower="6928" upper="6933" text="hairs"/>
+      </SceneUttr>
+      <SceneUttr lower="6935" upper="6975" punct=".">
+        <SceneWord lower="6935" upper="6938" text="And"/>
+        <SceneWord lower="6939" upper="6941" text="my"/>
+        <SceneWord lower="6942" upper="6948" text="father"/>
+        <SceneWord lower="6949" upper="6952" text="are"/>
+        <SceneWord lower="6953" upper="6961" text="drinking"/>
+        <SceneWord lower="6962" upper="6965" text="all"/>
+        <SceneWord lower="6966" upper="6969" text="the"/>
+        <SceneWord lower="6970" upper="6974" text="time"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="6977" upper="7024" language="en" identifier="MoveLRightBob">
+    <SceneTurn lower="7000" upper="7024" speaker="bob">
+      <SceneUttr lower="7006" upper="7024" punct=".">
+        <ActionObject lower="7006" upper="7012" actor="" name="MoveLR">
+          <ActionFeature lower="7013" upper="7022" key="value" val="500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneComment lower="7026" upper="7044" comment="/*  In school   */"/>
+  <SceneObject lower="7046" upper="7286" language="en" identifier="InSchool">
+    <SceneTurn lower="7064" upper="7106" speaker="Billy">
+      <SceneUttr lower="7072" upper="7106" punct=".">
+        <ActionObject lower="7072" upper="7085" actor="" name="SetBackground">
+          <ActionFeature lower="7086" upper="7104" key="value" val="'school.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7107" upper="7153" speaker="Billy">
+      <SceneUttr lower="7115" upper="7133" punct=".">
+        <ActionObject lower="7115" upper="7121" actor="" name="MoveUD">
+          <ActionFeature lower="7122" upper="7131" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="7135" upper="7153" punct=".">
+        <ActionObject lower="7135" upper="7141" actor="" name="MoveLR">
+          <ActionFeature lower="7142" upper="7151" key="value" val="400"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7154" upper="7181" speaker="Thomas">
+      <SceneUttr lower="7163" upper="7181" punct=".">
+        <ActionObject lower="7163" upper="7169" actor="" name="MoveUD">
+          <ActionFeature lower="7170" upper="7179" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7182" upper="7227" speaker="Billy">
+      <SceneUttr lower="7189" upper="7227" punct=".">
+        <SceneWord lower="7189" upper="7193" text="Look"/>
+        <SceneWord lower="7194" upper="7196" text="at"/>
+        <SceneWord lower="7197" upper="7201" text="that"/>
+        <SceneWord lower="7202" upper="7208" text="stupid"/>
+        <SceneWord lower="7209" upper="7212" text="guy"/>
+        <SceneWord lower="7213" upper="7217" text="with"/>
+        <SceneWord lower="7218" upper="7221" text="red"/>
+        <SceneWord lower="7222" upper="7226" text="hair"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7228" upper="7286" speaker="Billy">
+      <SceneUttr lower="7235" upper="7286" punct=".">
+        <SceneAbbrev lower="7235" upper="7239" first="I" second="ll"/>
+        <SceneWord lower="7240" upper="7243" text="let"/>
+        <SceneWord lower="7244" upper="7247" text="him"/>
+        <SceneWord lower="7248" upper="7252" text="know"/>
+        <SceneWord lower="7253" upper="7256" text="how"/>
+        <SceneWord lower="7257" upper="7263" text="stupid"/>
+        <SceneWord lower="7264" upper="7266" text="he"/>
+        <SceneWord lower="7267" upper="7269" text="is"/>
+        <SceneWord lower="7270" upper="7274" text="with"/>
+        <SceneWord lower="7275" upper="7279" text="that"/>
+        <SceneWord lower="7280" upper="7285" text="color"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="7288" upper="7490" language="en" identifier="BullyStart">
+    <SceneTurn lower="7308" upper="7353" speaker="Billy">
+      <SceneUttr lower="7315" upper="7325" punct=",">
+        <SceneWord lower="7315" upper="7319" text="Come"/>
+        <SceneWord lower="7320" upper="7324" text="here"/>
+      </SceneUttr>
+      <SceneUttr lower="7326" upper="7333" punct=".">
+        <SceneWord lower="7326" upper="7332" text="Thomas"/>
+      </SceneUttr>
+      <SceneUttr lower="7335" upper="7353" punct=".">
+        <ActionObject lower="7335" upper="7341" actor="" name="MoveLR">
+          <ActionFeature lower="7342" upper="7351" key="value" val="400"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7354" upper="7395" speaker="Thomas">
+      <SceneUttr lower="7363" upper="7382" punct=".">
+        <ActionObject lower="7363" upper="7369" actor="" name="MoveLR">
+          <ActionFeature lower="7370" upper="7380" key="value" val="-530"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="7384" upper="7395" punct=".">
+        <ActionObject lower="7384" upper="7393" actor="" name="FearStart">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7396" upper="7443" speaker="Billy">
+      <SceneUttr lower="7403" upper="7443" punct=".">
+        <SceneAbbrev lower="7403" upper="7408" first="Don" second="t"/>
+        <SceneWord lower="7409" upper="7412" text="let"/>
+        <SceneWord lower="7413" upper="7415" text="me"/>
+        <SceneWord lower="7416" upper="7419" text="see"/>
+        <SceneWord lower="7420" upper="7424" text="your"/>
+        <SceneWord lower="7425" upper="7431" text="stupid"/>
+        <SceneWord lower="7432" upper="7436" text="hair"/>
+        <SceneWord lower="7437" upper="7442" text="again"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7444" upper="7458" speaker="Billy">
+      <SceneUttr lower="7452" upper="7458" punct=".">
+        <ActionObject lower="7452" upper="7456" actor="" name="Beat">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7459" upper="7490" speaker="Thomas">
+      <SceneUttr lower="7468" upper="7478" punct=".">
+        <ActionObject lower="7468" upper="7476" actor="" name="TiltLeft">
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="7480" upper="7490" punct=".">
+        <ActionObject lower="7480" upper="7488" actor="" name="SadStart">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="7492" upper="7553" language="en" identifier="BullyEnd">
+    <SceneTurn lower="7510" upper="7525" speaker="Billy">
+      <SceneUttr lower="7517" upper="7525" punct="!">
+        <SceneWord lower="7517" upper="7520" text="Get"/>
+        <SceneWord lower="7521" upper="7524" text="out"/>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7526" upper="7553" speaker="Thomas">
+      <SceneUttr lower="7535" upper="7553" punct=".">
+        <ActionObject lower="7535" upper="7541" actor="" name="MoveLR">
+          <ActionFeature lower="7542" upper="7551" key="value" val="800"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneComment lower="7555" upper="7574" comment="/*  Experience   */"/>
+  <SceneObject lower="7576" upper="7790" language="en" identifier="classroom">
+    <SceneTurn lower="7595" upper="7639" speaker="Anna">
+      <SceneUttr lower="7602" upper="7639" punct=".">
+        <ActionObject lower="7602" upper="7615" actor="" name="SetBackground">
+          <ActionFeature lower="7616" upper="7637" key="value" val="'classroom.jpg'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7640" upper="7686" speaker="Anna">
+      <SceneUttr lower="7647" upper="7665" punct=".">
+        <ActionObject lower="7647" upper="7653" actor="" name="MoveUD">
+          <ActionFeature lower="7654" upper="7663" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="7667" upper="7686" punct=".">
+        <ActionObject lower="7667" upper="7673" actor="" name="MoveLR">
+          <ActionFeature lower="7674" upper="7684" key="value" val="-900"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7687" upper="7733" speaker="Lily">
+      <SceneUttr lower="7694" upper="7712" punct=".">
+        <ActionObject lower="7694" upper="7700" actor="" name="MoveUD">
+          <ActionFeature lower="7701" upper="7710" key="value" val="100"/>
+        </ActionObject>
+      </SceneUttr>
+      <SceneUttr lower="7714" upper="7733" punct=".">
+        <ActionObject lower="7714" upper="7720" actor="" name="MoveLR">
+          <ActionFeature lower="7721" upper="7731" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7734" upper="7761" speaker="Billy">
+      <SceneUttr lower="7742" upper="7761" punct=".">
+        <ActionObject lower="7742" upper="7748" actor="" name="MoveUD">
+          <ActionFeature lower="7749" upper="7759" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn><SceneTurn lower="7762" upper="7790" speaker="Thomas">
+      <SceneUttr lower="7771" upper="7790" punct=".">
+        <ActionObject lower="7771" upper="7777" actor="" name="MoveUD">
+          <ActionFeature lower="7778" upper="7788" key="value" val="1500"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="7792" upper="7834" language="en" identifier="experience">
+    <SceneTurn lower="7812" upper="7834" speaker="Anna">
+      <SceneUttr lower="7818" upper="7821" punct=",">
+        <SceneWord lower="7818" upper="7820" text="Hi"/>
+      </SceneUttr>
+      <SceneUttr lower="7822" upper="7834" punct=".">
+        <SceneWord lower="7822" upper="7825" text="how"/>
+        <SceneWord lower="7826" upper="7829" text="are"/>
+        <SceneWord lower="7830" upper="7833" text="you"/>
       </SceneUttr>
     </SceneTurn>
   </SceneObject>
