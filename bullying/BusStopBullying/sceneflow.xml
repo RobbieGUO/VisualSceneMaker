@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Tue, 4 Jul 2017 12:59:31" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Wed, 5 Jul 2017 18:05:11" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
   <Define>
   </Define>
   <Declare>
@@ -66,11 +66,11 @@
     </Graphics>
     <Text style="color:blue">
       NextDialogFlog: mark to go to next dialog or not
-                                                                                                                                                                                                                                                                  bullyStart: user finishs filling the basic information at beginning
-                                                                                                                                                                                                                                                                  stickmanName: indicate which character the user want to talk with
-                                                                                                                                                                              Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
-                                                                                                                                                                              SayNothingFlag: indicate User wants to say anything or not
-                                                                                                                                                                        GamePauseFlag: indicate the game is paused or not
+                                                                                                                                                                                                                                                                                                            bullyStart: user finishs filling the basic information at beginning
+                                                                                                                                                                                                                                                                                                            stickmanName: indicate which character the user want to talk with
+                                                                                                                                                                                                                        Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
+                                                                                                                                                                                                                        SayNothingFlag: indicate User wants to say anything or not
+                                                                                                                                                                                                                  GamePauseFlag: indicate the game is paused or not
     </Text>
   </Comment>
   <Node id="N26" name="N26" history="false">
@@ -184,6 +184,20 @@
     </Commands>
     <Graphics>
       <Position xPos="300" yPos="570"/>
+    </Graphics>
+  </Node>
+  <Node id="N221" name="N221" history="false">
+    <Define>
+    </Define>
+    <Declare>
+    </Declare>
+    <Commands>
+      <PlayScene>
+        <StringLiteral><![CDATA[ATestclassroom]]></StringLiteral>
+      </PlayScene>
+    </Commands>
+    <Graphics>
+      <Position xPos="480" yPos="300"/>
     </Graphics>
   </Node>
   <SuperNode id="S1" name="checkFlag" comment="" hideLocalVar="false" hideGlobalVar="false" start="N109;">
@@ -1572,7 +1586,7 @@
       <Graphics>
         <Connection>
           <ControlPoint xPos="390" yPos="165" ctrlXPos="412" ctrlYPos="165"/>
-          <ControlPoint xPos="480" yPos="177" ctrlXPos="457" ctrlYPos="165"/>
+          <ControlPoint xPos="480" yPos="165" ctrlXPos="457" ctrlYPos="165"/>
         </Connection>
       </Graphics>
       </EEdge>
@@ -1799,6 +1813,18 @@
             </Assignment>
             <CallingExpression name="setAllFlagFalse">
             </CallingExpression>
+            <Assignment>
+              <SimpleVariable name="InputAct"/>
+              <Expression>
+                <StringLiteral><![CDATA[unknown]]></StringLiteral>
+              </Expression>
+            </Assignment>
+            <Assignment>
+              <SimpleVariable name="InputContent"/>
+              <Expression>
+                <StringLiteral><![CDATA[unknown]]></StringLiteral>
+              </Expression>
+            </Assignment>
           </Commands>
           <EEdge target="S26" start ="">
           <Graphics>
@@ -2466,7 +2492,7 @@
               <Position xPos="30" yPos="30"/>
             </Graphics>
           </Node>
-          <Node id="N116" name="N116" history="false">
+          <Node id="N116" name="initial" history="false">
             <Define>
             </Define>
             <Declare>
@@ -2796,6 +2822,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <EEdge target="S73" start ="">
               <Graphics>
@@ -4582,6 +4620,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="660" yPos="300"/>
@@ -4683,6 +4733,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="570" yPos="300"/>
@@ -4784,6 +4846,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="660" yPos="300"/>
@@ -4885,6 +4959,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="570" yPos="300"/>
@@ -5308,6 +5394,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="570" yPos="210"/>
@@ -5350,7 +5448,7 @@
               <Position xPos="30" yPos="30"/>
             </Graphics>
           </Node>
-          <Node id="N117" name="N116" history="false">
+          <Node id="N117" name="initial" history="false">
             <Define>
             </Define>
             <Declare>
@@ -5422,7 +5520,7 @@
               <Position xPos="660" yPos="390"/>
             </Graphics>
           </Node>
-          <Node id="N122" name="N122" history="false">
+          <Node id="N122" name="PaulaDont" history="false">
             <Define>
             </Define>
             <Declare>
@@ -5466,7 +5564,7 @@
               <Position xPos="660" yPos="750"/>
             </Graphics>
           </Node>
-          <Node id="N52" name="N52" history="false">
+          <Node id="N52" name="PaulaBillyis" history="false">
             <Define>
             </Define>
             <Declare>
@@ -5622,6 +5720,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <EEdge target="S108" start ="">
               <Graphics>
@@ -7067,6 +7177,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="480" yPos="300"/>
@@ -7083,7 +7205,7 @@
             <EEdge target="S24" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="210" yPos="795" ctrlXPos="322" ctrlYPos="795"/>
+                <ControlPoint xPos="210" yPos="783" ctrlXPos="322" ctrlYPos="795"/>
                 <ControlPoint xPos="480" yPos="795" ctrlXPos="367" ctrlYPos="795"/>
               </Connection>
             </Graphics>
@@ -7168,6 +7290,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="570" yPos="300"/>
@@ -7269,6 +7403,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="660" yPos="300"/>
@@ -7311,7 +7457,7 @@
               <Position xPos="30" yPos="30"/>
             </Graphics>
           </Node>
-          <Node id="N118" name="N116" history="false">
+          <Node id="N118" name="initial" history="false">
             <Define>
             </Define>
             <Declare>
@@ -7559,7 +7705,7 @@
               <Commands>
               </Commands>
               <Graphics>
-                <Position xPos="30" yPos="30"/>
+                <Position xPos="30" yPos="300"/>
               </Graphics>
             </Node>
             <SuperNode id="S54" name="WaitingVoice" comment="" hideLocalVar="false" hideGlobalVar="false" start="N157;N158;">
@@ -7922,6 +8068,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <EEdge target="S69" start ="">
               <Graphics>
@@ -9026,6 +9184,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="390" yPos="300"/>
@@ -9127,6 +9297,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="480" yPos="390"/>
@@ -9228,6 +9410,18 @@
                 </Assignment>
                 <CallingExpression name="setAllFlagFalse">
                 </CallingExpression>
+                <Assignment>
+                  <SimpleVariable name="InputContent"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
+                <Assignment>
+                  <SimpleVariable name="InputAct"/>
+                  <Expression>
+                    <StringLiteral><![CDATA[unknown]]></StringLiteral>
+                  </Expression>
+                </Assignment>
               </Commands>
               <Graphics>
                 <Position xPos="300" yPos="390"/>
@@ -9582,7 +9776,7 @@
               <StringLiteral><![CDATA[FirstBully_BillyAhhthere]]></StringLiteral>
             </PlayScene>
           </Commands>
-          <TEdge target="N186" start="" timeout="1000">
+          <TEdge target="N186" start="" timeout="1500">
           <Graphics>
             <Connection>
               <ControlPoint xPos="480" yPos="75" ctrlXPos="592" ctrlYPos="75"/>
@@ -10049,6 +10243,18 @@
             </Assignment>
             <CallingExpression name="setAllFlagFalse">
             </CallingExpression>
+            <Assignment>
+              <SimpleVariable name="InputAct"/>
+              <Expression>
+                <StringLiteral><![CDATA[unknown]]></StringLiteral>
+              </Expression>
+            </Assignment>
+            <Assignment>
+              <SimpleVariable name="InputContent"/>
+              <Expression>
+                <StringLiteral><![CDATA[unknown]]></StringLiteral>
+              </Expression>
+            </Assignment>
           </Commands>
           <Graphics>
             <Position xPos="660" yPos="210"/>
@@ -10214,7 +10420,7 @@
       <Commands>
       </Commands>
       <Graphics>
-        <Position xPos="30" yPos="30"/>
+        <Position xPos="30" yPos="300"/>
       </Graphics>
     </Node>
     <Node id="N101" name="setFlag" history="false">
