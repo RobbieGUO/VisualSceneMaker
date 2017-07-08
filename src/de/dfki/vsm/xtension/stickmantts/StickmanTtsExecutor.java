@@ -41,6 +41,8 @@ import java.net.Socket;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Properties;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -186,6 +188,16 @@ public class StickmanTtsExecutor extends ActivityExecutor implements ExportableP
                 extraParams.put(feat.getKey(), feat.getVal());
             }
         }
+        
+        if(name.equals("Pause")){
+            try {
+                long sdelay = Long.parseLong(extraParams.get("value"));
+                Thread.sleep(sdelay);
+            } catch (InterruptedException ex) {
+                Logger.getLogger(StickmanTtsExecutor.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+
         if(extraParams.size() > 0){
             stickmanAnimation = stickmanFactory.loadAnimation(stickmanStageC.getStickman(actor), name, duration, true, extraParams);
         }else{
