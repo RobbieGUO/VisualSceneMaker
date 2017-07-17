@@ -7,8 +7,8 @@
       <Feature key="showstickmanname" val="true"/>
       <Feature key="stickman" val="Stickman2D"/>
       <Feature key="tts" val="cereproc"/>
-      <Feature key="license" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib/license.lic"/>
-      <Feature key="cereproc_library_path" val="/Users/Robbie/Documents/thesis/Archiv/cerevoice_sdk_3.2.0_darwin_i386_python27_11060_beta/cerevoice_eng/javalib"/>
+      <Feature key="license" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\license.lic"/>
+      <Feature key="cereproc_library_path" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cerevoice_sdk_3.2.0_windows_i686-x64_python27_10980_academic\cerevoice_eng\javalib64"/>
       <Feature key="fullscreen" val="false"/>
       <Feature key="useSSI" val="true"/>
       <Feature key="hlhost" val="127.0.0.1"/>
@@ -22,23 +22,23 @@
   <Agents>
     <Agent name="Paula" device="stickmantts">
       <Feature key="default-voice" val="en"/>
-      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="en" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
     <Agent name="Marie" device="stickmantts">
-      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="en" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\cerevoice_heather_3.2.0_48k.voice"/>
       <Feature key="default-voice" val="en"/>
     </Agent>
     <Agent name="Chris" device="stickmantts">
       <Feature key="default-voice" val="en"/>
-      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="en" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
     <Agent name="Billy" device="stickmantts">
       <Feature key="default-voice" val="en"/>
-      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="en" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
     <Agent name="Victor" device="stickmantts">
       <Feature key="default-voice" val="en"/>
-      <Feature key="en" val="/Users/Robbie/Documents/thesis/Archiv/cereproc/javalib/cerevoice_heather_3.2.0_48k.voice"/>
+      <Feature key="en" val="C:\Users\Manuel\Documents\NetBeansProjects\VisualSceneMaker\archiv\cereproc\javalib\cerevoice_heather_3.2.0_48k.voice"/>
     </Agent>
   </Agents>
   <Player>

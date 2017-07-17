@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sat, 8 Jul 2017 20:11:18" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
+<SceneFlow id="" name="Bullying" comment="" hideLocalVar="false" hideGlobalVar="false" modifDate="Sa, 15 Jul 2017 14:17:47" start="S35;S1;" context="" package="" xmlns="xml.sceneflow.dfki.de" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="xml.sceneflow.dfki.de res/xsd/sceneflow.xsd">
   <Define>
   </Define>
   <Declare>
@@ -34,7 +34,7 @@
       <StringLiteral><![CDATA[unknown]]></StringLiteral>
     </VariableDefinition>
     <VariableDefinition type="Bool" name ="useVoice">
-      <BoolLiteral value="false"/>
+      <BoolLiteral value="true"/>
     </VariableDefinition>
     <VariableDefinition type="String" name ="stickmanName">
       <StringLiteral><![CDATA[unknown]]></StringLiteral>
@@ -55,7 +55,7 @@
   <Commands>
   </Commands>
   <LocalVariableBadge>
-    <Position xPos="10" yPos="10"/>
+    <Position xPos="26" yPos="28"/>
   </LocalVariableBadge>
   <GlobalVariableBadge>
     <Position xPos="10" yPos="10"/>
@@ -66,11 +66,11 @@
     </Graphics>
     <Text style="color:blue">
       NextDialogFlog: mark to go to next dialog or not
-                                                                                                                                                                                                                                                                                                                                                                                                            bullyStart: user finishs filling the basic information at beginning
-                                                                                                                                                                                                                                                                                                                                                                                                            stickmanName: indicate which character the user want to talk with
-                                                                                                                                                                                                                                                                                                                        Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
-                                                                                                                                                                                                                                                                                                                        SayNothingFlag: indicate User wants to say anything or not
-                                                                                                                                                                                                                                                                                                                  GamePauseFlag: indicate the game is paused or not
+                                                                                                                                                                                                                                                                                                                                                                                                                              bullyStart: user finishs filling the basic information at beginning
+                                                                                                                                                                                                                                                                                                                                                                                                                              stickmanName: indicate which character the user want to talk with
+                                                                                                                                                                                                                                                                                                                                          Dialog1ReadFlag, Dialog2ReadFlag, Dialog3ReadFlag: check the dialog is readed or not by the user
+                                                                                                                                                                                                                                                                                                                                          SayNothingFlag: indicate User wants to say anything or not
+                                                                                                                                                                                                                                                                                                                                    GamePauseFlag: indicate the game is paused or not
     </Text>
   </Comment>
   <Node id="N26" name="N26" history="false">
@@ -1858,7 +1858,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                      <StringLiteral><![CDATA[guys]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog1ReadFlag"/>
@@ -2158,7 +2158,7 @@
           <Position xPos="10" yPos="10"/>
         </LocalVariableBadge>
         <GlobalVariableBadge>
-          <Position xPos="10" yPos="10"/>
+          <Position xPos="31" yPos="340"/>
         </GlobalVariableBadge>
         <Node id="N40" name="History" history="true">
           <Define>
@@ -5435,7 +5435,7 @@
             <Position xPos="10" yPos="10"/>
           </LocalVariableBadge>
           <GlobalVariableBadge>
-            <Position xPos="10" yPos="10"/>
+            <Position xPos="230" yPos="22"/>
           </GlobalVariableBadge>
           <Node id="N114" name="History" history="true">
             <Define>
@@ -5511,13 +5511,13 @@
             <EEdge target="S22" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="660" yPos="435" ctrlXPos="637" ctrlYPos="435"/>
-                <ControlPoint xPos="570" yPos="435" ctrlXPos="592" ctrlYPos="435"/>
+                <ControlPoint xPos="840" yPos="435" ctrlXPos="817" ctrlYPos="435"/>
+                <ControlPoint xPos="750" yPos="435" ctrlXPos="772" ctrlYPos="435"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="660" yPos="390"/>
+              <Position xPos="840" yPos="390"/>
             </Graphics>
           </Node>
           <Node id="N122" name="PaulaDont" history="false">
@@ -5577,13 +5577,13 @@
             <EEdge target="S39" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="486" yPos="637" ctrlXPos="370" ctrlYPos="702"/>
+                <ControlPoint xPos="396" yPos="637" ctrlXPos="280" ctrlYPos="702"/>
                 <ControlPoint xPos="210" yPos="769" ctrlXPos="343" ctrlYPos="691"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="480" yPos="570"/>
+              <Position xPos="390" yPos="570"/>
             </Graphics>
           </Node>
           <Node id="N78" name="N78" history="false">
@@ -5597,7 +5597,7 @@
               </PlayScene>
             </Commands>
             <Graphics>
-              <Position xPos="660" yPos="570"/>
+              <Position xPos="840" yPos="660"/>
             </Graphics>
           </Node>
           <Node id="N124" name="end" history="false">
@@ -5647,7 +5647,7 @@
             <Graphics>
               <Connection>
                 <ControlPoint xPos="705" yPos="300" ctrlXPos="705" ctrlYPos="322"/>
-                <ControlPoint xPos="705" yPos="390" ctrlXPos="705" ctrlYPos="367"/>
+                <ControlPoint xPos="885" yPos="390" ctrlXPos="885" ctrlYPos="367"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -5764,7 +5764,7 @@
                     <ParenExpression>
                       <Eq>
                         <SimpleVariable name="InputFunction"/>
-                        <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                        <StringLiteral><![CDATA[hipaula]]></StringLiteral>
                       </Eq>
                     </ParenExpression>
                     <SimpleVariable name="Dialog1ReadFlag"/>
@@ -6052,7 +6052,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                      <StringLiteral><![CDATA[badfeeling]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog1ReadFlag"/>
@@ -6062,8 +6062,8 @@
             <IEdge target="N52" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="210" yPos="461" ctrlXPos="343" ctrlYPos="538"/>
-                  <ControlPoint xPos="486" yPos="592" ctrlXPos="370" ctrlYPos="523"/>
+                  <ControlPoint xPos="210" yPos="461" ctrlXPos="415" ctrlYPos="460"/>
+                  <ControlPoint xPos="396" yPos="592" ctrlXPos="280" ctrlYPos="523"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6071,7 +6071,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup2]]></StringLiteral>
+                      <StringLiteral><![CDATA[picfunny]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog2ReadFlag"/>
@@ -6384,7 +6384,7 @@
             <IEdge target="N136" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="570" yPos="795" ctrlXPos="592" ctrlYPos="795"/>
+                  <ControlPoint xPos="390" yPos="795" ctrlXPos="412" ctrlYPos="795"/>
                   <ControlPoint xPos="660" yPos="795" ctrlXPos="637" ctrlYPos="795"/>
                 </Connection>
               </Graphics>
@@ -6393,7 +6393,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                      <StringLiteral><![CDATA[thinktrouble]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog1ReadFlag"/>
@@ -6403,8 +6403,8 @@
             <IEdge target="N78" start="">
               <Graphics>
                 <Connection>
-                  <ControlPoint xPos="570" yPos="750" ctrlXPos="629" ctrlYPos="690"/>
-                  <ControlPoint xPos="673" yPos="647" ctrlXPos="630" ctrlYPos="689"/>
+                  <ControlPoint xPos="390" yPos="750" ctrlXPos="449" ctrlYPos="690"/>
+                  <ControlPoint xPos="853" yPos="737" ctrlXPos="810" ctrlYPos="779"/>
                 </Connection>
               </Graphics>
               <ParenExpression>
@@ -6412,7 +6412,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup2]]></StringLiteral>
+                      <StringLiteral><![CDATA[rightnice]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog2ReadFlag"/>
@@ -6420,7 +6420,7 @@
               </ParenExpression>
             </IEdge>
             <Graphics>
-              <Position xPos="480" yPos="750"/>
+              <Position xPos="300" yPos="750"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -6734,7 +6734,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                      <StringLiteral><![CDATA[guessballs]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog1ReadFlag"/>
@@ -6753,7 +6753,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup2]]></StringLiteral>
+                      <StringLiteral><![CDATA[betheis]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog2ReadFlag"/>
@@ -6772,7 +6772,7 @@
                   <ParenExpression>
                     <Eq>
                       <SimpleVariable name="InputFunction"/>
-                      <StringLiteral><![CDATA[wakeup3]]></StringLiteral>
+                      <StringLiteral><![CDATA[notknowhim]]></StringLiteral>
                     </Eq>
                   </ParenExpression>
                   <SimpleVariable name="Dialog3ReadFlag"/>
@@ -7092,13 +7092,13 @@
             <EEdge target="S12" start ="">
             <Graphics>
               <Connection>
-                <ControlPoint xPos="480" yPos="435" ctrlXPos="367" ctrlYPos="435"/>
+                <ControlPoint xPos="660" yPos="435" ctrlXPos="547" ctrlYPos="435"/>
                 <ControlPoint xPos="210" yPos="435" ctrlXPos="322" ctrlYPos="435"/>
               </Connection>
             </Graphics>
             </EEdge>
             <Graphics>
-              <Position xPos="480" yPos="390"/>
+              <Position xPos="660" yPos="390"/>
             </Graphics>
             <LocalVariableBadge>
               <Position xPos="10" yPos="10"/>
@@ -7124,7 +7124,7 @@
               </Declare>
               <Commands>
                 <CallingExpression name="SendTextContent">
-                  <StringLiteral><![CDATA[Please read the dialog: \n \nDialog 1: \nI do not know, I have a bad feeling about this.\n \nDialog 2: \nThat picture is really funny.]]></StringLiteral>
+                  <StringLiteral><![CDATA[Please read the dialog: \n \nDialog 1: \nI dont know, I have a bad feeling about this.\n \nDialog 2: \nThat picture is really funny.]]></StringLiteral>
                 </CallingExpression>
               </Commands>
               <EEdge target="N70" start ="">
@@ -7206,7 +7206,7 @@
             <Graphics>
               <Connection>
                 <ControlPoint xPos="210" yPos="783" ctrlXPos="322" ctrlYPos="795"/>
-                <ControlPoint xPos="480" yPos="795" ctrlXPos="367" ctrlYPos="795"/>
+                <ControlPoint xPos="300" yPos="795" ctrlXPos="187" ctrlYPos="795"/>
               </Connection>
             </Graphics>
             </EEdge>
@@ -7237,7 +7237,7 @@
               </Declare>
               <Commands>
                 <CallingExpression name="SendTextContent">
-                  <StringLiteral><![CDATA[Please read the dialog: \n \nDialog 1: \nBut, do not you think we will get in trouble?\n \nDialog 2: \nYeah, you are right. You are lookining very nice today.]]></StringLiteral>
+                  <StringLiteral><![CDATA[Please read the dialog: \n \nDialog 1: \nBut, don't you think we will get in trouble?\n \nDialog 2: \nYeah, you are right. You are lookining very nice today.]]></StringLiteral>
                 </CallingExpression>
               </Commands>
               <EEdge target="N77" start ="">
@@ -8112,7 +8112,7 @@
                     <ParenExpression>
                       <Eq>
                         <SimpleVariable name="InputFunction"/>
-                        <StringLiteral><![CDATA[wakeup]]></StringLiteral>
+                        <StringLiteral><![CDATA[himarie]]></StringLiteral>
                       </Eq>
                     </ParenExpression>
                     <SimpleVariable name="Dialog1ReadFlag"/>
@@ -10541,7 +10541,7 @@
         <Position xPos="10" yPos="10"/>
       </LocalVariableBadge>
       <GlobalVariableBadge>
-        <Position xPos="10" yPos="10"/>
+        <Position xPos="20" yPos="155"/>
       </GlobalVariableBadge>
       <Node id="N102" name="History" history="true">
         <Define>
